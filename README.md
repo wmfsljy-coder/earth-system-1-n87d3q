@@ -2,14 +2,14 @@
 
 학생이 직접 조작하며 배우는 **이야기형 인터랙티브 단원** 모음입니다. 브라우저만 있으면 되고, 설치·회원 가입이 없습니다.
 
-- 바로 열기: https://wmfsljy-coder.github.io/earth-system-1/
+- 바로 열기: https://wmfsljy-coder.github.io/earth-system-1-n87d3q/
 
 ## 단원
 
 | 단원 | 제목 | 이야기(탭) | 수준별 문제 | 응용 실험실 |
 |---|---|---|---|---|
-| [1-1](https://wmfsljy-coder.github.io/earth-system-1/1-1/) | 지구의 탄생과 진화 | 지구의 탄생 · 산소의 순환과 대산소화 사건 · 물과 탄소의 순환 | ○ | ○ |
-| [1-2](https://wmfsljy-coder.github.io/earth-system-1/1-2/) | 판 구조 운동과 지구 내부 구조 | 판구조론 정립의 증거 · 판의 경계와 이동의 원동력 · 화산 활동과 암석의 순환 · 지진파와 지구 내부 구조 | ○ | ○ |
+| [1-1](https://wmfsljy-coder.github.io/earth-system-1-n87d3q/1-1/) | 지구의 탄생과 진화 | 지구의 탄생 · 산소의 순환과 대산소화 사건 · 물과 탄소의 순환 | ○ | ○ |
+| [1-2](https://wmfsljy-coder.github.io/earth-system-1-n87d3q/1-2/) | 판 구조 운동과 지구 내부 구조 | 판구조론 정립의 증거 · 판의 경계와 이동의 원동력 · 화산 활동과 암석의 순환 · 지진파와 지구 내부 구조 | ○ | ○ |
 
 ## 한 단원의 구성
 
@@ -23,8 +23,8 @@
 ## 내 학교에서 쓰기
 
 1. 이 저장소를 **Fork** 하거나 *Use this template* 으로 복사합니다.
-2. Settings → Pages → Branch 를 `main` / `(root)` 로 두면 몇 분 뒤 `https://<내 계정>.github.io/earth-system-1/` 에 열립니다.
-3. **우리 반 공유**를 쓰려면 `assets/share-config.js` 의 주소를 내 Apps Script 웹 앱 주소로 바꿉니다(만드는 법: science-teacher-hub 의 [GUIDE.md](https://github.com/wmfsljy-coder/science-teacher-hub/blob/main/GUIDE.md)). 바꾸지 않으면 공유 기능만 꺼지고 나머지는 그대로 됩니다.
+2. Settings → Pages → Branch 를 `main` / `(root)` 로 두면 몇 분 뒤 `https://<내 계정>.github.io/earth-system-1-n87d3q/` 에 열립니다.
+3. **우리 반 공유**를 쓰려면 `assets/share-config.js` 의 주소를 내 Apps Script 웹 앱 주소로 바꿉니다(만드는 법: science-teacher-hub 의 [GUIDE.md](https://github.com/wmfsljy-coder/science-teacher-hub-qtrqwc/blob/main/GUIDE.md)). 바꾸지 않으면 공유 기능만 꺼지고 나머지는 그대로 됩니다.
 4. 반 목록을 고르게 하려면 `assets/share-config.js` 에 `window.STH_CLASSES = [{ v: "1-1", t: "1학년 1반" }, …]` 를 적습니다.
 
 ## 라이선스
