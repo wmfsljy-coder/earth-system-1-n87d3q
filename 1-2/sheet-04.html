@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>개념정리 학습지 · 지진파와 지구 내부 구조 (지구시스템과학1 Ⅰ-2 04)</title>
+<link rel="icon" href="https://wmfsljy-coder.github.io/science-teacher-hub-qtrqwc/assets/hub-icon.svg" type="image/svg+xml">
+<style>
+  /* 개념정리 학습지 — 칠판 강의 화면(board-04.html)의 빈칸 번호와 1:1. 주소 끝 ?key=1 이면 교사용 정답이 보인다. */
+  @import url('https://fonts.googleapis.com/css2?family=Gothic+A1:wght@400;500;700;800;900&display=swap');
+  @page { size: A4; margin: 13mm 14mm; }
+  * { box-sizing: border-box; }
+  body { margin: 0; background: #e9edf2; font-family: "Gothic A1", "Malgun Gothic", sans-serif; color: #161b28; }
+  .paper { width: 210mm; min-height: 297mm; margin: 18px auto; background: #fff; padding: 13mm 14mm; box-shadow: 0 4px 24px rgba(0,0,0,.12); }
+  .tools { width: 210mm; margin: 18px auto 0; display: flex; gap: 10px; justify-content: flex-end; font-size: 14px; }
+  .tools a, .tools button { font: inherit; font-weight: 800; padding: 8px 14px; border-radius: 10px; border: 2px solid #c9d1dd; background: #fff; color: #161b28; text-decoration: none; cursor: pointer; }
+  .tools button.main { background: #1462d8; border-color: #1462d8; color: #fff; }
+  header { display: flex; justify-content: space-between; align-items: flex-end; border-bottom: 3px solid #161b28; padding-bottom: 8px; margin-bottom: 12px; }
+  header .k { font-size: 11.5px; font-weight: 800; color: #5f6b80; }
+  header h1 { font-size: 22px; font-weight: 900; margin: 2px 0 0; letter-spacing: -.03em; }
+  header .who { display: flex; gap: 8px; font-size: 12px; font-weight: 800; }
+  header .who span { border: 1.5px solid #9aa4b5; border-radius: 6px; padding: 6px 10px; min-width: 92px; }
+  .key-mark { display: none; color: #d9302c; font-weight: 900; font-size: 12px; }
+  .key .key-mark { display: inline; }
+  .guide { font-size: 11.5px; color: #5f6b80; margin: 0 0 10px; }
+  h2 { font-size: 15.5px; font-weight: 900; margin: 11px 0 5px; padding: 4px 10px; background: #eef2f8; border-left: 5px solid #1462d8; border-radius: 4px; }
+  p, li { font-size: 13.5px; line-height: 1.88; margin: 0; }
+  ul { margin: 0; padding-left: 18px; }
+  .blank { position: relative; display: inline-block; min-width: 4.4em; padding: 0 1.1em 0 1.7em; margin: 0 2px; border-bottom: 1.6px solid #161b28; color: transparent; line-height: 1.5; text-align: center; font-weight: 800; }
+  .blank::before { content: attr(data-n); position: absolute; left: 0; top: 50%; transform: translateY(-50%); width: 15px; height: 15px; border-radius: 50%; background: #1462d8; color: #fff; font-size: 9.5px; font-weight: 900; line-height: 15px; text-align: center; }
+  .key .blank { color: #d9302c; }
+  table { border-collapse: collapse; width: 100%; font-size: 12.5px; margin: 4px 0 2px; }
+  td, th { border: 1px solid #c9d1dd; padding: 4px 8px; text-align: left; line-height: 1.6; }
+  th { background: #f4f6fa; font-weight: 800; }
+  .formula { font-weight: 800; background: #f8fafc; border: 1px dashed #c9d1dd; border-radius: 6px; padding: 2px 10px; display: inline-block; }
+  .q { margin-top: 6px; }
+  .q p { line-height: 1.7; }
+  .q .ans { display: none; color: #d9302c; font-weight: 900; }
+  .key .q .ans { display: inline; }
+  .write { border: 1.5px solid #9aa4b5; border-radius: 8px; height: 54px; margin-top: 4px; }
+  .foot { margin-top: 10px; font-size: 10.5px; color: #8a94a6; display: flex; justify-content: space-between; }
+  @media print {
+    body { background: #fff; }
+    .tools { display: none; }
+    .paper { margin: 0; box-shadow: none; width: auto; min-height: 0; padding: 0; }
+  }
+</style>
+<style>/* A4 한 장에 맞게 줄 간격·여백을 줄인다 */ p, li { font-size: 12.8px; line-height: 1.62; } table { font-size: 12px; } td, th { padding: 2px 7px; line-height: 1.42; } h2 { font-size: 14.5px; margin: 7px 0 3px; padding: 3px 10px; } header { margin-bottom: 8px; } .guide { margin-bottom: 6px; } .write { height: 40px; } .foot { margin-top: 6px; }</style>
+</head>
+<body>
+<div class="tools">
+  <a href="board-04.html">칠판 강의 화면</a>
+  <a id="keyLink" href="?key=1" hidden>교사용 정답 보기</a>
+  <button class="main" onclick="window.print()">인쇄하기</button>
+</div>
+<div class="paper">
+  <header>
+    <div>
+      <div class="k">지구시스템과학1 · Ⅰ-2 판 구조 운동과 지구 내부 구조 · 04 &nbsp;<span class="key-mark">[교사용 정답]</span></div>
+      <h1>개념정리 학습지 · 지진파와 지구 내부 구조</h1>
+    </div>
+    <div class="who"><span>학번</span><span>이름</span></div>
+  </header>
+  <p class="guide">칠판 화면에 번호가 열리면 같은 번호 빈칸에 받아 적으세요. (빈칸 1~15)</p>
+
+  <h2>① P파와 S파 — 기록지 한 장으로 거리 읽기</h2>
+  <table>
+    <tr><th style="width:12%"></th><th>진동 방식</th><th style="width:18%">속도(지각)</th><th>통과하는 물질</th><th style="width:20%">기록지에서</th></tr>
+    <tr><td>P파</td><td>앞뒤로 밀고 당김: <b class="blank" data-n="1">종파</b></td><td>약 6 km/s</td><td>고체·액체·기체 모두</td><td>먼저 오는 작은 떨림</td></tr>
+    <tr><td>S파</td><td>진행 방향에 수직: <b class="blank" data-n="2">횡파</b></td><td>약 3~4 km/s</td><td><b class="blank" data-n="3">고체</b>만</td><td>뒤이은 큰 흔들림(주요동)</td></tr>
+  </table>
+  <ul>
+    <li>P파와 S파는 같은 순간에 출발하지만 P파가 더 빨라 먼저 온다 → 먼저 오는 작은 떨림 <b class="blank" data-n="4">초기 미동</b></li>
+    <li>P파와 S파의 도착 시각 차이: <b class="blank" data-n="5">PS시</b> · 진앙에서 멀수록 길어진다 (진앙 거리에 따른 도착 시간 그래프 = 주시 곡선)</li>
+    <li>주시 곡선(단원 화면 값): 4,000 km에서 P파 6.3분, S파 11.5분 → PS시 5.2분이면 진앙 거리 <b class="blank" data-n="6">4,000</b> km</li>
+  </ul>
+
+  <h2>② 진앙 찾기 — 세 관측소가 그린 원</h2>
+  <ul>
+    <li>㉮ PS시 1.20분 → 800 km · ㉯ 2.10분 → 1,500 km · ㉰ 3.45분 → 2,600 km</li>
+    <li>관측소를 중심으로 그 거리를 반지름으로 원을 그리면 세 원이 만나는 한 점이 <b class="blank" data-n="7">진앙</b> (하나면 원, 둘이면 두 점, 셋이면 한 점)</li>
+  </ul>
+
+  <h2>③ 지구 내부 — 그림자대와 경계면</h2>
+  <ul>
+    <li>진원에서 각거리 <b class="blank" data-n="8">103</b>°까지: P파·S파 모두 도달 · 103°~<b class="blank" data-n="9">142</b>°: P파도 S파도 없음 · 142°~180°: P파만 도달</li>
+    <li>S파는 103°부터 반대편까지 전혀 없다 → 고체만 지나는 S파의 길목에 액체인 <b class="blank" data-n="10">외핵</b></li>
+    <li>P파는 핵에 들어가며 속도가 뚝 떨어져 안쪽으로 <b class="blank" data-n="11">굴절</b> → 103°~142°에 오지 못한다</li>
+  </ul>
+  <table>
+    <tr><th style="width:22%">깊이</th><th>지진파 속도의 변화</th><th style="width:24%">경계면</th><th style="width:18%">위 | 아래</th></tr>
+    <tr><td>약 35 km(대륙)</td><td>P파·S파가 갑자기 빨라진다</td><td><b class="blank" data-n="12">모호면</b></td><td>지각 | 맨틀</td></tr>
+    <tr><td>약 2,900 km</td><td>P파가 느려지고 S파가 사라진다</td><td><b class="blank" data-n="13">구텐베르크면</b></td><td>맨틀 | 외핵</td></tr>
+    <tr><td>약 5,100 km</td><td>P파가 다시 빨라지고 S파가 되살아난다</td><td><b class="blank" data-n="14">레만면</b></td><td>외핵 | 내핵</td></tr>
+  </table>
+  <ul>
+    <li>지각·맨틀(고체, 부피의 약 82%, 천천히 대류) · 외핵(액체 철·니켈, 대류가 지구 자기장을 만든다) · 엄청난 압력 때문에 다시 고체가 된 <b class="blank" data-n="15">내핵</b> (1936년 레만)</li>
+  </ul>
+
+  <h2>문제로 확인하기</h2>
+  <div class="q">
+    <p>1. 액체를 지나지 못하는 지진파는? <span class="ans">→ ㉡</span> &nbsp; ㉠ P파 &nbsp; ㉡ S파 &nbsp; ㉢ 둘 다 지나지 못한다</p>
+    <p>2. 맨틀과 외핵의 경계는? <span class="ans">→ 구텐베르크면</span> &nbsp; ㉠ 모호면 &nbsp; ㉡ 구텐베르크면 &nbsp; ㉢ 레만면</p>
+  </div>
+  <h2>한 문장 정리</h2>
+  <p>‘S파 그림자대’가 외핵이 액체라는 증거가 되는 까닭을 한 문장으로 쓰세요.</p>
+  <div class="write"></div>
+  <div class="foot"><span>칠판 강의 화면: board-04.html · 이야기 ④ 「지구 속을 본 지진파」</span><span>과학 수업 도구</span></div>
+</div>
+<script>
+  if (new URLSearchParams(location.search).get("key") === "1") {
+    document.body.classList.add("key");
+    var a = document.getElementById("keyLink"); a.textContent = "학생용으로 보기"; a.href = "?"; a.hidden = false;
+  }
+</script>
+</body>
+</html>

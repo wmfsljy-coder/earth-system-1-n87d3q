@@ -1,0 +1,465 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>칠판 강의 · 물과 탄소의 순환 (지구시스템과학1 Ⅰ-1 03)</title>
+<link rel="icon" href="https://wmfsljy-coder.github.io/science-teacher-hub-qtrqwc/assets/hub-icon.svg" type="image/svg+xml">
+<link rel="stylesheet" href="../assets/board.css">
+<style>
+  @keyframes sIn { from { opacity: 0; transform: translateY(16px); } to { opacity: 1; transform: none; } }
+  .current .art .swrap { animation: sIn 1.2s ease both; }
+  .lines p { margin-bottom: 14px; }
+  .tight p { font-size: 28px; margin-bottom: 8px; }
+  .sumlist { list-style: none; padding: 0; margin: 0; }
+  .sumlist li { position: relative; padding: 16px 24px 16px 84px; margin-bottom: 14px; background: #fff; border-radius: 20px; font-size: 28px; }
+  .sumlist li::before { content: attr(data-k); position: absolute; left: 24px; top: 16px; width: 44px; height: 44px; border-radius: 50%; background: var(--ink); color: #fff; font-weight: 900; font-size: 24px; text-align: center; line-height: 44px; }
+  .q { font-size: 31px !important; font-weight: 800; margin-bottom: 14px !important; }
+  #s-quiz .opt { font-size: 26px; padding: 14px 22px; }
+  #s-check1 .opt { font-size: 29px; padding: 14px 24px; }
+  .clue p { font-size: 27px; margin-bottom: 12px; }
+  .speed li { font-size: 27px; margin-bottom: 6px; }
+</style>
+</head>
+<body>
+<div class="deck"><div class="stage">
+
+<!-- 1 표지 -->
+<section class="slide dark cover" id="s-cover" data-title="표지">
+  <div class="art">
+    <svg viewBox="0 0 1600 520" aria-label="얼음으로 하얗게 덮인 지구와, 얼음을 뚫고 연기를 내뿜는 화산">
+      <defs><radialGradient id="c3-ice" cx=".38" cy=".35" r=".75"><stop offset="0" stop-color="#ffffff"/><stop offset=".7" stop-color="#dbe9f6"/><stop offset="1" stop-color="#9fb8d0"/></radialGradient></defs>
+      <g class="swrap">
+        <circle cx="800" cy="250" r="200" fill="url(#c3-ice)"/>
+        <path d="M640 230 Q700 210 760 236 M820 300 Q890 280 950 310 M700 340 Q760 330 810 352" stroke="#b9cde0" stroke-width="8" fill="none"/>
+        <path d="M900 120 L940 60 L962 60 L1002 120Z" fill="#5c4330"/><path d="M940 60 L962 60 L956 74 L946 74Z" fill="#fd7e14"/>
+      </g>
+      <g data-step="1" fill="#adb5bd" opacity=".9"><circle cx="956" cy="46" r="18"/><circle cx="980" cy="26" r="20"/><circle cx="1012" cy="14" r="14"/></g>
+      <g data-step="1" font-weight="800"><path d="M1010 90 H1100" stroke="#ffc9a8" stroke-width="4"/><text x="1110" y="98" font-size="26" fill="#ffc9a8">얼음을 뚫은 화산</text></g>
+      <text x="1560" y="510" fill="#9aa4b5" font-size="18" text-anchor="end">⚠ 화산과 지구의 크기는 실제 비율이 아닙니다</text>
+    </svg>
+  </div>
+  <div class="ttl">
+    <p class="kicker">지구시스템과학1 · Ⅰ-1 지구의 탄생과 물질의 순환 · 03</p>
+    <h1>물과 탄소의 순환</h1>
+    <p class="sub" data-step="1">약 7억 년 전, 적도 부근까지 얼음에 덮인 지구는 어떻게 다시 녹았을까</p>
+  </div>
+  <aside class="script">
+    <p>오늘은 물과 탄소가 지구의 권역 사이를 어떻게 돌고, 그 순환이 지구의 기온을 어떻게 조절하는지 봅니다. 여러분은 고기후 연구원입니다.</p>
+    <p data-at="1">햇빛을 거의 다 되쏘아 버리는 새하얀 행성이 다시 녹은 까닭. 그것이 오늘의 사건입니다.</p>
+  </aside>
+</section>
+
+<!-- 2 도입 -->
+<section class="slide soft" id="s-hook" data-title="적도에서 나온 빙하 퇴적층" data-part="도입">
+  <p class="kicker">도입 · 연구원의 첫 추리</p>
+  <h2>한번 얼어붙은 지구가 어떻게 다시 녹았을까?</h2>
+  <div class="cols w64">
+    <div class="card clue">
+      <p><b>단서 ①</b> 약 7억~6억 년 전, 당시 적도 가까이 있던 지층에서 빙하 퇴적층이 나온다</p>
+      <p><b>단서 ②</b> 얼음은 햇빛을 잘 되쏜다. 하얘지면 더 추워지고, 추워지면 더 하얘진다</p>
+      <p><b>단서 ③</b> 빙하 퇴적층 <b>바로 위</b>를 따뜻한 바다에서 생기는 두꺼운 탄산염 암석층이 덮고 있다</p>
+    </div>
+    <div class="card yel">
+      <h3>여러분의 답은?</h3>
+      <div class="opts">
+        <div class="opt">㉠ 태양이 갑자기 밝아졌다</div>
+        <div class="opt">㉡ 얼음 때문에 풍화가 멎은 사이, 화산이 내보낸 이산화 탄소가 쌓였다</div>
+        <div class="opt">㉢ 큰 운석이 떨어지며 낸 열이 얼음을 녹였다</div>
+      </div>
+      <p class="small mt" data-step="1">하나를 골라 까닭을 한 문장으로 말해 보세요.</p>
+    </div>
+  </div>
+  <aside class="script">
+    <p>나미비아와 오스트레일리아의 지층입니다. 잔류 자기로 재어 보니 이 지층은 당시 적도 가까이에 있었습니다. 적도에 빙하가 있었다는 뜻이에요.</p>
+    <p data-at="1">단서 ②가 맞다면 한번 언 지구는 영원히 얼어 있어야 합니다. 그런데 단서 ③은 그 직후 아주 더웠다고 말합니다. 손을 들게 하고 까닭을 묻습니다. 답은 주지 않습니다.</p>
+  </aside>
+</section>
+
+<!-- 3 키워드 -->
+<section class="slide" id="s-kw" data-title="오늘의 키워드" data-part="도입">
+  <p class="kicker">오늘의 키워드</p>
+  <h2>이 다섯 낱말로 오늘을 정리합니다</h2>
+  <div class="kw">
+    <div class="card"><b>물의 순환</b><span>증발 → 강수 → 유출로 도는 물</span></div>
+    <div class="card"><b>탄소 순환</b><span>대기·바다·생물·암석을 도는 탄소</span></div>
+    <div class="card"><b>규산염 풍화</b><span>빗물이 암석을 녹이며 CO₂를 치움</span></div>
+    <div class="card"><b>음의 되먹임</b><span>변화를 줄이는 쪽으로 작용</span></div>
+    <div class="card"><b>눈덩이 지구</b><span>지표 전체가 얼음에 덮인 상태</span></div>
+  </div>
+  <div class="card blue mt2 row" style="gap:30px"><span class="blank on" style="font-size:34px;font-weight:900;flex:none"><i class="bn">1</i>빈칸</span>
+    <p style="margin:0">화면에 번호가 열리면 <b>학습지의 같은 번호</b>에 받아 적으세요. 오늘 빈칸은 <b>1~14번</b>입니다.</p></div>
+  <aside class="script"><p>키워드 다섯 개를 읽어 주기만 합니다. 정리 장면에서 모두 다시 나옵니다.</p></aside>
+</section>
+
+<!-- 4 물의 순환 -->
+<section class="slide" id="s-water" data-title="물은 어떻게 도는가" data-part="① 물의 순환">
+  <p class="kicker">① 물의 순환 · 해마다 오가는 물의 양 (km³/년, 단원 화면 값)</p>
+  <h2>바다 → 대기 → 육지 → 바다</h2>
+  <svg viewBox="0 0 1400 370" width="1400" height="370" aria-label="바다에서 해마다 413,000 km³가 증발하고 373,000 km³는 바다에 다시 내리며, 육지에는 113,000 km³가 내리고 40,000 km³가 하천과 지하수로 바다에 돌아간다">
+    <defs>
+      <marker id="s4-ab" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="4" markerHeight="4" orient="auto"><path d="M0 0 L10 5 L0 10 Z" fill="#1864ab"/></marker>
+      <marker id="s4-at" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="4" markerHeight="4" orient="auto"><path d="M0 0 L10 5 L0 10 Z" fill="#0c8599"/></marker>
+      <marker id="s4-ao" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="4" markerHeight="4" orient="auto"><path d="M0 0 L10 5 L0 10 Z" fill="#e8590c"/></marker>
+    </defs>
+    <rect x="0" y="0" width="1400" height="370" fill="#f1f8ff"/>
+    <rect x="0" y="270" width="760" height="100" fill="#4dabf7"/>
+    <path d="M760 370 L760 270 Q900 200 1080 180 Q1260 160 1400 150 L1400 370Z" fill="#8ce99a"/>
+    <g fill="#ced4da"><ellipse cx="380" cy="60" rx="150" ry="36"/><ellipse cx="1060" cy="56" rx="160" ry="36"/></g>
+    <text x="380" y="330" font-size="24" font-weight="900" fill="#fff" text-anchor="middle">바다 (수권)</text>
+    <text x="1120" y="300" font-size="24" font-weight="900" fill="#2b8a3e" text-anchor="middle">육지</text>
+    <g data-step="1"><path d="M200 262 V110" stroke="#1864ab" stroke-width="10" marker-end="url(#s4-ab)"/><text x="40" y="190" font-size="22" font-weight="900" fill="#1864ab">증발</text><text x="40" y="220" font-size="22" font-weight="900" fill="#1864ab">413,000</text></g>
+    <g data-step="2"><path d="M520 100 V258" stroke="#0c8599" stroke-width="9" marker-end="url(#s4-at)"/><text x="540" y="190" font-size="22" font-weight="900" fill="#0c8599">바다에 강수 373,000</text>
+      <path d="M1060 100 V176" stroke="#0c8599" stroke-width="6" marker-end="url(#s4-at)"/><text x="1080" y="140" font-size="22" font-weight="900" fill="#0c8599">육지에 강수 113,000</text></g>
+    <g data-step="3"><path d="M540 56 H880" stroke="#495057" stroke-width="5" stroke-dasharray="12 8" marker-end="url(#s4-ab)"/><text x="710" y="40" font-size="21" font-weight="900" fill="#495057" text-anchor="middle">바다 → 육지로 간 수증기</text>
+      <path d="M1000 250 Q900 300 780 300" stroke="#e8590c" stroke-width="7" fill="none" marker-end="url(#s4-ao)"/><text x="900" y="350" font-size="22" font-weight="900" fill="#d9480f" text-anchor="middle">하천·지하수 40,000</text></g>
+    <text x="1395" y="22" font-size="18" fill="#5f6b80" text-anchor="end">⚠ 화살표 굵기는 대략의 비율</text>
+  </svg>
+  <div class="tight">
+    <p data-step="1">태양 에너지를 받아 바닷물이 <b class="blank" data-n="1" data-step="1">증발</b>해 대기로 간다</p>
+    <p data-step="2">수증기가 구름이 되어 비와 눈으로 내린다 → <b class="blank" data-n="2" data-step="2">강수</b></p>
+    <p data-step="3">바다에서 육지로 간 수증기 413,000 − 373,000 = <b class="blank" data-n="3" data-step="3">40,000</b> = 하천·지하수로 돌아오는 양</p>
+  </div>
+  <aside class="script">
+    <p>단원 화면 물의 순환 장면에 나온 값입니다. 단위는 해마다 오가는 물의 부피, km³입니다.</p>
+    <p data-at="1">태양 에너지를 받아 바다에서 해마다 413,000 km³가 빈칸 1번, 증발합니다.</p>
+    <p data-at="2">그중 373,000은 바다에 다시 내리고, 육지에는 113,000이 내립니다. 빈칸 2번, 강수입니다.</p>
+    <p data-at="3">계산해 봅시다. 413,000 − 373,000, 빈칸 3번, 40,000만큼이 바다에서 육지로 넘어갑니다. 그리고 하천과 지하수로 바다에 돌아오는 양이 바로 40,000입니다. 물의 양은 늘 같고, 머무는 자리만 바뀝니다.</p>
+  </aside>
+</section>
+
+<!-- 5 기온과 물의 순환 -->
+<section class="slide" id="s-temp" data-title="얼면 무엇이 멎는가" data-part="① 물의 순환">
+  <p class="kicker">① 물의 순환 · 단원 화면 모형: 지구 평균 기온에 따른 변화</p>
+  <h2>얼면 물의 순환이 멎는다</h2>
+  <div class="cols" style="grid-template-columns:760px 1fr;align-items:center">
+    <svg id="s5-svg" viewBox="0 0 760 450" width="760" height="450" aria-label="지구 평균 기온이 낮을수록 물의 순환 세기가 약해지고 얼음이 덮은 넓이가 늘어나는 그래프. 영하 31 ℃에서 얼음 100%, 순환 세기 약 19%"></svg>
+    <div class="lines">
+      <p data-step="1">기온이 내려갈수록 증발·강수가 약해지고 얼음이 넓어진다</p>
+      <p data-step="2">−31 ℃: 얼음 100% · 순환 세기 약 19% → 눈덩이 지구</p>
+      <p data-step="3">비가 거의 없으면 빗물이 암석을 녹이는 <b class="blank" data-n="4" data-step="3">풍화</b>도 멎는다</p>
+    </div>
+  </div>
+  <p class="note">단원 화면 모형: 순환 세기 = 지금(15 ℃)을 100%로 본 값. 지구 전체 물의 양은 늘 같고 머무는 자리만 바뀝니다.</p>
+  <aside class="script">
+    <p>단원 화면에서 기온 슬라이더를 움직이며 저장고와 순환 세기를 봤죠. 그 모형을 그래프로 그렸습니다.</p>
+    <p data-at="1">지금 지구 15 ℃에서 순환 세기 100%, 얼음 약 11%입니다. 기온이 내려갈수록 증발과 강수가 약해지고 얼음이 넓어집니다.</p>
+    <p data-at="2">모형에서는 −31 ℃쯤이면 얼음이 지표를 100% 덮고, 순환 세기가 지금의 20% 아래로 떨어집니다. 눈덩이 지구입니다. 반대로 27 ℃ 위면 얼음이 모두 녹고 순환이 1.5배를 넘습니다.</p>
+    <p data-at="3">여기서 중요한 것이 함께 멎습니다. 빈칸 4번, 풍화. 다음 장면에서 왜 중요한지 봅니다.</p>
+  </aside>
+</section>
+
+<!-- 6 탄소 순환 -->
+<section class="slide" id="s-carbon" data-title="탄소는 어떻게 도는가" data-part="② 탄소 순환">
+  <p class="kicker">② 탄소 순환 · 지권 ↔ 기권 ↔ 수권</p>
+  <h2>화산이 내보내고, 풍화가 치운다</h2>
+  <svg viewBox="0 0 1400 380" width="1400" height="380" aria-label="화산이 지권의 탄소를 이산화 탄소로 대기에 내보내고, 빗물에 녹은 이산화 탄소가 규산염 암석을 풍화시켜 탄산 이온을 바다로 실어 나르며, 바다에서 석회암이 되어 해저에 묻히는 순환">
+    <defs>
+      <marker id="s6-ar" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="4" markerHeight="4" orient="auto"><path d="M0 0 L10 5 L0 10 Z" fill="#c92a2a"/></marker>
+      <marker id="s6-ag" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="4" markerHeight="4" orient="auto"><path d="M0 0 L10 5 L0 10 Z" fill="#2b8a3e"/></marker>
+      <marker id="s6-ab" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="4" markerHeight="4" orient="auto"><path d="M0 0 L10 5 L0 10 Z" fill="#1864ab"/></marker>
+    </defs>
+    <rect x="0" y="0" width="1400" height="210" fill="#fff4e6"/>
+    <text x="20" y="34" font-size="22" font-weight="900" fill="#d9480f">기권 · 대기 CO₂</text>
+    <path d="M0 210 L560 210 Q620 190 700 214 L700 380 L0 380Z" fill="#a9927a"/>
+    <path d="M700 214 Q760 240 840 250 L1400 250 L1400 380 L700 380Z" fill="#74c0fc"/>
+    <rect x="700" y="330" width="700" height="50" fill="#f3d9a4"/>
+    <text x="1380" y="290" font-size="22" font-weight="900" fill="#1864ab" text-anchor="end">수권 · 바다 (약 38,000 Gt C)</text>
+    <text x="1380" y="364" font-size="21" font-weight="900" fill="#7a5a00" text-anchor="end">지권 · 석회암</text>
+    <text x="20" y="366" font-size="22" font-weight="900" fill="#fff">지권 · 규산염 암석</text>
+    <path d="M120 210 L190 120 L222 120 L292 210Z" fill="#5c4330"/>
+    <g data-step="1"><path d="M206 116 V50" stroke="#c92a2a" stroke-width="8" marker-end="url(#s6-ar)"/><text x="240" y="76" font-size="22" font-weight="900" fill="#c92a2a">화산 → CO₂</text></g>
+    <g data-step="2">
+      <g stroke="#1c7ed6" stroke-width="4" stroke-linecap="round"><path d="M420 70 l-10 34 M470 70 l-10 34 M520 70 l-10 34 M570 70 l-10 34"/></g>
+      <text x="495" y="56" font-size="21" font-weight="900" fill="#1864ab" text-anchor="middle">CO₂가 녹은 빗물</text>
+      <path d="M440 200 Q520 240 640 236 Q760 250 900 280" fill="none" stroke="#2b8a3e" stroke-width="7" marker-end="url(#s6-ag)"/>
+      <rect x="380" y="232" width="250" height="38" rx="10" fill="#fff"/><text x="505" y="259" font-size="21" font-weight="900" fill="#2b8a3e" text-anchor="middle">탄산 이온이 바다로</text>
+    </g>
+    <g data-step="3"><path d="M1000 290 V326" stroke="#1864ab" stroke-width="7" marker-end="url(#s6-ab)"/><text x="1020" y="316" font-size="21" font-weight="900" fill="#1864ab">가라앉아 묻힘</text></g>
+    <g data-step="4"><rect x="740" y="20" width="640" height="150" rx="16" fill="#fff" stroke="#adb5bd" stroke-width="3"/>
+      <text x="760" y="56" font-size="22" font-weight="900" fill="#161b28">탄소 저장고 (Gt C, 단원 화면 값)</text>
+      <text x="760" y="94" font-size="22" font-weight="800" fill="#2b8a3e">생물권 · 숲과 토양 약 2,300</text>
+      <text x="760" y="124" font-size="22" font-weight="800" fill="#1864ab">수권 · 해양 약 38,000</text>
+      <text x="760" y="154" font-size="22" font-weight="900" fill="#d9480f">지권 · 석회암·화석 연료 약 6,000만</text></g>
+  </svg>
+  <div class="tight">
+    <p data-step="2">빗물에 녹은 CO₂가 규산염 암석을 녹인다 → <b class="blank" data-n="5" data-step="2">규산염 풍화</b></p>
+    <p data-step="3">바다에서 <b class="blank" data-n="6" data-step="3">석회암</b>(탄산염 암석)이 되어 해저에 묻힌다</p>
+    <p data-step="4">가장 큰 탄소 저장고는 <b class="blank" data-n="7" data-step="4">지권</b> · 대기 CO₂는 ‘내보내는 양 = 치우는 양’에서 정해진다</p>
+  </div>
+  <aside class="script">
+    <p>이번에는 탄소입니다. 땅과 바다와 대기 사이를 도는 큰 고리를 봅니다.</p>
+    <p data-at="1">화산은 지구 속 탄소를 이산화 탄소로 대기에 내보냅니다.</p>
+    <p data-at="2">빗물에 녹은 이산화 탄소가 규산염 암석을 녹입니다. 빈칸 5번, 규산염 풍화. 이때 탄소는 탄산 이온이 되어 강을 따라 바다로 갑니다.</p>
+    <p data-at="3">바다에서는 빈칸 6번, 석회암이 되어 해저에 묻힙니다.</p>
+    <p data-at="4">저장고 크기를 보면 빈칸 7번, 지권이 압도적입니다. 대기 이산화 탄소 농도는 화산이 내보내는 속도와 풍화가 치우는 속도가 같아지는 곳에서 정해집니다.</p>
+  </aside>
+</section>
+
+<!-- 7 온도 조절기 -->
+<section class="slide soft" id="s-loop" data-title="지구의 온도 조절기" data-part="② 탄소 순환">
+  <p class="kicker">② 탄소 순환 · 규산염 풍화의 되먹임</p>
+  <h2>더우면 더 치우고, 추우면 덜 치운다</h2>
+  <div class="cols" style="grid-template-columns:720px 1fr;align-items:center">
+    <svg viewBox="0 0 720 460" width="720" height="460" aria-label="기온이 오르면 비가 많아지고 풍화가 빨라져 대기 이산화 탄소가 줄어 기온이 다시 내려가는 고리. 반대로 기온이 내려가면 풍화가 느려져 이산화 탄소가 쌓여 기온이 오른다">
+      <defs><marker id="s7-ar" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="4" markerHeight="4" orient="auto"><path d="M0 0 L10 5 L0 10 Z" fill="#495057"/></marker></defs>
+      <g font-size="24" font-weight="900" text-anchor="middle">
+        <rect x="250" y="20" width="220" height="70" rx="18" fill="#fff0f0" stroke="#e03131" stroke-width="4"/><text x="360" y="64" fill="#c92a2a">기온 ↑</text>
+        <rect x="490" y="190" width="220" height="70" rx="18" fill="#e7f5ff" stroke="#1c7ed6" stroke-width="4"/><text x="600" y="234" fill="#1864ab">비 ↑ · 풍화 ↑</text>
+        <rect x="250" y="360" width="220" height="70" rx="18" fill="#ebfbee" stroke="#2b8a3e" stroke-width="4"/><text x="360" y="404" fill="#2b8a3e">대기 CO₂ ↓</text>
+        <rect x="10" y="190" width="220" height="70" rx="18" fill="#f1f3f5" stroke="#495057" stroke-width="4"/><text x="120" y="234" fill="#343a40">온실 효과 ↓</text>
+      </g>
+      <g stroke="#495057" stroke-width="6" fill="none" marker-end="url(#s7-ar)">
+        <path d="M476 72 Q580 100 596 180" data-step="1"/><path d="M596 268 Q580 350 480 386" data-step="1"/>
+        <path d="M244 386 Q140 350 124 268" data-step="2"/><path d="M124 182 Q140 100 244 72" data-step="2"/>
+      </g>
+      <text x="360" y="228" font-size="26" font-weight="900" fill="#5f3dc4" text-anchor="middle" data-step="3">기온이 다시 ↓</text>
+      <text x="360" y="262" font-size="20" font-weight="800" fill="#5f6b80" text-anchor="middle" data-step="3">처음 변화를 줄이는 쪽</text>
+    </svg>
+    <div class="lines">
+      <p data-step="1">더워지면 비가 많아져 풍화가 빨라지고 CO₂를 더 빨리 치운다</p>
+      <p data-step="2">CO₂가 줄면 온실 효과가 약해져 다시 식는다 (추워지면 반대)</p>
+      <p data-step="3">변화를 줄이는 쪽으로 작용 → <b class="blank" data-n="8" data-step="3">음의 되먹임</b></p>
+      <p data-step="4" class="small">모형: 화산이 2배가 되어도 끝없이 오르지 않고 약 732 ppm · 약 20.5 ℃에서 새 균형</p>
+    </div>
+  </div>
+  <aside class="script">
+    <p>규산염 풍화가 왜 지구의 온도 조절기라고 불리는지 고리로 봅니다.</p>
+    <p data-at="1">기온이 오르면 증발과 비가 많아지고, 풍화가 빨라져 대기의 이산화 탄소를 더 빨리 치웁니다.</p>
+    <p data-at="2">이산화 탄소가 줄면 온실 효과가 약해져 다시 식습니다. 추워질 때는 거꾸로, 풍화가 느려져 이산화 탄소가 쌓이고 다시 따뜻해집니다.</p>
+    <p data-at="3">처음 변화를 줄이는 쪽으로 작용하는 것, 빈칸 8번, 음의 되먹임입니다. 이 덕분에 수억 년 동안 지구의 기온이 물이 액체로 있을 수 있는 범위에 머물렀습니다.</p>
+    <p data-at="4">단원 화면 모형에서 화산 활동을 2배로 올리면 대기 이산화 탄소는 약 732 ppm, 기온은 약 20.5 ℃에서 새 균형을 이룹니다. 끝없이 오르지 않아요.</p>
+  </aside>
+</section>
+
+<!-- 8 확인 -->
+<section class="slide" id="s-check1" data-title="추워지면?" data-part="② 탄소 순환">
+  <p class="kicker">② 탄소 순환 · 확인</p>
+  <h2>지구가 조금 추워지면 규산염 풍화와 대기 CO₂는?</h2>
+  <div class="opts" style="max-width:1300px">
+    <div class="opt wrong" data-step="1">① 풍화가 빨라져 CO₂가 줄고, 지구는 더 추워진다</div>
+    <div class="opt right" data-step="1">② 풍화가 느려져 화산의 CO₂가 쌓이고, 지구는 다시 따뜻해진다</div>
+    <div class="opt wrong" data-step="1">③ 풍화는 기온과 관계없어 아무 일도 일어나지 않는다</div>
+    <div class="opt wrong" data-step="1">④ 화산 활동이 멈추어 CO₂가 더는 나오지 않는다</div>
+  </div>
+  <aside class="script">
+    <p>짝과 30초 이야기한 뒤 번호를 들게 합니다.</p>
+    <p data-at="1">정답은 ②. 추워지면 비가 줄어 풍화가 느려집니다. 화산은 기온과 상관없이 계속 이산화 탄소를 내보내니 쌓이게 되죠. 이것을 극단까지 밀어붙인 것이 눈덩이 지구입니다.</p>
+  </aside>
+</section>
+
+<!-- 9 얼음 반사 -->
+<section class="slide" id="s-ice" data-title="한번 얼면 더 언다" data-part="③ 눈덩이 지구">
+  <p class="kicker">③ 눈덩이 지구 · 단서 ②</p>
+  <h2>얼음은 얼음을 부른다</h2>
+  <div class="cols" style="grid-template-columns:720px 1fr;align-items:center">
+    <svg viewBox="0 0 720 440" width="720" height="440" aria-label="얼음이 늘면 햇빛을 더 많이 되쏘아 지구가 추워지고, 추워지면 얼음이 더 늘어나는 고리">
+      <defs><marker id="s9-ar" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="4" markerHeight="4" orient="auto"><path d="M0 0 L10 5 L0 10 Z" fill="#f08c00"/></marker>
+        <marker id="s9-ak" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="4" markerHeight="4" orient="auto"><path d="M0 0 L10 5 L0 10 Z" fill="#495057"/></marker>
+        <clipPath id="s9-cl"><circle cx="360" cy="250" r="150"/></clipPath></defs>
+      <circle cx="360" cy="250" r="150" fill="#4dabf7"/>
+      <g clip-path="url(#s9-cl)">
+        <rect x="200" y="96" width="320" height="50" fill="#fff"/><rect x="200" y="354" width="320" height="50" fill="#fff"/>
+        <g data-step="1"><rect x="200" y="140" width="320" height="50" fill="#f1f3f5"/><rect x="200" y="310" width="320" height="50" fill="#f1f3f5"/></g>
+        <g data-step="2"><rect x="200" y="186" width="320" height="130" fill="#e9ecef"/></g>
+      </g>
+      <circle cx="360" cy="250" r="150" fill="none" stroke="#adb5bd" stroke-width="3"/>
+      <g stroke="#f08c00" stroke-width="6" fill="none" marker-end="url(#s9-ar)"><path d="M40 60 L250 140"/><path d="M40 140 L222 200"/></g>
+      <g data-step="1" stroke="#f08c00" stroke-width="6" fill="none" stroke-dasharray="12 8" marker-end="url(#s9-ar)"><path d="M250 140 L80 220"/><path d="M222 200 L60 290"/></g>
+      <text x="20" y="40" font-size="21" font-weight="900" fill="#e67700">햇빛</text>
+      <text x="40" y="330" font-size="21" font-weight="900" fill="#e67700" data-step="1">되쏘는 햇빛 ↑</text>
+      <g data-step="2" font-size="22" font-weight="900" fill="#343a40" text-anchor="middle"><text x="600" y="120">얼음 ↑</text><path d="M600 132 V196" stroke="#495057" stroke-width="5" marker-end="url(#s9-ak)"/><text x="600" y="230">반사 ↑</text><path d="M600 242 V306" stroke="#495057" stroke-width="5" marker-end="url(#s9-ak)"/><text x="600" y="340">기온 ↓</text><path d="M660 334 Q710 230 660 116" stroke="#495057" stroke-width="5" fill="none" marker-end="url(#s9-ak)"/></g>
+      <text x="710" y="430" font-size="18" fill="#5f6b80" text-anchor="end">⚠ 얼음 띠는 모식도</text>
+    </svg>
+    <div class="lines">
+      <p data-step="1">얼음은 햇빛을 잘 되쏜다 → 지구가 흡수하는 에너지가 준다</p>
+      <p data-step="2">추워지면 얼음이 더 넓어지고, 더 많이 되쏜다</p>
+      <p data-step="3">변화를 키우는 쪽으로 작용 → <b class="blank" data-n="9" data-step="3">양의 되먹임</b> · 평균 기온이 0 ℃ 아래로 내려가면 눈덩이 문턱</p>
+    </div>
+  </div>
+  <aside class="script">
+    <p>단서 ②를 다시 봅니다. 얼음은 햇빛을 잘 되쏩니다.</p>
+    <p data-at="1">얼음이 넓어지면 지구가 흡수하는 햇빛이 줄어듭니다.</p>
+    <p data-at="2">그러면 더 추워지고, 얼음은 더 넓어지고, 더 많이 되쏩니다.</p>
+    <p data-at="3">처음 변화를 키우는 쪽으로 작용하니 빈칸 9번, 양의 되먹임입니다. 단원 화면 모형에서 대기 이산화 탄소가 너무 적어 평균 기온이 0 ℃ 아래로 떨어지면 이 고리가 시작됩니다. 그러면 지구는 어떻게 빠져나왔을까요?</p>
+  </aside>
+</section>
+
+<!-- 10 탈출 -->
+<section class="slide" id="s-escape" data-title="얼음 아래에서 벌어진 일" data-part="③ 눈덩이 지구">
+  <p class="kicker">③ 눈덩이 지구 · 단원 화면의 탈출 모형</p>
+  <h2>치우는 쪽이 멎고, 쌓기만 했다</h2>
+  <div class="cols" style="grid-template-columns:780px 1fr;align-items:center">
+    <svg id="s10-svg" viewBox="0 0 780 450" width="780" height="450" aria-label="눈덩이 지구에서 화산의 이산화 탄소가 쌓이는 그래프. 화산 2배이면 약 1,750만 년, 1배이면 약 3,450만 년 만에 약 12만 ppm에 닿아 탈출하고, 0.5배이면 6천만 년이 지나도 닿지 못한다"></svg>
+    <div class="lines">
+      <p data-step="1">얼음이 비를 막아 풍화가 멎었지만, 얼음을 뚫은 <b class="blank" data-n="10" data-step="1">화산</b>은 CO₂를 계속 내보냈다</p>
+      <p data-step="2">CO₂가 수백만~수천만 년 동안 쌓이기만 했다</p>
+      <p data-step="3">약 <b class="blank" data-n="11" data-step="3">0.1</b>기압(10만 ppm 안팎)에 이르자 얼음이 녹기 시작</p>
+    </div>
+  </div>
+  <p class="note">단원 화면 모형: 화산 1배마다 CO₂가 백만 년에 3,500 ppm씩 쌓이고, 약 12만 ppm에서 탈출(약 0.1기압은 실제 연구의 추정).</p>
+  <aside class="script">
+    <p>결정적인 장면입니다. 지구가 얼면 비가 거의 내리지 않으니 규산염 풍화가 멎습니다.</p>
+    <p data-at="1">그런데 빈칸 10번, 화산은 얼음을 뚫고 계속 이산화 탄소를 내보냅니다. 치우는 쪽은 멎었는데 쌓는 쪽은 계속되는 겁니다.</p>
+    <p data-at="2">그래프는 단원 화면의 탈출 모형입니다. 화산 활동이 2배면 약 1,750만 년, 지금과 같으면 약 3,450만 년이 걸리고, 절반이면 6천만 년이 지나도 빠져나오지 못합니다.</p>
+    <p data-at="3">실제 연구에서도 탈출에 필요한 이산화 탄소를 빈칸 11번, 약 0.1기압, 10만 ppm 안팎으로 추정합니다. 지금 대기의 수백 배입니다.</p>
+  </aside>
+</section>
+
+<!-- 11 덮개 탄산암 -->
+<section class="slide soft" id="s-cap" data-title="녹은 뒤에 생긴 일" data-part="③ 눈덩이 지구">
+  <p class="kicker">③ 눈덩이 지구 · 단서 ③ 풀기</p>
+  <h2>빙하 퇴적층 바로 위의 탄산염 암석</h2>
+  <div class="cols" style="grid-template-columns:560px 1fr;align-items:center">
+    <svg viewBox="0 0 560 450" width="560" height="450" aria-label="지층 단면: 아래에 빙하가 나른 자갈이 섞인 빙하 퇴적층, 그 바로 위에 두꺼운 탄산염 암석층이 덮여 있다">
+      <rect x="120" y="270" width="300" height="160" fill="#adb5bd"/>
+      <g fill="#6c757d"><circle cx="160" cy="300" r="12"/><circle cx="230" cy="340" r="18"/><circle cx="320" cy="300" r="10"/><circle cx="380" cy="370" r="16"/><circle cx="190" cy="400" r="10"/><circle cx="290" cy="400" r="13"/></g>
+      <text x="270" y="444" font-size="21" font-weight="900" fill="#343a40" text-anchor="middle">빙하 퇴적층 (얼어 있던 때)</text>
+      <g data-step="3"><rect x="120" y="120" width="300" height="150" fill="#f3d9a4"/>
+        <g stroke="#d9b36a" stroke-width="3"><path d="M120 160 H420 M120 200 H420 M120 240 H420"/></g>
+        <text x="270" y="200" font-size="24" font-weight="900" fill="#7a5a00" text-anchor="middle">탄산염 암석</text>
+        <text x="270" y="106" font-size="21" font-weight="900" fill="#7a5a00" text-anchor="middle">덮개 탄산암 (녹은 직후)</text></g>
+      <path d="M440 270 H520" stroke="#c92a2a" stroke-width="4" data-step="3"/><text x="530" y="262" font-size="20" font-weight="900" fill="#c92a2a" text-anchor="end" data-step="3">바로 위</text>
+      <text x="550" y="22" font-size="18" fill="#5f6b80" text-anchor="end">⚠ 두께는 과장한 모식도</text>
+    </svg>
+    <div class="lines">
+      <p data-step="1">얼음이 녹자 쌓여 있던 엄청난 CO₂가 남아 → <b class="blank" data-n="12" data-step="1">초온실</b></p>
+      <p data-step="2">뜨겁고 비가 많아 풍화가 폭주 → 대기의 탄소를 바다로 쓸어 담았다</p>
+      <p data-step="3">바다에서 두꺼운 <b class="blank" data-n="13" data-step="3">탄산염</b> 암석으로 묻힘 → 빙하 퇴적층 바로 위를 덮었다 (단서 ③)</p>
+    </div>
+  </div>
+  <aside class="script">
+    <p>단서 ③, 빙하 퇴적층 바로 위의 탄산염 암석을 풀어 봅니다.</p>
+    <p data-at="1">얼음이 녹는 순간, 대기에는 0.1기압 가까운 이산화 탄소가 남아 있습니다. 빈칸 12번, 초온실입니다.</p>
+    <p data-at="2">뜨겁고 비가 많으니 이번에는 풍화가 폭주합니다. 대기의 탄소가 빠르게 바다로 실려 갑니다.</p>
+    <p data-at="3">그 탄소가 바다에서 빈칸 13번, 탄산염 암석이 되어 빙하 퇴적층 바로 위에 두껍게 쌓였습니다. 지구를 얼린 것도 녹인 것도 규산염 풍화라는 하나의 되먹임이었습니다.</p>
+  </aside>
+</section>
+
+<!-- 12 빠른 순환 느린 순환 -->
+<section class="slide" id="s-speed" data-title="빠른 순환과 느린 순환" data-part="③ 눈덩이 지구">
+  <p class="kicker">③ 눈덩이 지구 · 결말: 탄소가 머무는 시간</p>
+  <h2>며칠 만에 오가는 탄소, 수억 년 머무는 탄소</h2>
+  <div class="cols">
+    <div class="card green" data-step="1"><h3>빠른 탄소 순환 (수년 ~ 수백 년)</h3>
+      <ul class="speed"><li>식물의 광합성</li><li>생물의 호흡과 분해</li><li>바다 표면과 대기의 CO₂ 교환</li><li>산불</li></ul></div>
+    <div class="card yel" data-step="2"><h3>느린 탄소 순환 (수만 ~ 수억 년)</h3>
+      <ul class="speed"><li>화산의 CO₂ 방출</li><li>규산염 풍화</li><li>석회암으로 묻힘</li><li>화석 연료가 됨</li></ul></div>
+  </div>
+  <div class="tight mt">
+    <p data-step="3">화석 연료를 태우는 일 = <b class="blank" data-n="14" data-step="3">느린 순환</b>으로 묻어 둔 탄소를 빠른 순환으로 꺼내는 일</p>
+    <p data-step="3" class="small">온도 조절기(풍화)는 너무 느려 사람이 내보내는 속도를 따라잡지 못한다</p>
+  </div>
+  <aside class="script">
+    <p>단원 화면 결말의 분류 활동입니다. 탄소는 며칠 만에 오가기도 하고 수억 년을 한자리에 머물기도 합니다.</p>
+    <p data-at="1">광합성, 호흡과 분해, 바다 표면의 교환, 산불은 빠른 순환입니다.</p>
+    <p data-at="2">화산, 규산염 풍화, 석회암 매몰, 화석 연료는 느린 순환입니다. 오늘 눈덩이 지구를 녹인 것은 느린 순환이었습니다.</p>
+    <p data-at="3">화석 연료를 태우는 일은 빈칸 14번, 느린 순환으로 묻어 둔 탄소를 수백 년 만에 빠른 순환으로 꺼내는 일입니다. 풍화라는 조절기는 수만 년 이상 걸리니 지금의 온난화를 막아 주지 못합니다.</p>
+  </aside>
+</section>
+
+<!-- 13 정리 -->
+<section class="slide soft" id="s-sum" data-title="오늘의 정리" data-part="정리">
+  <p class="kicker">오늘의 정리</p>
+  <h2>지구를 녹인 것은 지구 자신의 탄소 순환</h2>
+  <ul class="sumlist">
+    <li data-k="1" data-step="1"><b>물의 순환</b>: 증발 → 강수 → 하천·지하수 · 얼면 순환과 함께 <b>풍화</b>도 멎는다</li>
+    <li data-k="2" data-step="2"><b>탄소 순환</b>: 화산이 내보내고, <b>규산염 풍화</b>가 치워 석회암으로 묻는다</li>
+    <li data-k="3" data-step="3">더우면 풍화 ↑, 추우면 풍화 ↓ → <b>음의 되먹임</b>, 지구의 온도 조절기</li>
+    <li data-k="4" data-step="4"><b>눈덩이 지구</b>: 풍화가 멎은 사이 화산 CO₂가 쌓여 탈출 → 초온실 → 덮개 탄산암</li>
+  </ul>
+  <aside class="script"><p>학습지를 덮고 한 줄씩 먼저 말로 떠올리게 한 다음 엽니다. 마지막에 첫 추리 ㉠㉡㉢ 가운데 무엇이 맞았는지, 다른 두 개는 왜 틀렸는지 말하게 합니다.</p></aside>
+</section>
+
+<!-- 14 문제 -->
+<section class="slide" id="s-quiz" data-title="문제로 확인하기" data-part="정리">
+  <p class="kicker">문제로 확인하기</p>
+  <h2>두 문제만 풀어 봅시다</h2>
+  <div class="cols">
+    <div class="card">
+      <p class="q">1. 눈덩이 지구에서 대기 CO₂가 쌓인 까닭은?</p>
+      <div class="opts">
+        <div class="opt wrong" data-step="1">㉠ 얼음이 CO₂를 내뿜었다</div>
+        <div class="opt right" data-step="1">㉡ 풍화가 멎었는데 화산은 CO₂를 계속 내보냈다</div>
+        <div class="opt wrong" data-step="1">㉢ 식물이 늘어 CO₂를 내뿜었다</div>
+      </div>
+    </div>
+    <div class="card">
+      <p class="q">2. 느린 탄소 순환에 속하는 것은?</p>
+      <div class="opts">
+        <div class="opt wrong" data-step="2">㉠ 생물의 호흡</div>
+        <div class="opt wrong" data-step="2">㉡ 바다 표면의 CO₂ 교환</div>
+        <div class="opt right" data-step="2">㉢ 석회암으로 묻힘</div>
+      </div>
+    </div>
+  </div>
+  <aside class="script">
+    <p>1분 동안 풀게 하고 손가락으로 답을 들게 합니다.</p>
+    <p data-at="1">1번은 ㉡. 내보내는 쪽은 그대로인데 치우는 쪽이 멎었습니다.</p>
+    <p data-at="2">2번은 ㉢. 호흡과 바다 표면의 교환은 빠른 순환입니다.</p>
+  </aside>
+</section>
+
+<!-- 15 활동·다음 -->
+<section class="slide dark" id="s-next" data-title="직접 해 보기 · 다음 시간" data-part="정리">
+  <p class="kicker">직접 해 보기</p>
+  <h2>이야기 ③ 「눈덩이 지구를 녹인 것」</h2>
+  <div class="cols">
+    <div class="card"><h3>직접 순환을 돌려 보세요</h3><p>기온으로 세 가지 지구 만들기, 화산과 풍화로 균형 기온 맞추기, 화산 세기를 정해 눈덩이 탈출시키기, 빠른·느린 순환 분류가 기다립니다.</p>
+      <p class="mt"><a href="index.html" style="color:#74b6ff;font-weight:900">단원 화면 열기 →</a></p></div>
+    <div class="card"><h3>다음 단원 · Ⅰ-2 판 구조 운동과 지구 내부</h3><p>대륙은 정말 움직였을까요? 이야기 「대륙을 움직인 범인」에서 판구조론이 세워지기까지의 증거를 따라갑니다.</p></div>
+  </div>
+  <aside class="script"><p>남은 시간에는 단원 화면의 이야기 ③을 열어 미션을 하게 합니다.</p></aside>
+</section>
+
+</div></div>
+<script src="../assets/board.js"></script>
+<script>
+(function () {
+  "use strict";
+  /* 기온과 물의 순환 — 단원 화면 모형: 순환 세기 = exp((T − 15)/28), 얼음 = clamp((18 − T)/28, 0, 1) */
+  (function () {
+    var svg = document.getElementById("s5-svg"), X0 = 90, X1 = 720, Y0 = 370, Y1 = 50;
+    function sc(T) { return 100 * Math.exp((T - 15) / 28); }
+    function ice(T) { return 100 * Math.max(0, Math.min(1, (18 - T) / 28)); }
+    function X(T) { return X0 + (T + 55) / 95 * (X1 - X0); }
+    function Y(v) { return Y0 - v / 250 * (Y0 - Y1); }
+    var h = "<rect x='" + X(-55) + "' y='" + Y1 + "' width='" + (X(-31) - X(-55)) + "' height='" + (Y0 - Y1) + "' fill='#e7f5ff' data-step='2'/>";
+    [50, 100, 150, 200, 250].forEach(function (v) { h += "<line x1='" + X0 + "' y1='" + Y(v) + "' x2='" + X1 + "' y2='" + Y(v) + "' stroke='#e8edf4' stroke-width='2'/><text x='" + (X0 - 12) + "' y='" + (Y(v) + 7) + "' font-size='20' font-weight='800' fill='#5f6b80' text-anchor='end'>" + v + "</text>"; });
+    h += "<text x='" + (X0 - 40) + "' y='30' font-size='20' font-weight='900' fill='#5f6b80'>%</text>";
+    h += "<line x1='" + X0 + "' y1='" + Y0 + "' x2='" + X1 + "' y2='" + Y0 + "' stroke='#161b28' stroke-width='4'/><line x1='" + X0 + "' y1='" + Y1 + "' x2='" + X0 + "' y2='" + Y0 + "' stroke='#161b28' stroke-width='4'/>";
+    [-50, -30, -10, 0, 15, 40].forEach(function (T) { h += "<text x='" + X(T) + "' y='" + (Y0 + 30) + "' font-size='20' font-weight='800' fill='#161b28' text-anchor='middle'>" + T + "</text>"; });
+    h += "<text x='" + X1 + "' y='" + (Y0 + 58) + "' font-size='20' font-weight='900' fill='#5f6b80' text-anchor='end'>지구 평균 기온 (℃)</text>";
+    var a = [], b = []; for (var T = -55; T <= 40; T += 1) { a.push(X(T).toFixed(1) + " " + Y(sc(T)).toFixed(1)); b.push(X(T).toFixed(1) + " " + Y(ice(T)).toFixed(1)); }
+    h += "<g data-step='1'><polyline points='" + b.join(" ") + "' fill='none' stroke='#adb5bd' stroke-width='6'/><polyline points='" + a.join(" ") + "' fill='none' stroke='#1462d8' stroke-width='6'/>";
+    h += "<text x='" + (X(40) - 6) + "' y='" + (Y(sc(40)) + 34) + "' font-size='21' font-weight='900' fill='#1462d8' text-anchor='end'>물의 순환 세기</text><text x='" + (X(-52)) + "' y='" + (Y(100) - 14) + "' font-size='21' font-weight='900' fill='#868e96'>얼음 넓이</text>";
+    h += "<circle cx='" + X(15) + "' cy='" + Y(100) + "' r='9' fill='#1462d8'/><text x='" + (X(15) - 10) + "' y='" + (Y(100) - 16) + "' font-size='20' font-weight='900' fill='#161b28' text-anchor='end'>지금 15 ℃</text></g>";
+    h += "<g data-step='2'><circle cx='" + X(-31) + "' cy='" + Y(sc(-31)) + "' r='9' fill='#1864ab'/><text x='" + (X(-31) - 6) + "' y='" + Y(48) + "' font-size='20' font-weight='900' fill='#1864ab' text-anchor='end'>−31 ℃ · 약 19%</text><text x='" + ((X(-55) + X(-31)) / 2) + "' y='" + (Y(200)) + "' font-size='21' font-weight='900' fill='#1864ab' text-anchor='middle'>눈덩이</text></g>";
+    svg.innerHTML = h;
+  })();
+
+  /* 눈덩이 탈출 — 단원 화면 모형: CO₂ = 280 + 3,500 × 화산 세기 × 시간(백만 년), 280 × 2^8.75 ≈ 12만 ppm 에서 탈출 */
+  (function () {
+    var svg = document.getElementById("s10-svg"), X0 = 110, X1 = 740, Y0 = 370, Y1 = 50, ESC = 280 * Math.pow(2, 8.75);
+    function X(t) { return X0 + t / 60 * (X1 - X0); }
+    function Y(p) { return Y0 - p / 140000 * (Y0 - Y1); }
+    var h = "";
+    [[40000, "4만"], [80000, "8만"], [120000, "12만"]].forEach(function (g) { h += "<line x1='" + X0 + "' y1='" + Y(g[0]) + "' x2='" + X1 + "' y2='" + Y(g[0]) + "' stroke='#e8edf4' stroke-width='2'/><text x='" + (X0 - 12) + "' y='" + (Y(g[0]) + 7) + "' font-size='20' font-weight='800' fill='#5f6b80' text-anchor='end'>" + g[1] + "</text>"; });
+    h += "<text x='" + (X0 - 100) + "' y='26' font-size='20' font-weight='900' fill='#5f6b80'>대기 CO₂ (ppm)</text>";
+    h += "<line x1='" + X0 + "' y1='" + Y0 + "' x2='" + X1 + "' y2='" + Y0 + "' stroke='#161b28' stroke-width='4'/><line x1='" + X0 + "' y1='" + Y1 + "' x2='" + X0 + "' y2='" + Y0 + "' stroke='#161b28' stroke-width='4'/>";
+    [0, 10, 20, 30, 40, 50, 60].forEach(function (t) { h += "<text x='" + X(t) + "' y='" + (Y0 + 30) + "' font-size='20' font-weight='800' fill='#161b28' text-anchor='middle'>" + t + "</text>"; });
+    h += "<text x='" + X1 + "' y='" + (Y0 + 58) + "' font-size='20' font-weight='900' fill='#5f6b80' text-anchor='end'>얼어붙은 뒤 흐른 시간 (백만 년)</text>";
+    h += "<g data-step='3'><line x1='" + X0 + "' y1='" + Y(ESC) + "' x2='" + X1 + "' y2='" + Y(ESC) + "' stroke='#e03131' stroke-width='3' stroke-dasharray='10 8'/><text x='" + (X0 + 10) + "' y='" + (Y(ESC) - 12) + "' font-size='21' font-weight='900' fill='#c92a2a'>탈출 (약 12만 ppm)</text></g>";
+    function run(V, col, lab, row) {
+      var tEnd = Math.min(60, (ESC - 280) / (3500 * V)), ly = Y(34000 - row * 12000);
+      var s = "<line x1='" + X(0) + "' y1='" + Y(280) + "' x2='" + X(tEnd) + "' y2='" + Y(280 + 3500 * V * tEnd) + "' stroke='" + col + "' stroke-width='6'/>";
+      s += "<circle cx='" + X(tEnd) + "' cy='" + Y(280 + 3500 * V * tEnd) + "' r='9' fill='" + col + "'/>";
+      return s + "<line x1='" + X(30) + "' y1='" + (ly - 7) + "' x2='" + X(33) + "' y2='" + (ly - 7) + "' stroke='" + col + "' stroke-width='6'/><text x='" + (X(33) + 8) + "' y='" + ly + "' font-size='21' font-weight='900' fill='" + col + "'>" + lab + "</text>";
+    }
+    h += "<g data-step='2'>" + run(2, "#e8590c", "화산 2배 · 약 1,750만 년", 0) + run(1, "#1462d8", "화산 1배 · 약 3,450만 년", 1) + run(0.5, "#868e96", "0.5배 · 6천만 년에도 실패", 2) + "</g>";
+    svg.innerHTML = h;
+  })();
+})();
+</script>
+</body>
+</html>

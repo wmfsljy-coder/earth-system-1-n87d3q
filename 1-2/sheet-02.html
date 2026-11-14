@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>개념정리 학습지 · 판의 경계와 이동의 원동력 (지구시스템과학1 Ⅰ-2 02)</title>
+<link rel="icon" href="https://wmfsljy-coder.github.io/science-teacher-hub-qtrqwc/assets/hub-icon.svg" type="image/svg+xml">
+<style>
+  /* 개념정리 학습지 — 칠판 강의 화면(board-02.html)의 빈칸 번호와 1:1. 주소 끝 ?key=1 이면 교사용 정답이 보인다. */
+  @import url('https://fonts.googleapis.com/css2?family=Gothic+A1:wght@400;500;700;800;900&display=swap');
+  @page { size: A4; margin: 13mm 14mm; }
+  * { box-sizing: border-box; }
+  body { margin: 0; background: #e9edf2; font-family: "Gothic A1", "Malgun Gothic", sans-serif; color: #161b28; }
+  .paper { width: 210mm; min-height: 297mm; margin: 18px auto; background: #fff; padding: 13mm 14mm; box-shadow: 0 4px 24px rgba(0,0,0,.12); }
+  .tools { width: 210mm; margin: 18px auto 0; display: flex; gap: 10px; justify-content: flex-end; font-size: 14px; }
+  .tools a, .tools button { font: inherit; font-weight: 800; padding: 8px 14px; border-radius: 10px; border: 2px solid #c9d1dd; background: #fff; color: #161b28; text-decoration: none; cursor: pointer; }
+  .tools button.main { background: #1462d8; border-color: #1462d8; color: #fff; }
+  header { display: flex; justify-content: space-between; align-items: flex-end; border-bottom: 3px solid #161b28; padding-bottom: 8px; margin-bottom: 12px; }
+  header .k { font-size: 11.5px; font-weight: 800; color: #5f6b80; }
+  header h1 { font-size: 22px; font-weight: 900; margin: 2px 0 0; letter-spacing: -.03em; }
+  header .who { display: flex; gap: 8px; font-size: 12px; font-weight: 800; }
+  header .who span { border: 1.5px solid #9aa4b5; border-radius: 6px; padding: 6px 10px; min-width: 92px; }
+  .key-mark { display: none; color: #d9302c; font-weight: 900; font-size: 12px; }
+  .key .key-mark { display: inline; }
+  .guide { font-size: 11.5px; color: #5f6b80; margin: 0 0 10px; }
+  h2 { font-size: 15.5px; font-weight: 900; margin: 11px 0 5px; padding: 4px 10px; background: #eef2f8; border-left: 5px solid #1462d8; border-radius: 4px; }
+  p, li { font-size: 13.5px; line-height: 1.88; margin: 0; }
+  ul { margin: 0; padding-left: 18px; }
+  .blank { position: relative; display: inline-block; min-width: 4.4em; padding: 0 1.1em 0 1.7em; margin: 0 2px; border-bottom: 1.6px solid #161b28; color: transparent; line-height: 1.5; text-align: center; font-weight: 800; }
+  .blank::before { content: attr(data-n); position: absolute; left: 0; top: 50%; transform: translateY(-50%); width: 15px; height: 15px; border-radius: 50%; background: #1462d8; color: #fff; font-size: 9.5px; font-weight: 900; line-height: 15px; text-align: center; }
+  .key .blank { color: #d9302c; }
+  table { border-collapse: collapse; width: 100%; font-size: 12.5px; margin: 4px 0 2px; }
+  td, th { border: 1px solid #c9d1dd; padding: 4px 8px; text-align: left; line-height: 1.6; }
+  th { background: #f4f6fa; font-weight: 800; }
+  .formula { font-weight: 800; background: #f8fafc; border: 1px dashed #c9d1dd; border-radius: 6px; padding: 2px 10px; display: inline-block; }
+  .q { margin-top: 6px; }
+  .q p { line-height: 1.7; }
+  .q .ans { display: none; color: #d9302c; font-weight: 900; }
+  .key .q .ans { display: inline; }
+  .write { border: 1.5px solid #9aa4b5; border-radius: 8px; height: 54px; margin-top: 4px; }
+  .foot { margin-top: 10px; font-size: 10.5px; color: #8a94a6; display: flex; justify-content: space-between; }
+  @media print {
+    body { background: #fff; }
+    .tools { display: none; }
+    .paper { margin: 0; box-shadow: none; width: auto; min-height: 0; padding: 0; }
+  }
+</style>
+<style>/* A4 한 장에 맞게 줄 간격·여백을 줄인다 */ p, li { font-size: 12.8px; line-height: 1.62; } table { font-size: 12px; } td, th { padding: 2px 7px; line-height: 1.42; } h2 { font-size: 14.5px; margin: 7px 0 3px; padding: 3px 10px; } header { margin-bottom: 8px; } .guide { margin-bottom: 6px; } .write { height: 40px; } .foot { margin-top: 6px; }</style>
+</head>
+<body>
+<div class="tools">
+  <a href="board-02.html">칠판 강의 화면</a>
+  <a id="keyLink" href="?key=1" hidden>교사용 정답 보기</a>
+  <button class="main" onclick="window.print()">인쇄하기</button>
+</div>
+<div class="paper">
+  <header>
+    <div>
+      <div class="k">지구시스템과학1 · Ⅰ-2 판 구조 운동과 지구 내부 구조 · 02 &nbsp;<span class="key-mark">[교사용 정답]</span></div>
+      <h1>개념정리 학습지 · 판의 경계와 이동의 원동력</h1>
+    </div>
+    <div class="who"><span>학번</span><span>이름</span></div>
+  </header>
+  <p class="guide">칠판 화면에 번호가 열리면 같은 번호 빈칸에 받아 적으세요. (빈칸 1~15)</p>
+
+  <h2>① 판과 판의 경계</h2>
+  <ul>
+    <li>지각과 맨틀 윗부분을 합친 단단한 층 <b class="blank" data-n="1">암석권</b> = 판 · 그 아래 고체이지만 천천히 흐를 수 있는 층 <b class="blank" data-n="2">연약권</b> (녹은 용암이 아니다)</li>
+  </ul>
+  <table>
+    <tr><th style="width:18%">상대 운동</th><th style="width:22%">경계</th><th>지형 · 특징</th><th style="width:22%">예</th></tr>
+    <tr><td>멀어진다</td><td><b class="blank" data-n="3">발산형</b></td><td>해령·열곡, 새 지각이 만들어진다</td><td>대서양 중앙 해령</td></tr>
+    <tr><td>다가선다</td><td><b class="blank" data-n="4">수렴형</b></td><td>해구·습곡 산맥, 지각이 사라진다 (섭입·충돌)</td><td>일본 해구, 히말라야</td></tr>
+    <tr><td>스쳐 간다</td><td><b class="blank" data-n="5">보존형</b></td><td><b class="blank" data-n="6">변환 단층</b>, 지각이 생기지도 사라지지도 않는다</td><td>산안드레아스 단층</td></tr>
+  </table>
+  <ul><li>하와이의 화산은 어느 판 경계에도 있지 않다 (가장 가까운 경계도 수천 km 밖)</li></ul>
+
+  <h2>② 판을 움직이는 힘</h2>
+  <ul>
+    <li>맨틀이 천천히 돌며 판을 실어 나른다(홈스): <b class="blank" data-n="7">맨틀 대류</b></li>
+    <li>해령에서 판이 양옆으로 밀려 나간다: <b class="blank" data-n="8">해령 밀기</b> · 해구에서 차갑고 무거운 판이 가라앉으며 뒤를 끌어당긴다: <b class="blank" data-n="9">판 끌기</b></li>
+    <li>판의 속도(cm/년): 태평양판 9.0 · 나스카판 7.4 · 인도-호주판 6.2 · 아프리카판 2.1 · 북아메리카판 1.9 · 유라시아판 0.9</li>
+    <li>빠른 판일수록 가장자리에 <b class="blank" data-n="10">섭입대</b>가 많다 → 가장 큰 힘은 판 끌기</li>
+  </ul>
+
+  <h2>③ 열점과 플룸 — 굽은 화산 열</h2>
+  <ul>
+    <li>맨틀 깊은 곳에서 올라와 거의 제자리에 있는 뜨거운 지점: <b class="blank" data-n="11">열점</b> → 판이 그 위를 지나가며 화산이 줄을 서고, 멀수록 나이가 많다</li>
+    <li>열점은 맨틀 깊은 곳에서 기둥처럼 솟는 <b class="blank" data-n="12">플룸</b> 위에 생긴다</li>
+    <li>킬라우에아 0 km(분출 중) · 미드웨이 약 2,400 km(약 2,800만 년) · 꺾인 지점 약 3,500 km(약 4,700만 년) · 북쪽 끝 약 6,000 km(약 8,100만 년)</li>
+    <li>세 점에 맞춘 태평양판의 평균 속도 약 <b class="blank" data-n="13">7.5</b> cm/년 (하와이 구간만 약 8.6 cm/년) · 꺾인 것은 이동 방향이 북북서 → 서북서로 바뀐 기록</li>
+    <li>섭입한 차가운 판이 맨틀 바닥까지 가라앉는다: <b class="blank" data-n="14">콜드 플룸</b> · 맨틀과 핵의 경계 부근에서 뜨거운 기둥이 솟는다: <b class="blank" data-n="15">핫 플룸</b></li>
+    <li>판구조론은 맨틀 상부(판 경계)를, 플룸 구조론은 맨틀 전체를 본다</li>
+  </ul>
+
+  <h2>문제로 확인하기</h2>
+  <div class="q">
+    <p>1. 산안드레아스 단층처럼 두 판이 스쳐 지나가는 경계는? <span class="ans">→ ㉢</span> &nbsp; ㉠ 발산형 &nbsp; ㉡ 수렴형 &nbsp; ㉢ 보존형</p>
+    <p>2. 열점 화산 열에서 열점에서 멀어질수록 화산의 나이는? <span class="ans">→ 많아진다</span></p>
+  </div>
+  <h2>한 문장 정리</h2>
+  <p>하와이의 화산과 일본의 화산이 생기는 원인을 ‘맨틀 상부 운동’과 ‘플룸’을 넣어 한 문장으로 구분해 쓰세요.</p>
+  <div class="write"></div>
+  <div class="foot"><span>칠판 강의 화면: board-02.html · 이야기 ② 「굽은 화산 열」</span><span>과학 수업 도구</span></div>
+</div>
+<script>
+  if (new URLSearchParams(location.search).get("key") === "1") {
+    document.body.classList.add("key");
+    var a = document.getElementById("keyLink"); a.textContent = "학생용으로 보기"; a.href = "?"; a.hidden = false;
+  }
+</script>
+</body>
+</html>

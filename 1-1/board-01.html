@@ -1,0 +1,522 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>칠판 강의 · 지구의 탄생 (지구시스템과학1 Ⅰ-1 01)</title>
+<link rel="icon" href="https://wmfsljy-coder.github.io/science-teacher-hub-qtrqwc/assets/hub-icon.svg" type="image/svg+xml">
+<link rel="stylesheet" href="../assets/board.css">
+<style>
+  @keyframes pIn { from { opacity: 0; transform: translateY(16px); } to { opacity: 1; transform: none; } }
+  .current .art .pwrap { animation: pIn 1.2s ease both; }
+  .lines p { margin-bottom: 14px; }
+  .tight p { font-size: 28px; margin-bottom: 8px; }
+  .sumlist { list-style: none; padding: 0; margin: 0; }
+  .sumlist li { position: relative; padding: 16px 24px 16px 84px; margin-bottom: 14px; background: #fff; border-radius: 20px; font-size: 28px; }
+  .sumlist li::before { content: attr(data-k); position: absolute; left: 24px; top: 16px; width: 44px; height: 44px; border-radius: 50%; background: var(--ink); color: #fff; font-weight: 900; font-size: 24px; text-align: center; line-height: 44px; }
+  .q { font-size: 31px !important; font-weight: 800; margin-bottom: 14px !important; }
+  #s-quiz .opt { font-size: 26px; padding: 14px 22px; }
+  #s-check1 .opt { font-size: 29px; padding: 14px 24px; }
+  table.ledger.case td, table.ledger.case th { font-size: 26px; padding: 10px 16px; }
+</style>
+</head>
+<body>
+<div class="deck"><div class="stage">
+
+<!-- 1 표지 -->
+<section class="slide dark cover" id="s-cover" data-title="표지">
+  <div class="art">
+    <svg viewBox="0 0 1600 520" aria-label="왼쪽의 태양과, 오른쪽으로 차례로 놓인 노란 구름의 금성, 파란 바다의 지구, 작고 붉은 화성">
+      <defs>
+        <radialGradient id="c1-sun" cx=".5" cy=".5" r=".5"><stop offset="0" stop-color="#fff3bf"/><stop offset=".6" stop-color="#ffd43b"/><stop offset="1" stop-color="#f08c00" stop-opacity="0"/></radialGradient>
+        <radialGradient id="c1-ve" cx=".35" cy=".35" r=".75"><stop offset="0" stop-color="#fff3bf"/><stop offset="1" stop-color="#e0b54a"/></radialGradient>
+        <radialGradient id="c1-ea" cx=".35" cy=".35" r=".75"><stop offset="0" stop-color="#74c0fc"/><stop offset="1" stop-color="#1864ab"/></radialGradient>
+        <radialGradient id="c1-ma" cx=".35" cy=".35" r=".75"><stop offset="0" stop-color="#ffa36b"/><stop offset="1" stop-color="#a63e14"/></radialGradient>
+      </defs>
+      <g class="pwrap">
+        <circle cx="120" cy="250" r="230" fill="url(#c1-sun)"/>
+        <circle cx="620" cy="250" r="92" fill="url(#c1-ve)"/>
+        <path d="M545 230 Q620 205 695 232 M548 270 Q622 290 700 262" stroke="#f8e3a0" stroke-width="10" fill="none" opacity=".8"/>
+        <circle cx="960" cy="250" r="96" fill="url(#c1-ea)"/>
+        <path d="M905 205 Q940 185 965 215 Q955 250 920 255 Z M985 270 Q1020 250 1035 285 Q1010 320 985 300 Z" fill="#69db7c" opacity=".85"/>
+        <circle cx="1270" cy="250" r="52" fill="url(#c1-ma)"/>
+      </g>
+      <g data-step="1" font-weight="800" text-anchor="middle">
+        <text x="620" y="390" font-size="30" fill="#ffe8a3">금성</text><text x="620" y="426" font-size="22" fill="#c9d1df">약 462 ℃ · 92기압</text>
+        <text x="960" y="390" font-size="30" fill="#a5d8ff">지구</text><text x="960" y="426" font-size="22" fill="#c9d1df">약 15 ℃ · 바다 71%</text>
+        <text x="1270" y="390" font-size="30" fill="#ffc9a8">화성</text><text x="1270" y="426" font-size="22" fill="#c9d1df">약 −63 ℃ · 0.006기압</text>
+      </g>
+      <text x="1560" y="510" fill="#9aa4b5" font-size="18" text-anchor="end">⚠ 태양과 행성의 크기, 서로의 거리는 실제 비율이 아닙니다</text>
+    </svg>
+  </div>
+  <div class="ttl">
+    <p class="kicker">지구시스템과학1 · Ⅰ-1 지구의 탄생과 물질의 순환 · 01</p>
+    <h1>지구의 탄생</h1>
+    <p class="sub" data-step="1">46억 년 전, 같은 먼지 구름에서 거의 같은 재료로 태어난 세 행성</p>
+  </div>
+  <aside class="script">
+    <p>오늘은 지구가 어떻게 태어나 대기와 바다를 갖추게 되었는지 봅니다. 여러분은 행성 비교 연구실의 신입 연구원입니다.</p>
+    <p data-at="1">금성·지구·화성은 같은 성운에서 거의 같은 시각에 태어났습니다. 그런데 오늘의 모습은 이렇게 다릅니다. 무엇이 길을 갈랐는지가 오늘의 사건입니다.</p>
+  </aside>
+</section>
+
+<!-- 2 도입 -->
+<section class="slide soft" id="s-hook" data-title="쌍둥이였는데 남남이 되었다" data-part="도입">
+  <p class="kicker">도입 · 연구원의 첫 추리</p>
+  <h2>같은 재료로 태어났는데 왜 이렇게 다를까?</h2>
+  <div class="cols w64">
+    <div class="card">
+      <table class="ledger case">
+        <tr><th></th><th>표면 온도</th><th>대기압</th><th>물</th></tr>
+        <tr><td><b>금성</b></td><td class="v">약 462 ℃</td><td class="v">약 92기압</td><td>거의 없음</td></tr>
+        <tr><td><b>지구</b></td><td class="v">약 15 ℃</td><td class="v">1기압</td><td>표면의 71%가 바다</td></tr>
+        <tr><td><b>화성</b></td><td class="v">약 −63 ℃</td><td class="v">약 0.006기압</td><td>얼음뿐</td></tr>
+      </table>
+      <p class="small mt">금성 대기의 96%는 이산화 탄소 · 화성에는 물이 흐른 지형이 남아 있다</p>
+    </div>
+    <div class="card yel">
+      <h3>가장 큰 까닭은?</h3>
+      <div class="opts">
+        <div class="opt">㉠ 처음부터 만들어진 재료가 서로 달랐다</div>
+        <div class="opt">㉡ 태양으로부터의 거리와 행성의 크기가 달랐다</div>
+        <div class="opt">㉢ 나중에 커다란 천체가 부딪혀 운명이 갈렸다</div>
+      </div>
+      <p class="small mt" data-step="1">하나를 골라 까닭을 한 문장으로 말해 보세요.</p>
+    </div>
+  </div>
+  <aside class="script">
+    <p>세 행성의 오늘 모습입니다. 금성은 납이 녹을 만큼 뜨겁고, 화성은 대기가 거의 없습니다. 바다가 남은 곳은 지구뿐입니다.</p>
+    <p data-at="1">손을 들게 하고 까닭을 묻습니다. 답은 주지 않습니다. 오늘 원시 지구를 처음부터 다시 만들어 보며 확인합니다.</p>
+  </aside>
+</section>
+
+<!-- 3 키워드 -->
+<section class="slide" id="s-kw" data-title="오늘의 키워드" data-part="도입">
+  <p class="kicker">오늘의 키워드</p>
+  <h2>이 다섯 낱말로 오늘을 정리합니다</h2>
+  <div class="kw">
+    <div class="card"><b>미행성 충돌</b><span>원시 지구를 달군 첫 번째 열</span></div>
+    <div class="card"><b>마그마 바다</b><span>지표 전체가 녹아 흐르던 때</span></div>
+    <div class="card"><b>층상 분화</b><span>밀도에 따라 핵·맨틀·지각으로 나뉨</span></div>
+    <div class="card"><b>원시 대기</b><span>화산이 내놓은 기체로 생긴 대기</span></div>
+    <div class="card"><b>원시 바다</b><span>수증기가 응결해 생긴 바다</span></div>
+  </div>
+  <div class="card blue mt2 row" style="gap:30px"><span class="blank on" style="font-size:34px;font-weight:900;flex:none"><i class="bn">1</i>빈칸</span>
+    <p style="margin:0">화면에 번호가 열리면 <b>학습지의 같은 번호</b>에 받아 적으세요. 오늘 빈칸은 <b>1~15번</b>입니다.</p></div>
+  <aside class="script"><p>키워드 다섯 개를 읽어 주기만 합니다. 정리 장면에서 모두 다시 나옵니다.</p></aside>
+</section>
+
+<!-- 4 미행성 충돌 → 마그마 바다 -->
+<section class="slide" id="s-magma" data-title="미행성이 쏟아지던 시절" data-part="① 마그마 바다">
+  <p class="kicker">① 미행성 충돌과 마그마 바다 · 갓 태어난 원시 지구</p>
+  <h2>무엇이 지구를 녹였나</h2>
+  <svg viewBox="0 0 1400 360" width="1400" height="360" aria-label="미행성이 원시 지구에 쏟아지고, 지구 속 방사성 원소의 붕괴열이 더해져 지표 온도가 1200 ℃를 넘어 마그마 바다가 된다">
+    <defs>
+      <radialGradient id="s4-hot" cx=".5" cy=".5" r=".5"><stop offset="0" stop-color="#ffd43b"/><stop offset=".7" stop-color="#f76707"/><stop offset="1" stop-color="#c92a2a"/></radialGradient>
+      <marker id="s4-ar" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="4" markerHeight="4" orient="auto"><path d="M0 0 L10 5 L0 10 Z" fill="#495057"/></marker>
+    </defs>
+    <circle cx="330" cy="200" r="140" fill="#868e96"/>
+    <g data-step="3"><circle cx="330" cy="200" r="140" fill="url(#s4-hot)"/></g>
+    <g data-step="1">
+      <g fill="#495057"><circle cx="110" cy="40" r="16"/><circle cx="560" cy="50" r="13"/><circle cx="70" cy="200" r="12"/><circle cx="590" cy="250" r="14"/></g>
+      <g stroke="#495057" stroke-width="5" fill="none" marker-end="url(#s4-ar)"><path d="M122 52 L215 120"/><path d="M548 62 L450 115"/><path d="M84 200 L178 200"/><path d="M576 246 L482 228"/></g>
+      <g fill="#ffd43b" stroke="#e8590c" stroke-width="3"><circle cx="235" cy="132" r="14"/><circle cx="432" cy="124" r="14"/><circle cx="194" cy="200" r="14"/><circle cx="466" cy="226" r="14"/></g>
+      <text x="330" y="24" font-size="22" font-weight="900" fill="#161b28" text-anchor="middle">충돌 에너지 → 열</text>
+    </g>
+    <g data-step="2" fill="#fff" stroke="#c92a2a" stroke-width="3"><circle cx="300" cy="190" r="9"/><circle cx="360" cy="215" r="9"/><circle cx="330" cy="250" r="9"/><circle cx="345" cy="165" r="9"/></g>
+    <g data-step="2"><text x="6" y="300" font-size="21" font-weight="800" fill="#c92a2a">● 방사성 원소 붕괴열</text></g>
+    <!-- 온도 눈금 -->
+    <rect x="760" y="30" width="56" height="300" rx="28" fill="#f2f5f9" stroke="#adb5bd" stroke-width="3"/>
+    <rect x="770" y="250" width="36" height="70" rx="18" fill="#ff8787" data-only="0"/>
+    <rect x="770" y="150" width="36" height="170" rx="18" fill="#ff6b6b" data-only="1"/>
+    <rect x="770" y="124" width="36" height="196" rx="18" fill="#fa5252" data-only="2"/>
+    <rect x="770" y="70" width="36" height="250" rx="18" fill="#e03131" data-step="3"/>
+    <g font-size="21" font-weight="800">
+      <line x1="740" y1="110" x2="836" y2="110" stroke="#c92a2a" stroke-width="3" stroke-dasharray="8 6"/>
+      <text x="850" y="117" fill="#c92a2a">1200 ℃ 규산염 암석이 모두 녹음</text>
+      <line x1="740" y1="190" x2="836" y2="190" stroke="#e8590c" stroke-width="3" stroke-dasharray="8 6"/>
+      <text x="850" y="197" fill="#d9480f">700 ℃ 지각이 굳기 시작</text>
+      <text x="788" y="356" fill="#5f6b80" text-anchor="middle">지표 온도</text>
+    </g>
+    <g data-step="3"><rect x="850" y="236" width="520" height="64" rx="14" fill="#fff0f0" stroke="#e03131" stroke-width="3"/><text x="1110" y="278" font-size="26" font-weight="900" fill="#c92a2a" text-anchor="middle">지구 전체가 녹아 흐른다</text></g>
+    <text x="1395" y="20" font-size="18" fill="#5f6b80" text-anchor="end">⚠ 미행성과 온도 막대는 모식도</text>
+  </svg>
+  <div class="tight">
+    <p data-step="1"><b class="blank" data-n="1" data-step="1">미행성</b>이 쉴 새 없이 충돌 → 충돌 에너지가 열로 바뀌어 지표를 달군다</p>
+    <p data-step="2">지구 속 <b class="blank" data-n="2" data-step="2">방사성 원소</b>가 붕괴하며 내는 열이 더해진다</p>
+    <p data-step="3">지표 전체가 녹아 흐르는 <b class="blank" data-n="3" data-step="3">마그마 바다</b> (1200 ℃ 이상)</p>
+  </div>
+  <aside class="script">
+    <p>갓 태어난 원시 지구입니다. 아직 주변에 미행성이 많이 남아 있었습니다.</p>
+    <p data-at="1">빈칸 1번, 미행성. 미행성이 떨어질 때마다 충돌 에너지가 열로 바뀌어 지표를 달굽니다.</p>
+    <p data-at="2">여기에 빈칸 2번, 지구 속 방사성 원소가 붕괴하며 내는 열이 더해집니다.</p>
+    <p data-at="3">지표 온도가 1200 ℃를 넘으면 규산염 암석이 모두 녹습니다. 빈칸 3번, 마그마 바다입니다. 오늘날 운석 낙하의 몇십 배 정도로는 이렇게 되지 않습니다. 훨씬 잦은 충돌이었습니다.</p>
+  </aside>
+</section>
+
+<!-- 5 식으며 지각 -->
+<section class="slide" id="s-crust" data-title="충돌이 잦아들자" data-part="① 마그마 바다">
+  <p class="kicker">① 미행성 충돌과 마그마 바다 · 시간이 흐르면</p>
+  <h2>충돌이 잦아들자 지표가 굳었다</h2>
+  <div class="cols" style="grid-template-columns:760px 1fr;align-items:center">
+    <svg viewBox="0 0 760 440" width="760" height="440" aria-label="시간이 지나며 미행성 충돌이 잦아들어 지표 온도가 1200 ℃ 위에서 700 ℃ 아래로 내려가는 모식 그래프">
+      <rect x="90" y="40" width="640" height="80" fill="#fff0f0"/>
+      <rect x="90" y="200" width="640" height="160" fill="#f1f3f5"/>
+      <line x1="90" y1="120" x2="730" y2="120" stroke="#c92a2a" stroke-width="3" stroke-dasharray="8 6"/>
+      <line x1="90" y1="200" x2="730" y2="200" stroke="#e8590c" stroke-width="3" stroke-dasharray="8 6"/>
+      <g font-size="20" font-weight="800"><text x="80" y="127" fill="#c92a2a" text-anchor="end">1200 ℃</text><text x="80" y="207" fill="#d9480f" text-anchor="end">700 ℃</text></g>
+      <text x="720" y="72" font-size="21" font-weight="900" fill="#c92a2a" text-anchor="end">마그마 바다</text>
+      <text x="720" y="340" font-size="21" font-weight="900" fill="#495057" text-anchor="end">지각이 굳는 구간</text>
+      <line x1="90" y1="360" x2="730" y2="360" stroke="#161b28" stroke-width="4"/><line x1="90" y1="30" x2="90" y2="360" stroke="#161b28" stroke-width="4"/>
+      <text x="730" y="396" font-size="20" font-weight="900" fill="#5f6b80" text-anchor="end">시간 →</text>
+      <text x="96" y="24" font-size="20" font-weight="900" fill="#5f6b80">지표 온도 ↑</text>
+      <path d="M100 70 C200 66 260 84 320 130" fill="none" stroke="#e03131" stroke-width="7" data-step="1"/>
+      <path d="M320 130 C380 180 440 230 520 262 C600 290 660 296 720 300" fill="none" stroke="#1462d8" stroke-width="7" data-step="2"/>
+      <g data-step="2"><circle cx="455" cy="214" r="10" fill="#1462d8"/><text x="470" y="186" font-size="20" font-weight="900" fill="#1462d8">700 ℃ 아래</text></g>
+      <g data-step="3"><path d="M520 254 h200" stroke="#343a40" stroke-width="12" stroke-linecap="round"/><text x="620" y="240" font-size="20" font-weight="900" fill="#343a40" text-anchor="middle">원시 지각</text></g>
+      <text x="740" y="430" font-size="18" fill="#5f6b80" text-anchor="end">⚠ 시간 눈금 없는 모식도</text>
+    </svg>
+    <div class="lines">
+      <p data-step="1">미행성 충돌이 잦을수록 지표가 뜨겁다</p>
+      <p data-step="2">충돌이 잦아들면 지표가 식어 700 ℃ 아래로</p>
+      <p data-step="3">원시 <b class="blank" data-n="4" data-step="3">지각</b>이 굳기 시작 → 이때부터 화산 기체가 모여 원시 대기를 이룬다</p>
+    </div>
+  </div>
+  <aside class="script">
+    <p>단원 화면에서 충돌 빈도를 바꾸며 지표 온도를 봤죠. 그 결과를 시간 순서로 늘어놓은 모식도입니다.</p>
+    <p data-at="1">충돌이 잦던 처음에는 1200 ℃ 위, 마그마 바다입니다.</p>
+    <p data-at="2">미행성이 점점 줄어들자 지표가 식어 700 ℃ 아래로 내려갑니다.</p>
+    <p data-at="3">빈칸 4번, 지각. 녹아 있던 지표가 굳기 시작합니다. 지각이 생긴 다음부터 화산이 내놓은 기체가 모여 원시 대기가 됩니다. ③에서 이어 봅니다.</p>
+  </aside>
+</section>
+
+<!-- 6 층상 분화 -->
+<section class="slide" id="s-diff" data-title="무거운 것은 가라앉는다" data-part="② 층상 분화">
+  <p class="kicker">② 층상 분화 · 지구가 녹아 있는 동안</p>
+  <h2>무거운 것은 가라앉고, 가벼운 것은 떠올랐다</h2>
+  <svg viewBox="0 0 1400 360" width="1400" height="360" aria-label="녹은 원시 지구 안에서 철 방울이 중심으로 가라앉아 핵이 되고, 규산염이 떠올라 맨틀과 지각이 되는 세 단계 단면">
+    <defs>
+      <marker id="s6-ar" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="4" markerHeight="4" orient="auto"><path d="M0 0 L10 5 L0 10 Z" fill="#343a40"/></marker>
+      <marker id="s6-arr" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="4" markerHeight="4" orient="auto"><path d="M0 0 L10 5 L0 10 Z" fill="#2b8a3e"/></marker>
+    </defs>
+    <g>
+      <circle cx="220" cy="170" r="140" fill="#ffa94d"/>
+      <g fill="#495057"><circle cx="150" cy="110" r="10"/><circle cx="260" cy="90" r="10"/><circle cx="300" cy="190" r="10"/><circle cx="190" cy="240" r="10"/><circle cx="120" cy="190" r="10"/><circle cx="240" cy="160" r="10"/><circle cx="270" cy="260" r="10"/><circle cx="180" cy="160" r="10"/></g>
+      <text x="220" y="340" font-size="22" font-weight="900" fill="#161b28" text-anchor="middle">(가) 뒤섞여 있다</text>
+    </g>
+    <g data-step="1">
+      <circle cx="700" cy="170" r="140" fill="#ffa94d"/>
+      <circle cx="700" cy="170" r="40" fill="#868e96"/>
+      <g fill="#495057"><circle cx="640" cy="110" r="10"/><circle cx="760" cy="105" r="10"/><circle cx="770" cy="210" r="10"/><circle cx="640" cy="230" r="10"/></g>
+      <g stroke="#343a40" stroke-width="4" fill="none" marker-end="url(#s6-ar)"><path d="M646 118 L668 140"/><path d="M754 113 L732 138"/><path d="M762 204 L738 190"/><path d="M646 222 L668 202"/></g>
+      <g stroke="#2b8a3e" stroke-width="4" fill="none" marker-end="url(#s6-arr)"><path d="M600 170 L572 170"/><path d="M700 70 L700 44"/><path d="M800 170 L828 170"/></g>
+      <text x="700" y="340" font-size="22" font-weight="900" fill="#161b28" text-anchor="middle">(나) 철 방울이 가라앉는 중</text>
+    </g>
+    <g data-step="2">
+      <circle cx="1180" cy="170" r="140" fill="#5c4330"/>
+      <circle cx="1180" cy="170" r="132" fill="#e8590c"/>
+      <circle cx="1180" cy="170" r="66" fill="#868e96"/>
+      <g font-size="21" font-weight="900" text-anchor="middle"><text x="1180" y="178" fill="#fff">핵</text><text x="1180" y="80" fill="#fff">맨틀</text></g>
+      <path d="M1290 90 L1350 50" stroke="#5c4330" stroke-width="3"/><text x="1355" y="46" font-size="20" font-weight="900" fill="#5c4330">지각</text>
+      <text x="1180" y="340" font-size="22" font-weight="900" fill="#161b28" text-anchor="middle">(다) 층이 생겼다</text>
+    </g>
+    <g font-size="20" font-weight="900"><circle cx="20" cy="16" r="10" fill="#495057"/><text x="38" y="23" fill="#343a40">철·니켈</text><rect x="130" y="6" width="22" height="20" rx="6" fill="#ffa94d"/><text x="160" y="23" fill="#d9480f">녹은 규산염</text></g>
+    <text x="440" y="356" font-size="18" fill="#5f6b80" text-anchor="middle">⚠ 지각 두께는 과장</text>
+  </svg>
+  <div class="tight">
+    <p data-step="1"><b class="blank" data-n="5" data-step="1">밀도</b>가 큰 철·니켈은 가라앉고, 밀도가 작은 규산염은 떠오른다</p>
+    <p data-step="2">철·니켈 → <b class="blank" data-n="6" data-step="2">핵</b>, 규산염 → 맨틀과 지각 : 이 과정이 <b class="blank" data-n="7" data-step="2">층상 분화</b></p>
+    <p data-step="3" class="small">지구 전체가 녹아 있었기에 물질이 밀도에 따라 자유롭게 자리를 바꿀 수 있었다</p>
+  </div>
+  <aside class="script">
+    <p>지구가 녹아 있는 동안 아주 중요한 일이 한 번에 일어납니다. (가)처럼 처음에는 철과 규산염이 뒤섞여 있었어요.</p>
+    <p data-at="1">빈칸 5번, 밀도. 밀도가 큰 철과 니켈은 가라앉고, 밀도가 작은 규산염은 떠오릅니다.</p>
+    <p data-at="2">가라앉은 철·니켈은 빈칸 6번, 핵이 되고 규산염은 맨틀과 지각이 됩니다. 이렇게 층이 나뉘는 것이 빈칸 7번, 층상 분화입니다.</p>
+    <p data-at="3">핵심 조건은 ‘녹아 있었다’는 것입니다. 굳은 암석 속에서는 물질이 이렇게 움직일 수 없습니다.</p>
+  </aside>
+</section>
+
+<!-- 7 분화 시간과 자기장 -->
+<section class="slide" id="s-diff2" data-title="분화는 얼마나 걸렸나" data-part="② 층상 분화">
+  <p class="kicker">② 층상 분화 · 단원 화면 모형의 진행률</p>
+  <h2>녹아 있던 짧은 동안에 끝났다</h2>
+  <div class="cols" style="grid-template-columns:720px 1fr;align-items:center">
+    <svg id="s7-svg" viewBox="0 0 720 440" width="720" height="440" aria-label="지구가 만들어진 뒤 흐른 시간에 따른 층상 분화 진행률. 약 1,900만 년에 절반, 약 7,700만 년에 95%를 넘는다"></svg>
+    <div class="lines">
+      <p data-step="1">처음에 빠르고, 갈수록 느려지며 끝에 다가간다</p>
+      <p data-step="2">약 1,900만 년에 절반 · 약 7,700만 년에 95%</p>
+      <p data-step="3">가라앉는 철의 마찰열이 지구를 더 달궜다</p>
+      <p data-step="4">액체 외핵의 대류 → 지구 <b class="blank" data-n="8" data-step="4">자기장</b> → 태양풍으로부터 대기를 지켜 준다</p>
+    </div>
+  </div>
+  <p class="note">단원 화면 모형의 값(경향만 살린 수업용 모형)입니다. 가로축은 지구가 만들어진 뒤 흐른 시간입니다.</p>
+  <aside class="script">
+    <p>단원 화면에서 시간 슬라이더를 움직이며 분화 진행률을 봤죠. 그 모형을 그래프로 그렸습니다.</p>
+    <p data-at="1">처음에는 빠르게 진행되고, 끝에 가까워질수록 느려집니다.</p>
+    <p data-at="2">모형에서는 약 1,900만 년에 절반, 약 7,700만 년에 95%를 넘습니다. 지구 나이 46억 년에 비하면 아주 짧은 순간이에요.</p>
+    <p data-at="3">철이 가라앉을 때 생긴 마찰열이 지구를 더 달궜습니다.</p>
+    <p data-at="4">빈칸 8번, 자기장. 핵 가운데 액체인 외핵이 대류하며 지구 자기장을 만들고, 이 자기장이 태양풍으로부터 대기를 지켜 줍니다. 순서에 주의하세요. 핵이 먼저, 자기장은 그다음입니다.</p>
+  </aside>
+</section>
+
+<!-- 8 확인 -->
+<section class="slide" id="s-check1" data-title="분화의 조건" data-part="② 층상 분화">
+  <p class="kicker">② 층상 분화 · 확인</p>
+  <h2>원시 지구가 핵·맨틀·지각으로 나뉠 수 있었던 조건은?</h2>
+  <div class="opts" style="max-width:1300px">
+    <div class="opt wrong" data-step="1">① 지구가 빠르게 자전해 무거운 물질을 가운데로 끌어당겼다</div>
+    <div class="opt right" data-step="1">② 지구 전체가 녹아 있어 물질이 밀도에 따라 자리를 바꿀 수 있었다</div>
+    <div class="opt wrong" data-step="1">③ 지구 자기장이 철을 중심으로 끌어당겼다</div>
+    <div class="opt wrong" data-step="1">④ 철이 규산염보다 가벼워 아래로 흘러내렸다</div>
+  </div>
+  <aside class="script">
+    <p>짝과 30초 이야기한 뒤 번호를 들게 합니다.</p>
+    <p data-at="1">정답은 ②. 자전은 오히려 물질을 바깥으로 밀어냅니다. 자기장은 핵이 생긴 뒤에 만들어졌으니 ③은 순서가 거꾸로이고, 철은 규산염보다 밀도가 큽니다.</p>
+  </aside>
+</section>
+
+<!-- 9 원시 대기 -->
+<section class="slide" id="s-atm" data-title="기체가 빠져나온다" data-part="③ 원시 대기와 바다">
+  <p class="kicker">③ 원시 대기와 원시 바다 · 화산 활동</p>
+  <h2>지구 속 기체가 빠져나와 대기가 되었다</h2>
+  <svg viewBox="0 0 1400 360" width="1400" height="360" aria-label="굳은 지각 위의 화산들이 수증기와 이산화 탄소를 내뿜어 지표 위에 두꺼운 원시 대기 층을 만든다">
+    <defs><linearGradient id="s9-sky" x1="0" x2="0" y1="0" y2="1"><stop offset="0" stop-color="#ffe8cc"/><stop offset="1" stop-color="#ffd8a8"/></linearGradient></defs>
+    <rect x="0" y="0" width="1400" height="280" fill="#f8f9fa"/>
+    <g data-step="2"><rect x="0" y="20" width="1400" height="260" fill="url(#s9-sky)"/></g>
+    <rect x="0" y="280" width="1400" height="80" fill="#495057"/>
+    <path d="M220 280 L300 180 L330 180 L410 280Z M860 280 L950 160 L985 160 L1080 280Z" fill="#5c4330"/>
+    <g fill="#e8590c"><path d="M300 180 L330 180 L322 196 L308 196Z"/><path d="M950 160 L985 160 L976 178 L958 178Z"/></g>
+    <g data-step="1" font-size="22" font-weight="900" text-anchor="middle">
+      <g fill="#adb5bd" opacity=".9"><circle cx="315" cy="150" r="22"/><circle cx="300" cy="115" r="26"/><circle cx="335" cy="85" r="30"/><circle cx="968" cy="130" r="22"/><circle cx="950" cy="95" r="26"/><circle cx="985" cy="62" r="30"/></g>
+      <text x="450" y="120" fill="#1864ab">H₂O</text><text x="200" y="100" fill="#c92a2a">CO₂</text>
+      <text x="1110" y="110" fill="#1864ab">H₂O</text><text x="840" y="80" fill="#c92a2a">CO₂</text>
+    </g>
+    <g data-step="2" font-size="24" font-weight="900" fill="#7a3d00" text-anchor="middle"><text x="640" y="200">원시 대기 — 수증기 · 이산화 탄소가 대부분</text></g>
+    <g data-step="3"><rect x="470" y="220" width="340" height="44" rx="12" fill="#fff" stroke="#e03131" stroke-width="3"/><text x="640" y="250" font-size="22" font-weight="900" fill="#c92a2a" text-anchor="middle">산소(O₂)는 거의 없다</text></g>
+    <text x="1395" y="356" font-size="18" fill="#fff" text-anchor="end">⚠ 화산과 대기 두께는 과장한 모식도</text>
+  </svg>
+  <div class="tight">
+    <p data-step="1">녹아 있던 지구 속 기체가 화산 활동으로 빠져나온다</p>
+    <p data-step="2">원시 대기의 주성분: <b class="blank" data-n="9" data-step="2">수증기</b>와 <b class="blank" data-n="10" data-step="2">이산화 탄소</b></p>
+    <p data-step="3">지금 대기와 달리 산소는 거의 없었다 (산소 이야기는 다음 시간 02)</p>
+  </div>
+  <aside class="script">
+    <p>지각이 굳은 뒤에도 지구 속은 뜨겁습니다. 이제 갈림길로 갑니다.</p>
+    <p data-at="1">녹아 있던 지구 속 기체가 화산 활동으로 빠져나옵니다.</p>
+    <p data-at="2">이렇게 모인 원시 대기의 주성분은 빈칸 9번, 수증기와 빈칸 10번, 이산화 탄소입니다.</p>
+    <p data-at="3">원시 대기가 지금처럼 질소와 산소였다고 생각하는 학생이 많습니다. 산소는 거의 없었습니다. 산소가 어떻게 생겼는지는 다음 시간에 봅니다.</p>
+  </aside>
+</section>
+
+<!-- 10 원시 바다 -->
+<section class="slide" id="s-sea" data-title="바다가 생긴다" data-part="③ 원시 대기와 바다">
+  <p class="kicker">③ 원시 대기와 원시 바다 · 지표가 식자</p>
+  <h2>수증기가 비가 되어 바다를 채웠다</h2>
+  <svg viewBox="0 0 1400 360" width="1400" height="360" aria-label="지표가 식자 대기의 수증기가 응결해 비가 되어 쏟아지고, 낮은 곳에 고여 원시 바다가 된다. 대기의 이산화 탄소 일부가 바다에 녹아든다">
+    <defs>
+      <linearGradient id="s10-sea" x1="0" x2="0" y1="0" y2="1"><stop offset="0" stop-color="#4dabf7"/><stop offset="1" stop-color="#1864ab"/></linearGradient>
+      <marker id="s10-ar" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="4" markerHeight="4" orient="auto"><path d="M0 0 L10 5 L0 10 Z" fill="#c92a2a"/></marker>
+    </defs>
+    <rect x="0" y="0" width="1400" height="300" fill="#f1f3f5"/>
+    <g fill="#868e96"><ellipse cx="260" cy="60" rx="170" ry="40"/><ellipse cx="700" cy="50" rx="200" ry="44"/><ellipse cx="1130" cy="62" rx="180" ry="40"/></g>
+    <path d="M0 210 Q140 200 240 230 Q420 344 700 344 Q980 344 1150 230 Q1260 190 1400 200 L1400 360 L0 360 Z" fill="#5c4330"/>
+    <g data-step="1" stroke="#1c7ed6" stroke-width="4" stroke-linecap="round">
+      <path d="M180 110 l-12 40 M260 115 l-12 40 M340 110 l-12 40 M560 110 l-12 40 M640 105 l-12 40 M720 110 l-12 40 M800 105 l-12 40 M1060 110 l-12 40 M1140 115 l-12 40 M1220 110 l-12 40"/>
+    </g>
+    <g data-step="2"><path d="M262 244 Q420 330 700 330 Q980 330 1128 244 Z" fill="url(#s10-sea)"/><text x="700" y="290" font-size="26" font-weight="900" fill="#fff" text-anchor="middle">원시 바다</text></g>
+    <g data-step="3">
+      <path d="M470 150 L520 236" stroke="#c92a2a" stroke-width="5" fill="none" marker-end="url(#s10-ar)"/>
+      <rect x="318" y="112" width="204" height="36" rx="10" fill="#fff"/><text x="420" y="138" font-size="21" font-weight="900" fill="#c92a2a" text-anchor="middle">CO₂가 바다에 녹아듦</text>
+      <path d="M955 216 L912 290" stroke="#2b8a3e" stroke-width="3"/>
+      <g transform="translate(900 300)"><circle r="12" fill="#69db7c" stroke="#2b8a3e" stroke-width="3"/><circle cx="20" cy="-6" r="9" fill="#69db7c" stroke="#2b8a3e" stroke-width="3"/></g>
+      <text x="960" y="210" font-size="21" font-weight="900" fill="#2b8a3e">바닷속 최초의 생명체</text>
+    </g>
+    <text x="1395" y="22" font-size="18" fill="#5f6b80" text-anchor="end">⚠ 구름·바다 깊이는 과장한 모식도</text>
+  </svg>
+  <div class="tight">
+    <p data-step="1">지표가 식자 대기의 수증기가 <b class="blank" data-n="11" data-step="1">응결</b>해 비가 되어 쏟아진다</p>
+    <p data-step="2">빗물이 낮은 곳에 고여 <b class="blank" data-n="12" data-step="2">원시 바다</b>가 된다</p>
+    <p data-step="3">대기의 이산화 탄소가 바다에 녹아 줄어들고, 바닷속에서 최초의 생명체가 나타났다</p>
+  </div>
+  <aside class="script">
+    <p>원시 대기에는 수증기가 아주 많았습니다. 그다음이 갈림길입니다.</p>
+    <p data-at="1">지표가 충분히 식자 수증기가 빈칸 11번, 응결해 엄청난 비가 되어 쏟아집니다.</p>
+    <p data-at="2">빗물이 낮은 곳에 고여 빈칸 12번, 원시 바다가 됩니다.</p>
+    <p data-at="3">바다가 생기자 대기의 이산화 탄소가 바다에 녹아 줄어듭니다. 그리고 이 바닷속에서 최초의 생명체가 나타났습니다. 자외선을 막아 줄 오존층이 아직 없었다는 점도 기억해 두세요.</p>
+  </aside>
+</section>
+
+<!-- 11 세 행성의 갈림길 -->
+<section class="slide" id="s-fork" data-title="네 갈래의 길" data-part="③ 원시 대기와 바다">
+  <p class="kicker">③ 원시 대기와 원시 바다 · 단원 화면의 행성 모형</p>
+  <h2>갈림길은 ‘거리’와 ‘크기’였다</h2>
+  <div class="cols" style="grid-template-columns:780px 1fr;align-items:center">
+    <svg id="s11-svg" viewBox="0 0 780 470" width="780" height="470" aria-label="태양으로부터의 거리와 행성 질량에 따라 바다 행성, 폭주 온실 행성, 얼어붙은 행성, 대기를 잃은 행성으로 나뉘는 지도. 지구는 바다 행성, 금성은 폭주 온실, 화성은 얼어붙은 행성, 수성은 대기를 잃은 행성 자리에 있다"></svg>
+    <div class="lines">
+      <p data-step="1">지구 (1 AU · 질량 1): 수증기가 응결 → 🌊 바다 행성</p>
+      <p data-step="2">금성 (0.72 AU): 햇빛이 너무 강해 수증기가 끝내 응결하지 못함 → 🔥 <b class="blank" data-n="13" data-step="2">폭주 온실</b></p>
+      <p data-step="3">화성 (질량 0.10): 대기가 얇고 추워 🧊 얼어붙음 · 수성 (질량 0.06): <b class="blank" data-n="14" data-step="3">중력</b>이 약해 기체를 붙잡지 못함</p>
+    </div>
+  </div>
+  <p class="note">햇빛·온실 효과·중력만 넣은 단원 화면의 단순화한 모형입니다. 실제 행성의 운명에는 자기장, 판 구조 운동, 큰 충돌 등도 함께 작용합니다.</p>
+  <aside class="script">
+    <p>단원 화면에서 거리와 질량을 바꿔 가며 네 갈래의 행성을 만들었죠. 그 결과를 한 장의 지도로 모았습니다. 가로는 태양으로부터의 거리, 세로는 질량입니다.</p>
+    <p data-at="1">지구 자리는 바다 행성 칸입니다. 수증기가 응결해 원시 바다가 남습니다.</p>
+    <p data-at="2">금성 자리는 햇빛이 너무 강합니다. 수증기가 응결하지 못한 채 대기에 남아 온실 효과를 키우고, 그래서 더 뜨거워집니다. 빈칸 13번, 폭주 온실입니다.</p>
+    <p data-at="3">화성은 물이 있어도 대기가 얇고 추워 얼어붙었고, 수성은 빈칸 14번, 중력이 약해 기체를 붙잡지 못했습니다. 첫 추리의 답을 이제 말할 수 있겠죠?</p>
+  </aside>
+</section>
+
+<!-- 12 네 권역 -->
+<section class="slide soft" id="s-sphere" data-title="네 권역이 갖추어지다" data-part="③ 원시 대기와 바다">
+  <p class="kicker">③ 원시 대기와 원시 바다 · 지구시스템의 탄생</p>
+  <h2>지권 위에 기권과 수권이 차례로 얹혔다</h2>
+  <svg viewBox="0 0 1400 400" width="1400" height="400" aria-label="지권, 기권, 수권, 생물권이 차례로 갖추어지는 네 칸 흐름도">
+    <defs><marker id="s12-ar" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="4" markerHeight="4" orient="auto"><path d="M0 0 L10 5 L0 10 Z" fill="#495057"/></marker></defs>
+    <g data-step="1"><rect x="0" y="60" width="300" height="250" rx="22" fill="#fff4e6" stroke="#e8590c" stroke-width="4"/>
+      <circle cx="150" cy="160" r="60" fill="#e8590c"/><circle cx="150" cy="160" r="28" fill="#868e96"/>
+      <text x="150" y="262" font-size="30" font-weight="900" fill="#d9480f" text-anchor="middle">지권</text><text x="150" y="294" font-size="21" font-weight="800" fill="#5f6b80" text-anchor="middle">핵 · 맨틀 · 지각</text></g>
+    <g data-step="2"><path d="M306 185 H360" stroke="#495057" stroke-width="6" marker-end="url(#s12-ar)"/>
+      <rect x="366" y="60" width="300" height="250" rx="22" fill="#fff9db" stroke="#f08c00" stroke-width="4"/>
+      <path d="M416 190 Q516 100 616 190" fill="none" stroke="#f08c00" stroke-width="14" opacity=".55"/>
+      <text x="516" y="262" font-size="30" font-weight="900" fill="#e67700" text-anchor="middle">기권</text><text x="516" y="294" font-size="21" font-weight="800" fill="#5f6b80" text-anchor="middle">화산 기체 → 원시 대기</text></g>
+    <g data-step="3"><path d="M672 185 H726" stroke="#495057" stroke-width="6" marker-end="url(#s12-ar)"/>
+      <rect x="732" y="60" width="300" height="250" rx="22" fill="#e7f5ff" stroke="#1c7ed6" stroke-width="4"/>
+      <path d="M782 190 Q832 160 882 190 T982 190 V220 H782 Z" fill="#4dabf7"/>
+      <text x="882" y="262" font-size="30" font-weight="900" fill="#1864ab" text-anchor="middle">수권</text><text x="882" y="294" font-size="21" font-weight="800" fill="#5f6b80" text-anchor="middle">수증기 응결 → 원시 바다</text></g>
+    <g data-step="4"><path d="M1038 185 H1092" stroke="#495057" stroke-width="6" marker-end="url(#s12-ar)"/>
+      <rect x="1098" y="60" width="300" height="250" rx="22" fill="#ebfbee" stroke="#2b8a3e" stroke-width="4"/>
+      <g fill="#69db7c" stroke="#2b8a3e" stroke-width="3"><circle cx="1220" cy="170" r="20"/><circle cx="1262" cy="156" r="14"/><circle cx="1250" cy="196" r="12"/></g>
+      <text x="1248" y="262" font-size="30" font-weight="900" fill="#2b8a3e" text-anchor="middle">생물권</text><text x="1248" y="294" font-size="21" font-weight="800" fill="#5f6b80" text-anchor="middle">바닷속 최초의 생명체</text></g>
+    <text x="700" y="372" font-size="22" font-weight="900" fill="#5f6b80" text-anchor="middle">미행성 집적 → 마그마 바다 → 층상 분화 → 탈가스 → 원시 바다 → 생명</text>
+  </svg>
+  <div class="tight">
+    <p data-step="4">바닷속 최초의 생명체로 <b class="blank" data-n="15" data-step="4">생물권</b>이 더해져 지구시스템의 네 권역이 갖추어졌다</p>
+  </div>
+  <aside class="script">
+    <p>오늘 본 과정을 지구시스템의 권역으로 다시 묶어 봅니다.</p>
+    <p data-at="1">층상 분화로 핵·맨틀·지각, 지권의 뼈대가 생겼습니다.</p>
+    <p data-at="2">화산이 내놓은 기체로 기권, 원시 대기가 생겼습니다.</p>
+    <p data-at="3">수증기가 응결해 수권, 원시 바다가 생겼습니다.</p>
+    <p data-at="4">그 바닷속에서 최초의 생명체가 나타나 빈칸 15번, 생물권이 더해졌습니다. 네 행성 모두 탈가스까지는 같은 길을 걸었고, 갈라진 곳은 그다음이었습니다.</p>
+  </aside>
+</section>
+
+<!-- 13 정리 -->
+<section class="slide soft" id="s-sum" data-title="오늘의 정리" data-part="정리">
+  <p class="kicker">오늘의 정리</p>
+  <h2>같은 재료, 다른 자리. 지구만 바다를 지켰다</h2>
+  <ul class="sumlist">
+    <li data-k="1" data-step="1"><b>미행성 충돌</b>의 열 + 방사성 원소의 붕괴열 → 지표 전체가 녹은 <b>마그마 바다</b></li>
+    <li data-k="2" data-step="2">녹아 있는 동안 밀도에 따라 철·니켈은 핵, 규산염은 맨틀·지각으로 → <b>층상 분화</b></li>
+    <li data-k="3" data-step="3">화산 기체(수증기·이산화 탄소)로 <b>원시 대기</b> → 지표가 식어 수증기가 응결 → <b>원시 바다</b></li>
+    <li data-k="4" data-step="4">거리와 크기가 갈림길: 가까우면 폭주 온실, 작으면 대기를 잃음 · 지구에 네 권역이 갖추어졌다</li>
+  </ul>
+  <aside class="script"><p>학습지를 덮고 한 줄씩 먼저 말로 떠올리게 한 다음 엽니다. 마지막에 첫 추리 ㉠㉡㉢ 가운데 무엇이 맞았는지, 다른 두 개는 왜 결정적이지 않았는지 말하게 합니다.</p></aside>
+</section>
+
+<!-- 14 문제 -->
+<section class="slide" id="s-quiz" data-title="문제로 확인하기" data-part="정리">
+  <p class="kicker">문제로 확인하기</p>
+  <h2>두 문제만 풀어 봅시다</h2>
+  <div class="cols">
+    <div class="card">
+      <p class="q">1. 원시 바다가 생기기 바로 전에 일어나야 했던 일은?</p>
+      <div class="opts">
+        <div class="opt right" data-step="1">㉠ 지표가 식어 대기의 수증기가 응결했다</div>
+        <div class="opt wrong" data-step="1">㉡ 대기에 산소가 쌓였다</div>
+        <div class="opt wrong" data-step="1">㉢ 미행성 충돌이 더 잦아졌다</div>
+      </div>
+    </div>
+    <div class="card">
+      <p class="q">2. 금성에 바다가 남지 않은 가장 큰 까닭은?</p>
+      <div class="opts">
+        <div class="opt wrong" data-step="2">㉠ 질량이 너무 작아 물을 붙잡지 못했다</div>
+        <div class="opt right" data-step="2">㉡ 태양에 가까워 수증기가 응결하지 못했다</div>
+        <div class="opt wrong" data-step="2">㉢ 처음부터 재료에 물이 없었다</div>
+      </div>
+    </div>
+  </div>
+  <aside class="script">
+    <p>1분 동안 풀게 하고 손가락으로 답을 들게 합니다.</p>
+    <p data-at="1">1번은 ㉠. 충돌이 잦으면 오히려 더 뜨거워지고, 산소는 훨씬 나중 일입니다.</p>
+    <p data-at="2">2번은 ㉡. 금성의 질량은 지구의 0.82배로 지구와 거의 같습니다. 질량이 문제였던 것은 화성과 수성입니다.</p>
+  </aside>
+</section>
+
+<!-- 15 활동·다음 -->
+<section class="slide dark" id="s-next" data-title="직접 해 보기 · 다음 시간" data-part="정리">
+  <p class="kicker">직접 해 보기</p>
+  <h2>이야기 ① 「세 행성의 갈림길」</h2>
+  <div class="cols">
+    <div class="card"><h3>원시 지구를 직접 만들어 보세요</h3><p>충돌 빈도로 마그마 바다 만들기, 시간을 흘려 층상 분화 보기, 거리와 질량을 바꿔 네 갈래의 행성 만들기, 탐사선 단서 분류가 기다립니다.</p>
+      <p class="mt"><a href="index.html" style="color:#74b6ff;font-weight:900">단원 화면 열기 →</a></p></div>
+    <div class="card"><h3>다음 시간 · 02 산소의 순환과 대산소화 사건</h3><p>세계의 철광석은 왜 하필 약 25억 년 전 지층에 몰려 있을까요? 붉은 줄무늬 바위에서 산소의 20억 년을 추적합니다.</p></div>
+  </div>
+  <aside class="script"><p>남은 시간에는 단원 화면의 이야기 ①을 열어 미션을 하게 합니다.</p></aside>
+</section>
+
+</div></div>
+<script src="../assets/board.js"></script>
+<script>
+(function () {
+  "use strict";
+  /* 층상 분화 진행률 — 단원 화면 모형: t ≤ 2 이면 0, 그 뒤 1 − exp(−(t − 2) / 25) (t 단위 백만 년) */
+  (function () {
+    var svg = document.getElementById("s7-svg"), X0 = 90, X1 = 690, Y0 = 370, Y1 = 40;
+    function prog(t) { return t <= 2 ? 0 : 1 - Math.exp(-(t - 2) / 25); }
+    function X(t) { return X0 + t / 200 * (X1 - X0); }
+    function Y(p) { return Y0 - p * (Y0 - Y1); }
+    var h = "";
+    [25, 50, 75, 100].forEach(function (p) { h += "<line x1='" + X0 + "' y1='" + Y(p / 100) + "' x2='" + X1 + "' y2='" + Y(p / 100) + "' stroke='#e8edf4' stroke-width='2'/><text x='" + (X0 - 12) + "' y='" + (Y(p / 100) + 7) + "' font-size='20' font-weight='800' fill='#5f6b80' text-anchor='end'>" + p + "%</text>"; });
+    h += "<line x1='" + X0 + "' y1='" + Y0 + "' x2='" + X1 + "' y2='" + Y0 + "' stroke='#161b28' stroke-width='4'/><line x1='" + X0 + "' y1='" + Y1 + "' x2='" + X0 + "' y2='" + Y0 + "' stroke='#161b28' stroke-width='4'/>";
+    [0, 50, 100, 150, 200].forEach(function (t) { h += "<text x='" + X(t) + "' y='" + (Y0 + 30) + "' font-size='20' font-weight='800' fill='#161b28' text-anchor='middle'>" + t + "</text>"; });
+    h += "<text x='" + X1 + "' y='" + (Y0 + 58) + "' font-size='20' font-weight='900' fill='#5f6b80' text-anchor='end'>지구가 만들어진 뒤 (백만 년)</text>";
+    h += "<text x='" + (X0 + 8) + "' y='" + (Y1 - 12) + "' font-size='20' font-weight='900' fill='#5f6b80'>분화 진행률</text>";
+    var pts = []; for (var t = 0; t <= 200; t += 2) pts.push(X(t).toFixed(1) + " " + Y(prog(t)).toFixed(1));
+    h += "<polyline data-step='1' points='" + pts.join(" ") + "' fill='none' stroke='#e8590c' stroke-width='6'/>";
+    var t50 = 2 + 25 * Math.log(2), t95 = 2 + 25 * Math.log(20);   /* 약 19.3, 약 76.9 백만 년 */
+    h += "<g data-step='2'><line x1='" + X(t50) + "' y1='" + Y(0.5) + "' x2='" + X(t50) + "' y2='" + Y0 + "' stroke='#1462d8' stroke-width='3' stroke-dasharray='8 6'/><circle cx='" + X(t50) + "' cy='" + Y(0.5) + "' r='10' fill='#1462d8'/><text x='" + (X(t50) + 16) + "' y='" + (Y(0.5) + 34) + "' font-size='21' font-weight='900' fill='#1462d8'>절반 · 약 19백만 년</text>";
+    h += "<line x1='" + X(t95) + "' y1='" + Y(0.95) + "' x2='" + X(t95) + "' y2='" + Y0 + "' stroke='#2b8a3e' stroke-width='3' stroke-dasharray='8 6'/><circle cx='" + X(t95) + "' cy='" + Y(0.95) + "' r='10' fill='#2b8a3e'/><text x='" + (X(t95) + 16) + "' y='" + (Y(0.95) + 36) + "' font-size='21' font-weight='900' fill='#2b8a3e'>95% · 약 77백만 년</text></g>";
+    svg.innerHTML = h;
+  })();
+
+  /* 네 갈래의 행성 지도 — 단원 화면의 world(d, m) 모형을 그대로 칸마다 판정 */
+  (function () {
+    var svg = document.getElementById("s11-svg"), MX = 110, MY = 50, MW = 620, MH = 340;
+    function clamp(x, a, b) { return Math.max(a, Math.min(b, x)); }
+    function kind(d, m) {
+      var keep = clamp((m - 0.03) / 0.37, 0, 1);
+      if (keep < 0.10) return "bare";
+      if (238.2 / (d * d) > 300) return "vapor";
+      var base = 278.6 * Math.pow(0.70, 0.25) / Math.sqrt(d);
+      return base * Math.pow(1 + 0.75 * 0.80 * keep, 0.25) - 273 >= 0 ? "ocean" : "ice";
+    }
+    function X(d) { return MX + (d - 0.30) / 1.70 * MW; }
+    function Y(m) { return MY + MH - Math.log(m / 0.02) / Math.log(100) * MH; }
+    var COL = { ocean: "#a5d8ff", vapor: "#ffc9c9", ice: "#d0bfff", bare: "#dee2e6" };
+    var h = "<g data-step='1'>", N = 62, M = 36;
+    for (var i = 0; i < N; i++) for (var j = 0; j < M; j++) {
+      var d = 0.30 + (i + 0.5) / N * 1.70, m = 0.02 * Math.pow(100, (j + 0.5) / M);
+      h += "<rect x='" + (MX + i * MW / N).toFixed(1) + "' y='" + (MY + MH - (j + 1) * MH / M).toFixed(1) + "' width='" + (MW / N + 0.6).toFixed(1) + "' height='" + (MH / M + 0.6).toFixed(1) + "' fill='" + COL[kind(d, m)] + "'/>";
+    }
+    h += "<g font-size='21' font-weight='900'>";
+    h += "<text x='" + X(0.58) + "' y='" + Y(0.5) + "' fill='#c92a2a' text-anchor='middle'>🔥 폭주 온실</text>";
+    h += "<text x='" + X(1.62) + "' y='" + Y(0.5) + "' fill='#5f3dc4' text-anchor='middle'>🧊 얼어붙음</text>";
+    h += "<text x='" + X(1.15) + "' y='" + (Y(0.035) + 8) + "' fill='#495057' text-anchor='middle'>🪨 대기를 잃음</text>";
+    h += "<line x1='" + X(1.0) + "' y1='" + (Y(1.6) - 4) + "' x2='" + X(1.0) + "' y2='" + (MY - 8) + "' stroke='#1864ab' stroke-width='3'/><text x='" + (X(1.0) + 8) + "' y='" + (MY - 14) + "' fill='#1864ab'>🌊 바다 행성</text></g>";
+    h += "<circle cx='" + X(1.00) + "' cy='" + Y(1.00) + "' r='13' fill='#1462d8' stroke='#fff' stroke-width='4'/><text x='" + (X(1.00) + 18) + "' y='" + (Y(1.00) + 8) + "' font-size='22' font-weight='900' fill='#161b28'>지구</text></g>";
+    h += "<g data-step='2'><circle cx='" + X(0.72) + "' cy='" + Y(0.82) + "' r='13' fill='#e03131' stroke='#fff' stroke-width='4'/><text x='" + (X(0.72) - 18) + "' y='" + (Y(0.82) + 8) + "' font-size='22' font-weight='900' fill='#161b28' text-anchor='end'>금성</text></g>";
+    h += "<g data-step='3'><circle cx='" + X(1.52) + "' cy='" + Y(0.10) + "' r='13' fill='#7048e8' stroke='#fff' stroke-width='4'/><text x='" + (X(1.52) + 18) + "' y='" + (Y(0.10) + 8) + "' font-size='22' font-weight='900' fill='#161b28'>화성</text>";
+    h += "<circle cx='" + X(0.39) + "' cy='" + Y(0.06) + "' r='13' fill='#495057' stroke='#fff' stroke-width='4'/><text x='" + (X(0.39) + 18) + "' y='" + (Y(0.06) + 8) + "' font-size='22' font-weight='900' fill='#161b28'>수성</text></g>";
+    h += "<rect x='" + MX + "' y='" + MY + "' width='" + MW + "' height='" + MH + "' fill='none' stroke='#161b28' stroke-width='3'/>";
+    [[0.3, "0.3"], [1.0, "1.0"], [1.52, "1.5"], [2.0, "2.0"]].forEach(function (g) { h += "<text x='" + X(g[0]) + "' y='" + (MY + MH + 28) + "' font-size='20' font-weight='800' fill='#161b28' text-anchor='middle'>" + g[1] + "</text>"; });
+    h += "<text x='" + (MX + MW) + "' y='" + (MY + MH + 58) + "' font-size='20' font-weight='900' fill='#5f6b80' text-anchor='end'>태양으로부터의 거리 (AU)</text>";
+    [[2, "2"], [0.2, "0.2"], [0.02, "0.02"]].forEach(function (g) { h += "<text x='" + (MX - 10) + "' y='" + (Y(g[0]) + (g[0] === 2 ? 16 : (g[0] === 0.02 ? -4 : 7))) + "' font-size='20' font-weight='800' fill='#161b28' text-anchor='end'>" + g[1] + "</text>"; });
+    h += "<text x='22' y='" + (MY + MH / 2) + "' font-size='20' font-weight='900' fill='#5f6b80' text-anchor='middle' transform='rotate(-90 22 " + (MY + MH / 2) + ")'>질량 (지구 = 1)</text>";
+    svg.innerHTML = h;
+  })();
+})();
+</script>
+</body>
+</html>

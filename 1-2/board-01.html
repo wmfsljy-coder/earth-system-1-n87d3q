@@ -1,0 +1,509 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>칠판 강의 · 판구조론 정립의 증거 (지구시스템과학1 Ⅰ-2 01)</title>
+<link rel="icon" href="https://wmfsljy-coder.github.io/science-teacher-hub-qtrqwc/assets/hub-icon.svg" type="image/svg+xml">
+<link rel="stylesheet" href="../assets/board.css">
+<style>
+  @keyframes driftIn { from { opacity: 0; transform: translateX(-30px); } to { opacity: 1; transform: none; } }
+  .current .art .sa { animation: driftIn 1.4s ease both; }
+  .lines p { margin-bottom: 12px; }
+  .tight p { font-size: 28px; margin-bottom: 8px; }
+  .sumlist { list-style: none; padding: 0; margin: 0; }
+  .sumlist li { position: relative; padding: 16px 24px 16px 84px; margin-bottom: 14px; background: #fff; border-radius: 20px; font-size: 28px; }
+  .sumlist li::before { content: attr(data-k); position: absolute; left: 24px; top: 16px; width: 44px; height: 44px; border-radius: 50%; background: var(--ink); color: #fff; font-weight: 900; font-size: 24px; text-align: center; line-height: 44px; }
+  .q { font-size: 31px !important; font-weight: 800; margin-bottom: 14px !important; }
+  #s-quiz .opt { font-size: 26px; padding: 14px 22px; }
+  #s-check1 .opt { font-size: 29px; padding: 14px 24px; }
+  .flow .card { padding: 24px 24px; }
+  .flow .card b.t { display: block; font-size: 32px; margin-bottom: 8px; }
+  .flow .card p { font-size: 25px; line-height: 1.5; margin: 0 0 6px; }
+  .halo { paint-order: stroke; stroke: #fff; stroke-width: 6px; stroke-linejoin: round; }
+</style>
+</head>
+<body>
+<div class="deck"><div class="stage">
+
+<!-- 1 표지 -->
+<section class="slide dark cover" id="s-cover" data-title="표지">
+  <div class="art">
+    <svg viewBox="0 0 1600 520" aria-label="대서양을 사이에 두고 퍼즐처럼 들어맞는 남아메리카와 아프리카, 그 사이 바다 밑의 해령">
+      <defs>
+        <linearGradient id="c1-sea" x1="0" x2="0" y1="0" y2="1"><stop offset="0" stop-color="#1864ab"/><stop offset="1" stop-color="#0b2a4a"/></linearGradient>
+      </defs>
+      <rect x="380" y="40" width="840" height="460" rx="30" fill="url(#c1-sea)" opacity=".75"/>
+      <g class="sa"><path d="M470 70 L600 60 L690 120 L742 190 L730 250 L660 320 L600 400 L560 480 L530 480 L540 390 L505 300 L465 220 L450 140 Z" fill="#c49a6c" stroke="#7b5233" stroke-width="5"/></g>
+      <path d="M880 60 L1060 52 L1150 110 L1190 200 L1150 300 L1090 380 L1040 470 L1005 470 L980 390 L950 320 L895 268 L830 255 L812 205 L835 130 Z" fill="#c49a6c" stroke="#7b5233" stroke-width="5"/>
+      <path d="M786 50 Q800 110 778 170 Q768 230 790 290 Q808 360 786 420 Q776 470 790 500" fill="none" stroke="#ff8a5c" stroke-width="7" stroke-dasharray="16 10"/>
+      <g data-step="1" font-size="26" font-weight="800" fill="#c9d1df">
+        <text x="300" y="250" text-anchor="end">남아메리카</text><text x="1300" y="250">아프리카</text>
+        <text x="800" y="30" text-anchor="middle" fill="#ffb08a">바다 밑 해령</text>
+      </g>
+      <text x="1560" y="510" fill="#9aa4b5" font-size="18" text-anchor="end">⚠ 대륙 모양과 바다 폭은 단순하게 줄인 모식도</text>
+    </svg>
+  </div>
+  <div class="ttl">
+    <p class="kicker">지구시스템과학1 · Ⅰ-2 판 구조 운동과 지구 내부 구조 · 01</p>
+    <h1>판구조론 정립의 증거</h1>
+    <p class="sub" data-step="1">1912년 베게너, 증거는 있었지만 ‘무엇이 움직였는지’는 대지 못했다</p>
+  </div>
+  <aside class="script">
+    <p>오늘은 대륙이 움직인다는 생각이 어떻게 판구조론이라는 이론이 되었는지, 그 증거를 하나씩 따라갑니다. 여러분은 50년 묵은 사건을 다시 여는 조사관입니다.</p>
+    <p data-at="1">베게너는 증거를 많이 모았지만 한 가지 물음에 답하지 못했습니다. 그 물음이 오늘의 사건이에요.</p>
+  </aside>
+</section>
+
+<!-- 2 도입 -->
+<section class="slide soft" id="s-hook" data-title="베게너가 답하지 못한 물음" data-part="도입">
+  <p class="kicker">도입 · 1912년 지질학회</p>
+  <h2>무엇이 대륙을 움직였을까?</h2>
+  <div class="cols w64">
+    <div class="card">
+      <p>“증거는 그럴듯하오. 그런데 <b>딱딱한 대륙이 무엇에 밀려 단단한 해저를 헤치고 나아간단 말이오?</b>”</p>
+      <p class="big mt">베게너가 끝내 답하지 못한 물음, 여러분의 답은?</p>
+    </div>
+    <div class="card yel">
+      <h3>여러분의 답은?</h3>
+      <div class="opts">
+        <div class="opt">㉠ 대륙이 단단한 해저를 헤치고 스스로 밀고 나아갔다</div>
+        <div class="opt">㉡ 대륙 아래 맨틀이 천천히 돌면서 대륙을 실어 날랐다</div>
+        <div class="opt">㉢ 해저 자체가 새로 만들어져 넓어지면서 대륙까지 함께 옮겼다</div>
+      </div>
+      <p class="small mt" data-step="1">하나를 골라 까닭을 한 문장으로 말해 보세요.</p>
+    </div>
+  </div>
+  <aside class="script">
+    <p>당시 지질학회 회원의 반박입니다. 대륙이 움직였다는 증거보다, 무엇이 움직였느냐가 문제였어요.</p>
+    <p data-at="1">손을 들게 하고 까닭을 묻습니다. 답은 주지 않습니다. 오늘 마지막에 다시 확인합니다.</p>
+  </aside>
+</section>
+
+<!-- 3 키워드 -->
+<section class="slide" id="s-kw" data-title="오늘의 키워드" data-part="도입">
+  <p class="kicker">오늘의 키워드</p>
+  <h2>이 다섯 낱말로 오늘을 정리합니다</h2>
+  <div class="kw">
+    <div class="card"><b>대륙 이동설</b><span>대륙이 원래 하나였다가 갈라졌다는 베게너의 주장</span></div>
+    <div class="card"><b>복각</b><span>자침이 수평면과 이루는 각, 위도에 따라 달라진다</span></div>
+    <div class="card"><b>겉보기 극이동 곡선</b><span>시대별 자북극 위치를 이은 선</span></div>
+    <div class="card"><b>해양저 확장설</b><span>해령에서 새 해양 지각이 생겨 넓어진다</span></div>
+    <div class="card"><b>판구조론</b><span>지구의 겉을 여러 장의 판으로 보는 이론</span></div>
+  </div>
+  <div class="card blue mt2 row" style="gap:30px"><span class="blank on" style="font-size:34px;font-weight:900;flex:none"><i class="bn">1</i>빈칸</span>
+    <p style="margin:0">화면에 번호가 열리면 <b>학습지의 같은 번호</b>에 받아 적으세요. 오늘 빈칸은 <b>1~16번</b>입니다.</p></div>
+  <aside class="script"><p>키워드 다섯 개를 읽어 주기만 합니다. 정리 장면에서 모두 다시 나옵니다.</p></aside>
+</section>
+
+<!-- 4 대륙 이동설의 증거 -->
+<section class="slide" id="s-evid" data-title="베게너가 모은 네 가지 증거" data-part="① 대륙 이동설">
+  <p class="kicker">① 대륙 이동설 · 베게너가 모은 증거</p>
+  <h2>대륙이 원래 하나였다는 증거</h2>
+  <svg viewBox="0 0 1400 320" width="1400" height="320" aria-label="네 칸 그림: 해안선이 맞물리는 두 대륙, 양쪽 대륙에서 나오는 같은 파충류 화석, 한 점에서 퍼져 나간 빙하 자국, 바다 건너 이어지는 산맥과 지층">
+    <g fill="#f2f5f9"><rect x="0" y="0" width="330" height="320" rx="18"/><rect x="356" y="0" width="330" height="320" rx="18"/><rect x="712" y="0" width="330" height="320" rx="18"/><rect x="1068" y="0" width="330" height="320" rx="18"/></g>
+    <g font-size="23" font-weight="900" fill="#161b28" text-anchor="middle"><text x="165" y="38">해안선</text><text x="521" y="38">화석</text><text x="877" y="38">빙하 자국</text><text x="1233" y="38">산맥·지층</text></g>
+    <g data-step="1">
+      <path d="M40 70 L120 64 L160 110 L176 160 L150 220 L120 280 L90 280 L70 200 L44 140 Z" fill="#c49a6c" stroke="#7b5233" stroke-width="3"/>
+      <path d="M210 66 L290 66 L300 150 L280 230 L250 290 L230 290 L222 230 L196 180 L180 150 L196 100 Z" fill="#d8b98e" stroke="#7b5233" stroke-width="3"/>
+      <text x="165" y="310" font-size="20" font-weight="800" fill="#5f6b80" text-anchor="middle">퍼즐처럼 맞물린다</text>
+    </g>
+    <g data-step="2">
+      <rect x="376" y="70" width="130" height="190" rx="12" fill="#c49a6c"/><rect x="536" y="70" width="130" height="190" rx="12" fill="#d8b98e"/>
+      <g fill="#2f9e44"><ellipse cx="441" cy="160" rx="38" ry="11"/><path d="M403 160 Q385 150 380 170 Z"/><ellipse cx="601" cy="160" rx="38" ry="11"/><path d="M563 160 Q545 150 540 170 Z"/></g>
+      <text x="441" y="230" font-size="19" font-weight="800" fill="#161b28" text-anchor="middle">남아메리카</text><text x="601" y="230" font-size="19" font-weight="800" fill="#161b28" text-anchor="middle">아프리카</text>
+      <text x="521" y="300" font-size="20" font-weight="800" fill="#5f6b80" text-anchor="middle">민물 파충류가 양쪽에만</text>
+    </g>
+    <g data-step="3">
+      <circle cx="877" cy="160" r="96" fill="#dbe9f7" stroke="#74a7d8" stroke-width="3"/>
+      <g stroke="#1462d8" stroke-width="5" stroke-linecap="round"><path d="M877 160 L877 82"/><path d="M877 160 L944 120"/><path d="M877 160 L950 196"/><path d="M877 160 L877 240"/><path d="M877 160 L806 200"/><path d="M877 160 L806 118"/></g>
+      <circle cx="877" cy="160" r="12" fill="#fff" stroke="#1462d8" stroke-width="4"/>
+      <text x="877" y="300" font-size="20" font-weight="800" fill="#5f6b80" text-anchor="middle">한 점에서 퍼져 나간 방향</text>
+    </g>
+    <g data-step="4">
+      <g><rect x="1088" y="70" width="130" height="190" fill="#e9d8bf"/><rect x="1248" y="70" width="130" height="190" fill="#e9d8bf"/></g>
+      <g><rect x="1088" y="110" width="130" height="30" fill="#e8590c" opacity=".7"/><rect x="1248" y="110" width="130" height="30" fill="#e8590c" opacity=".7"/>
+        <rect x="1088" y="170" width="130" height="30" fill="#1462d8" opacity=".6"/><rect x="1248" y="170" width="130" height="30" fill="#1462d8" opacity=".6"/></g>
+      <path d="M1088 100 L1130 74 L1170 96 L1218 70 M1248 70 L1290 94 L1330 72 L1378 98" fill="none" stroke="#5c4330" stroke-width="5"/>
+      <text x="1233" y="300" font-size="20" font-weight="800" fill="#5f6b80" text-anchor="middle">바다 건너 그대로 이어진다</text>
+    </g>
+  </svg>
+  <div class="tight mt">
+    <p data-step="1">대서양 양쪽 해안선이 들어맞는다 → 여러 대륙이 원래 하나, 초대륙 <b class="blank" data-n="1" data-step="1">판게아</b></p>
+    <p data-step="2">민물에 살던 파충류 <b class="blank" data-n="2" data-step="2">메소사우루스</b> 화석이 남아메리카와 아프리카 양쪽에서만 나온다</p>
+    <p data-step="3">고생대 말 <b class="blank" data-n="3" data-step="3">빙하</b>가 긁고 간 자국이 지금은 적도 부근인 대륙들에 남아 있다</p>
+    <p data-step="4">대서양으로 끊긴 산맥과 지층이 반대편 대륙에서 이어진다</p>
+  </div>
+  <aside class="script">
+    <p>1912년 독일의 기상학자 베게너가 모은 증거 네 가지입니다.</p>
+    <p data-at="1">남아메리카 동쪽 해안과 아프리카 서쪽 해안이 퍼즐처럼 맞습니다. 수심 2,000 m 등심선으로 맞추면 더 잘 맞아요. 그 초대륙이 빈칸 1번, 판게아입니다.</p>
+    <p data-at="2">빈칸 2번, 메소사우루스. 민물 파충류가 넓은 바다를 헤엄쳐 건넜을 리 없죠.</p>
+    <p data-at="3">빈칸 3번, 빙하. 인도·아프리카·남아메리카·오스트레일리아에 고생대 말 빙하 자국이 있고, 대륙을 모으면 방향이 한 점에서 퍼져 나갑니다.</p>
+    <p data-at="4">끊긴 산맥과 지층도 대륙을 붙이면 이어집니다.</p>
+  </aside>
+</section>
+
+<!-- 5 원동력 -->
+<section class="slide soft" id="s-force" data-title="거절당한 까닭" data-part="① 대륙 이동설">
+  <p class="kicker">① 대륙 이동설 · 왜 받아들여지지 않았나</p>
+  <h2>증거는 있었다, 힘이 없었다</h2>
+  <div class="cols" style="grid-template-columns:680px 1fr;align-items:center">
+    <svg viewBox="0 0 680 380" width="680" height="380" aria-label="대륙 덩어리가 단단한 해저를 쟁기처럼 헤치고 나아가는 모습. 무엇이 미는지 물음표가 붙어 있다">
+      <defs><marker id="s5-a" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="4" markerHeight="4" orient="auto"><path d="M0 0 L10 5 L0 10 Z" fill="#d9302c"/></marker></defs>
+      <rect x="0" y="230" width="680" height="150" fill="#5f6b80"/>
+      <text x="340" y="350" font-size="22" font-weight="800" fill="#fff" text-anchor="middle">단단한 해저 (해양 지각)</text>
+      <rect x="0" y="150" width="680" height="80" fill="#a5d8ff" opacity=".6"/>
+      <path d="M160 230 L200 110 L400 100 L460 150 L470 230 Z" fill="#c49a6c" stroke="#7b5233" stroke-width="4"/>
+      <text x="320" y="180" font-size="26" font-weight="900" fill="#3d2a1a" text-anchor="middle">대륙</text>
+      <path d="M40 170 L140 170" stroke="#d9302c" stroke-width="8" marker-end="url(#s5-a)"/>
+      <text x="90" y="140" font-size="64" font-weight="900" fill="#d9302c" text-anchor="middle">?</text>
+      <g data-step="1"><path d="M470 230 Q520 205 560 230" fill="none" stroke="#161b28" stroke-width="5"/><text x="580" y="196" font-size="20" font-weight="800" fill="#161b28" text-anchor="middle">헤치고 간다?</text></g>
+      <g data-step="2"><path d="M230 60 L430 280 M430 60 L230 280" stroke="#d9302c" stroke-width="10" opacity=".75"/></g>
+      <text x="676" y="22" font-size="18" fill="#5f6b80" text-anchor="end">⚠ 베게너 시대의 생각을 나타낸 모식도</text>
+    </svg>
+    <div class="lines">
+      <p data-step="1">대륙이 단단한 해저를 헤치고 나아간다는 그림</p>
+      <p data-step="2">그런 힘은 없었다 → 대륙을 움직이는 <b class="blank" data-n="4" data-step="2">원동력</b>을 설명하지 못해 외면당했다</p>
+      <p class="small" data-step="3">그 뒤 50년, 해저를 직접 잰 새 증거가 사건을 다시 연다. 첫 단서는 암석 속에 굳어 버린 나침반</p>
+    </div>
+  </div>
+  <aside class="script">
+    <p>베게너는 대륙이 해저를 쟁기처럼 헤치고 나아간다고 생각했습니다.</p>
+    <p data-at="1">지질학자들은 묻습니다. 그렇게 큰 힘이 어디서 오느냐고요.</p>
+    <p data-at="2">빈칸 4번, 원동력. 증거가 있어도 원동력을 대지 못하니 공상으로 여겨졌습니다.</p>
+    <p data-at="3">그 뒤 새 관측 기술이 해저와 암석에서 새 증거를 찾아냅니다. 첫 단서부터 갑니다.</p>
+  </aside>
+</section>
+
+<!-- 6 복각 -->
+<section class="slide" id="s-dip" data-title="암석에 굳은 나침반, 복각" data-part="② 고지자기">
+  <p class="kicker">② 고지자기 · 단서 ① 암석에 굳어 버린 나침반</p>
+  <h2>자침은 위도마다 다르게 기운다</h2>
+  <div class="cols" style="grid-template-columns:640px 1fr;align-items:center">
+    <svg id="dipSvg" viewBox="0 0 640 470" width="640" height="470" aria-label="지구 자기장의 자기력선과 적도, 북위 45도, 자극에 놓인 자침. 적도에서는 수평, 자극에서는 수직으로 선다"></svg>
+    <div class="lines">
+      <p data-step="1">용암이 식어 굳을 때 자성 광물이 그 자리의 자기장 방향을 기록한다</p>
+      <p data-step="2">자침이 수평면과 이루는 각 → <b class="blank" data-n="5" data-step="2">복각</b></p>
+      <p data-step="3">적도 0°, 자극 90° → 복각은 <b class="blank" data-n="6" data-step="3">위도</b>에 따라 정해진다</p>
+      <p class="formula" data-step="4">tan(복각) = 2 × tan(위도)</p>
+    </div>
+  </div>
+  <aside class="script">
+    <p>고지자기 연구원 도윤의 단서입니다. 용암 속 자성 광물은 굳는 순간의 자기장 방향을 가리킨 채 얼어붙습니다.</p>
+    <p data-at="1">파란 선이 지구 자기장의 자기력선입니다. 빨간 쪽이 자침의 N극이에요.</p>
+    <p data-at="2">자침이 수평면과 이루는 각, 빈칸 5번, 복각입니다.</p>
+    <p data-at="3">적도에서는 수평이라 0°, 자극에서는 곧게 서서 90°. 빈칸 6번, 위도에 따라 정해집니다.</p>
+    <p data-at="4">그래서 암석의 복각을 재면 그 암석이 굳을 때의 위도를 거꾸로 알 수 있습니다. 단원 화면에서 쓰는 식이에요.</p>
+  </aside>
+</section>
+
+<!-- 7 노르웨이 -->
+<section class="slide" id="s-norway" data-title="노르웨이 암석이 기억한 위도" data-part="② 고지자기">
+  <p class="kicker">② 고지자기 · 노르웨이 남부의 두 기록 (단원 화면 미션)</p>
+  <h2>같은 땅, 다른 위도</h2>
+  <div class="cols" style="grid-template-columns:740px 1fr;align-items:center">
+    <svg id="latSvg" viewBox="0 0 740 440" width="740" height="440" aria-label="위도에 따른 복각 그래프. 복각 73.9도는 위도 60도, 복각 36.1도는 위도 20도에 해당한다"></svg>
+    <div class="lines">
+      <p data-step="1">㉮ 오늘 복각 73.9° → 지금 북위 <b class="blank" data-n="7" data-step="1">60</b>°</p>
+      <p data-step="2">㉯ 3억 년 전 용암 복각 36.1° → 그때 북위 <b class="blank" data-n="8" data-step="2">20</b>°</p>
+      <p data-step="3">위도 40° 차이 = 북쪽으로 4,000 km 넘게 옮겨 왔다 (위도 1° ≈ 111 km)</p>
+      <p class="small" data-step="3">유럽의 석탄기 지층에는 열대 늪지 숲이 쌓여 만든 석탄이 있다</p>
+    </div>
+  </div>
+  <aside class="script">
+    <p>단원 화면 미션의 두 자료입니다. 같은 노르웨이 남부의 오늘 복각과 3억 년 전 용암의 복각이에요.</p>
+    <p data-at="1">73.9°는 그래프에서 위도 60°. 빈칸 7번, 북위 60°입니다. 식으로 하면 tan 73.9°는 약 3.46, 반으로 나누면 약 1.73, 그 각이 60°예요.</p>
+    <p data-at="2">36.1°는 빈칸 8번, 북위 20°입니다. 3억 년 전 그 땅은 열대에 가까웠어요.</p>
+    <p data-at="3">40° 차이면 약 4,400 km. 땅이 북쪽으로 4,000 km 넘게 옮겨 온 겁니다. 석탄기 지층 속 열대 숲의 석탄도 같은 이야기를 합니다.</p>
+  </aside>
+</section>
+
+<!-- 8 겉보기 극이동 곡선 -->
+<section class="slide" id="s-apw" data-title="어긋난 두 극이동 곡선" data-part="② 고지자기">
+  <p class="kicker">② 고지자기 · 단서 ② 북아메리카와 유럽에서 구한 곡선</p>
+  <h2>자북극이 두 개였을까?</h2>
+  <div class="cols" style="grid-template-columns:700px 1fr;align-items:center">
+    <svg viewBox="0 0 700 460" width="700" height="460" aria-label="북극에서 내려다본 모식도. 북아메리카(주황)와 유럽(파랑)에서 구한 극이동 곡선이 지금의 북극에서 시작해 서로 다른 쪽으로 뻗어 있다가, 대서양을 닫아 유럽을 되돌리면 하나로 겹친다">
+      <defs><marker id="s8-a" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="4" markerHeight="4" orient="auto"><path d="M0 0 L10 5 L0 10 Z" fill="#495057"/></marker></defs>
+      <circle cx="430" cy="250" r="200" fill="#f2f5f9" stroke="#c9d1dd" stroke-width="3"/>
+      <circle cx="430" cy="250" r="100" fill="none" stroke="#dfe4ec" stroke-width="2" stroke-dasharray="8 6"/>
+      <circle cx="430" cy="250" r="10" fill="#161b28"/>
+      <text x="446" y="276" font-size="20" font-weight="900" fill="#161b28">지금의 북극</text>
+      <g data-step="1">
+        <path d="M430 250 Q380 200 330 175 Q270 150 230 150" fill="none" stroke="#e8590c" stroke-width="7"/>
+        <g fill="#e8590c"><circle cx="330" cy="175" r="8"/><circle cx="230" cy="150" r="8"/></g>
+        <text x="200" y="128" font-size="21" font-weight="900" fill="#c2410c">북아메리카에서 구한 곡선</text>
+      </g>
+      <g data-step="1" data-hide="3">
+        <path d="M430 250 Q440 180 420 130 Q400 90 360 70" fill="none" stroke="#1462d8" stroke-width="7"/>
+        <g fill="#1462d8"><circle cx="420" cy="130" r="8"/><circle cx="360" cy="70" r="8"/></g>
+        <text x="380" y="50" font-size="21" font-weight="900" fill="#1462d8">유럽에서 구한 곡선</text>
+      </g>
+      <g data-step="2" data-hide="3">
+        <path d="M500 110 Q560 160 560 230" fill="none" stroke="#495057" stroke-width="5" stroke-dasharray="10 8" marker-end="url(#s8-a)"/>
+        <text x="600" y="150" font-size="20" font-weight="900" fill="#495057" text-anchor="middle">대서양을</text><text x="600" y="176" font-size="20" font-weight="900" fill="#495057" text-anchor="middle">닫으면</text>
+      </g>
+      <g data-step="3">
+        <path d="M430 250 Q380 200 330 175 Q270 150 230 150" fill="none" stroke="#1462d8" stroke-width="5" stroke-dasharray="14 10"/>
+        <text x="300" y="330" font-size="22" font-weight="900" fill="#198a4a">두 곡선이 하나로 겹친다</text>
+      </g>
+      <text x="696" y="22" font-size="18" fill="#5f6b80" text-anchor="end">⚠ 북극에서 내려다본 모식도 (실제 위치 아님)</text>
+    </svg>
+    <div class="lines">
+      <p data-step="1">시대별 암석의 복각으로 그 시대 자북극 위치를 이은 선 → <b class="blank" data-n="9" data-step="1">겉보기 극이동 곡선</b></p>
+      <p data-step="2">북아메리카와 유럽의 곡선이 서로 어긋난다</p>
+      <p data-step="3">대서양을 닫아 유럽을 되돌리면 하나로 겹친다 → 움직인 것은 극이 아니라 <b class="blank" data-n="10" data-step="3">대륙</b></p>
+    </div>
+  </div>
+  <aside class="script">
+    <p>시대별 암석으로 그 시대 자북극이 어디였는지 거꾸로 계산해 이어 그린 선입니다.</p>
+    <p data-at="1">빈칸 9번, 겉보기 극이동 곡선. 극이 실제로 그렇게 움직인 것처럼 보인다고 해서 ‘겉보기’예요.</p>
+    <p data-at="2">그런데 대륙마다 곡선이 다릅니다. 자북극이 동시에 두 개였을 리는 없죠.</p>
+    <p data-at="3">유럽을 대서양이 닫히는 쪽으로 되돌리면 두 곡선이 겹칩니다. 빈칸 10번, 움직인 것은 대륙이었습니다.</p>
+  </aside>
+</section>
+
+<!-- 9 확인 -->
+<section class="slide" id="s-check1" data-title="대륙이 그대로였다면" data-part="② 고지자기">
+  <p class="kicker">② 고지자기 · 확인</p>
+  <h2>대륙이 움직이지 않았다면 극이동 곡선은?</h2>
+  <div class="opts" style="max-width:1300px">
+    <div class="opt wrong" data-step="1">① 대륙마다 모두 달라야 한다</div>
+    <div class="opt right" data-step="1">② 모든 대륙에서 구한 곡선이 하나로 같아야 한다</div>
+    <div class="opt wrong" data-step="1">③ 곡선을 아예 그릴 수 없다</div>
+    <div class="opt wrong" data-step="1">④ 자북극이 대륙 수만큼 생긴다</div>
+  </div>
+  <aside class="script">
+    <p>짝과 30초 이야기한 뒤 번호를 들게 합니다.</p>
+    <p data-at="1">정답은 ②. 자북극은 하나뿐이니, 대륙이 그대로였다면 어느 대륙에서 구해도 같은 곡선이 나와야 합니다. 곡선이 다르다는 것 자체가 대륙이 움직였다는 증거예요.</p>
+  </aside>
+</section>
+
+<!-- 10 해양저 확장 -->
+<section class="slide" id="s-ridge" data-title="바다 밑 줄무늬" data-part="③ 해양저 확장">
+  <p class="kicker">③ 해양저 확장 · 단서 ③ 해령을 가로지른 자력계</p>
+  <h2>해령을 사이에 둔 대칭 줄무늬</h2>
+  <svg viewBox="0 0 1400 330" width="1400" height="330" aria-label="해령 단면. 가운데 해령 아래로 마그마가 올라오고, 정자극기(검정)와 역자극기(흰색) 줄무늬가 좌우 대칭으로 놓여 있다. 해령에서 멀어질수록 해양 지각의 나이가 많다">
+    <defs>
+      <marker id="s10-a" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="4" markerHeight="4" orient="auto"><path d="M0 0 L10 5 L0 10 Z" fill="#161b28"/></marker>
+      <marker id="s10-r" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="4" markerHeight="4" orient="auto"><path d="M0 0 L10 5 L0 10 Z" fill="#d9302c"/></marker>
+      <linearGradient id="s10-mg" x1="0" x2="0" y1="1" y2="0"><stop offset="0" stop-color="#e8590c"/><stop offset="1" stop-color="#ffa94d"/></linearGradient>
+    </defs>
+    <rect x="0" y="0" width="1400" height="120" fill="#d0ebff"/>
+    <rect x="0" y="120" width="1400" height="80" fill="#868e96"/>
+    <rect x="0" y="200" width="1400" height="80" fill="#e9d8bf"/>
+    <path d="M660 280 Q700 180 700 120 Q700 180 740 280 Z" fill="url(#s10-mg)"/>
+    <g id="s10-stripes" data-step="1"></g>
+    <path d="M640 120 L700 92 L760 120" fill="#495057"/>
+    <text x="700" y="80" font-size="22" font-weight="900" fill="#161b28" text-anchor="middle">해령</text>
+    <g data-step="1" font-size="20" font-weight="900"><rect x="20" y="20" width="26" height="22" fill="#161b28"/><text x="54" y="39" fill="#161b28">정자극기</text><rect x="160" y="20" width="26" height="22" fill="#fff" stroke="#161b28" stroke-width="2"/><text x="194" y="39" fill="#161b28">역자극기</text></g>
+    <g data-step="2" font-size="21" font-weight="900" fill="#161b28" text-anchor="middle">
+      <text x="700" y="312">나이 0</text><text x="190" y="312">오래됨</text><text x="1210" y="312">오래됨</text>
+      <path d="M640 305 L270 305" stroke="#161b28" stroke-width="3" marker-end="url(#s10-a)"/><path d="M760 305 L1130 305" stroke="#161b28" stroke-width="3" marker-end="url(#s10-a)"/>
+    </g>
+    <g data-step="3" stroke="#d9302c" stroke-width="7" marker-end="url(#s10-r)"><path d="M630 104 L470 104"/><path d="M770 104 L930 104"/></g>
+    <text x="1396" y="270" font-size="18" fill="#5f6b80" text-anchor="end">⚠ 해령 높이와 줄무늬 폭은 과장한 모식도</text>
+  </svg>
+  <div class="tight mt">
+    <p data-step="1">해저 암석의 자기 방향: 정자극기와 역자극기 줄무늬가 해령을 축으로 좌우 <b class="blank" data-n="11" data-step="1">대칭</b></p>
+    <p data-step="2">해령에서 멀어질수록 해양 지각의 나이가 <b class="blank" data-n="12" data-step="2">많아진다</b> (시추로 확인)</p>
+    <p data-step="3">해령에서 새 해양 지각이 만들어져 양옆으로 밀려 나간다 → <b class="blank" data-n="13" data-step="3">해양저 확장설</b></p>
+  </div>
+  <aside class="script">
+    <p>해양 탐사선이 배에 자력계를 달고 해령을 가로질렀습니다.</p>
+    <p data-at="1">지구 자기장은 가끔 남북이 뒤바뀝니다. 지금과 같은 때를 정자극기, 반대일 때를 역자극기라 해요. 그 줄무늬가 빈칸 11번, 해령을 축으로 좌우 대칭이었습니다.</p>
+    <p data-at="2">시추해서 잰 해양 지각의 나이는 해령에서 멀어질수록, 빈칸 12번, 많아집니다.</p>
+    <p data-at="3">해령에서 새 지각이 생겨 양옆으로 밀려 나간다면 둘 다 설명됩니다. 빈칸 13번, 해양저 확장설입니다.</p>
+  </aside>
+</section>
+
+<!-- 11 확장 속도 -->
+<section class="slide soft" id="s-rate" data-title="두 바다의 확장 속도" data-part="③ 해양저 확장">
+  <p class="kicker">③ 해양저 확장 · 나이와 거리로 잰 확장 속도 (단원 화면 관측점)</p>
+  <h2>바다는 해마다 몇 cm씩 넓어진다</h2>
+  <div class="cols" style="grid-template-columns:800px 1fr;align-items:center">
+    <svg id="rateSvg" viewBox="0 0 800 440" width="800" height="440" aria-label="해양 지각의 나이와 해령에서의 거리 그래프. 대서양 관측점은 1,000만 년에 250 km, 동태평양 관측점은 500만 년에 300 km 비율로 직선 위에 놓인다"></svg>
+    <div class="lines">
+      <p class="small" data-step="1">1 cm/년 = 10 km/100만 년</p>
+      <p data-step="1">대서양 중앙 해령: 1,000만 년에 250 km → 한쪽으로 약 <b class="blank" data-n="14" data-step="1">2.5</b> cm/년</p>
+      <p data-step="2">동태평양 해령: 500만 년에 300 km → 약 <b class="blank" data-n="15" data-step="2">6</b> cm/년</p>
+      <p class="small" data-step="3">손톱이 자라는 빠르기. 1억 년이면 각각 2,500 km, 6,000 km</p>
+    </div>
+  </div>
+  <aside class="script">
+    <p>나이와 거리를 알면 확장 속도를 잴 수 있습니다. 단위 바꾸기부터. 1 cm/년은 100만 년에 10 km입니다.</p>
+    <p data-at="1">대서양 관측점은 1,000만 년에 250 km. 100만 년에 25 km이니 빈칸 14번, 한쪽으로 약 2.5 cm/년입니다.</p>
+    <p data-at="2">동태평양은 500만 년에 300 km, 100만 년에 60 km. 빈칸 15번, 약 6 cm/년. 기울기가 가파를수록 빠릅니다.</p>
+    <p data-at="3">1억 년이면 2,500 km, 6,000 km. 작은 속도도 지질 시대 동안 쌓이면 바다 하나가 됩니다.</p>
+  </aside>
+</section>
+
+<!-- 12 이론의 흐름 -->
+<section class="slide" id="s-flow" data-title="판구조론이 자리 잡기까지" data-part="③ 해양저 확장">
+  <p class="kicker">③ 해양저 확장 · 증거가 이론을 바꾼 과정</p>
+  <h2>대륙 이동설에서 판구조론까지</h2>
+  <div class="cols c4 flow">
+    <div class="card" data-step="1"><b class="t">대륙 이동설</b><p>1912년 베게너</p><p>증거 ○</p><p>원동력 ✕</p></div>
+    <div class="card" data-step="2"><b class="t">맨틀 대류설</b><p>홈스</p><p>원동력으로 맨틀 대류를 제시</p><p>증거 부족</p></div>
+    <div class="card" data-step="3"><b class="t">해양저 확장설</b><p>해저 탐사</p><p>고지자기 줄무늬 대칭, 해양 지각의 나이</p></div>
+    <div class="card blue" data-step="4"><b class="t">판구조론</b><p>1960년대</p><p>지진·화산·산맥을 함께 설명</p></div>
+  </div>
+  <div class="tight mt">
+    <p data-step="4">지구의 겉을 여러 장의 단단한 판으로 보고, 그 움직임으로 지진·화산·산맥을 함께 설명 → <b class="blank" data-n="16" data-step="4">판구조론</b></p>
+    <p data-step="5">대륙이 해저를 헤치고 간 것이 아니라, 새로 만들어지는 바닥에 실려 판째 옮겨 갔다</p>
+  </div>
+  <aside class="script">
+    <p>지금까지의 단서를 시간 순서로 놓아 봅니다.</p>
+    <p data-at="1">베게너의 대륙 이동설. 증거는 있었지만 원동력이 없었습니다.</p>
+    <p data-at="2">홈스는 맨틀 대류가 대륙을 움직인다고 제안했어요. 그러나 그때는 이를 뒷받침할 증거가 부족했습니다.</p>
+    <p data-at="3">해저 탐사로 고지자기 줄무늬와 해양 지각의 나이를 얻어 해양저 확장설이 나옵니다.</p>
+    <p data-at="4">1960년대, 빈칸 16번, 판구조론이 자리 잡습니다.</p>
+    <p data-at="5">첫 추리로 돌아가 봅시다. 대륙이 해저를 헤치고 간 것이 아니라 바닥째 실려 갔습니다.</p>
+  </aside>
+</section>
+
+<!-- 13 정리 -->
+<section class="slide soft" id="s-sum" data-title="오늘의 정리" data-part="정리">
+  <p class="kicker">오늘의 정리</p>
+  <h2>범인은 ‘새로 만들어지는 바닥’이었다</h2>
+  <ul class="sumlist">
+    <li data-k="1" data-step="1"><b>대륙 이동설</b>: 해안선·화석·빙하 자국·산맥이 증거, 그러나 원동력을 설명하지 못했다</li>
+    <li data-k="2" data-step="2"><b>복각</b>은 위도에 따라 정해진다 → 암석의 복각으로 옛 위도를 알아낸다</li>
+    <li data-k="3" data-step="3">대륙마다 다른 <b>겉보기 극이동 곡선</b>이 되돌리면 하나로 겹친다 → 대륙이 움직였다</li>
+    <li data-k="4" data-step="4">대칭 줄무늬와 해양 지각의 나이 → <b>해양저 확장설</b> → 1960년대 <b>판구조론</b></li>
+  </ul>
+  <aside class="script"><p>학습지를 덮고 한 줄씩 먼저 말로 떠올리게 한 다음 엽니다. 마지막에 첫 추리 ㉠㉡㉢ 가운데 어느 것이 가장 가까웠는지 까닭과 함께 말하게 합니다. ㉢이 결말과 가장 가깝고, ㉡의 맨틀 대류도 원동력의 일부로 다음 시간에 다룹니다.</p></aside>
+</section>
+
+<!-- 14 문제 -->
+<section class="slide" id="s-quiz" data-title="문제로 확인하기" data-part="정리">
+  <p class="kicker">문제로 확인하기</p>
+  <h2>두 문제만 풀어 봅시다</h2>
+  <div class="cols">
+    <div class="card">
+      <p class="q">1. 해령에서 멀어질수록 해양 지각의 나이는?</p>
+      <div class="opts">
+        <div class="opt wrong" data-step="1">㉠ 적어진다</div>
+        <div class="opt right" data-step="1">㉡ 많아진다</div>
+        <div class="opt wrong" data-step="1">㉢ 어디서나 같다</div>
+      </div>
+    </div>
+    <div class="card">
+      <p class="q">2. 대륙 이동설이 처음에 받아들여지지 않은 가장 큰 까닭은?</p>
+      <div class="opts">
+        <div class="opt wrong" data-step="2">㉠ 증거가 하나도 없어서</div>
+        <div class="opt right" data-step="2">㉡ 대륙을 움직이는 원동력을 설명하지 못해서</div>
+        <div class="opt wrong" data-step="2">㉢ 화석이 한 대륙에서만 나와서</div>
+      </div>
+    </div>
+  </div>
+  <aside class="script">
+    <p>1분 동안 풀게 하고 손가락으로 답을 들게 합니다.</p>
+    <p data-at="1">1번은 ㉡. 해령에서 새로 생겨 밀려 나가니까요.</p>
+    <p data-at="2">2번은 ㉡. 증거는 네 가지나 있었습니다.</p>
+  </aside>
+</section>
+
+<!-- 15 활동·다음 -->
+<section class="slide dark" id="s-next" data-title="직접 해 보기 · 다음 시간" data-part="정리">
+  <p class="kicker">직접 해 보기</p>
+  <h2>이야기 ① 「대륙을 움직인 범인」</h2>
+  <div class="cols">
+    <div class="card"><h3>직접 재어 보세요</h3><p>노르웨이 복각 두 건으로 위도 찾기, 두 극이동 곡선을 3.0° 이하로 겹치기, 두 해령의 확장 속도 맞추기가 기다립니다.</p>
+      <p class="mt"><a href="index.html" style="color:#74b6ff;font-weight:900">단원 화면 열기 →</a></p></div>
+    <div class="card"><h3>다음 시간 · 02 판의 경계와 원동력</h3><p>판 경계에서 수천 km 떨어진 태평양 한가운데에 화산이 6,000 km나 줄지어 있습니다. 게다가 그 줄은 한 번 꺾여 있어요.</p></div>
+  </div>
+  <aside class="script"><p>남은 시간에는 단원 화면의 이야기 ①을 열어 미션을 하게 합니다.</p></aside>
+</section>
+
+</div></div>
+<script src="../assets/board.js"></script>
+<script>
+(function () {
+  "use strict";
+  var D2R = Math.PI / 180;
+  function t(x, y, s, txt, o) { o = o || {}; return "<text x='" + x + "' y='" + y + "' font-size='" + s + "' font-weight='" + (o.w || 800) + "' fill='" + (o.c || "#161b28") + "'" + (o.a ? " text-anchor='" + o.a + "'" : "") + (o.halo ? " class='halo'" : "") + ">" + txt + "</text>"; }
+
+  /* 복각 — 쌍극자 자기력선과 자침 */
+  (function () {
+    var svg = document.getElementById("dipSvg"), cx = 300, cy = 250, R = 110, h = "";
+    [1.6, 2.1, 2.7].forEach(function (L) {
+      var lm = Math.acos(Math.sqrt(1 / L));
+      [1, -1].forEach(function (sx) {
+        var p = [];
+        for (var k = 0; k <= 60; k++) { var la = -lm + 2 * lm * k / 60, r = L * R * Math.cos(la) * Math.cos(la); p.push((cx + sx * r * Math.cos(la)).toFixed(1) + " " + (cy - r * Math.sin(la)).toFixed(1)); }
+        h += "<path d='M" + p.join(" L") + "' fill='none' stroke='#74a7d8' stroke-width='3'/>";
+      });
+    });
+    h += "<circle cx='" + cx + "' cy='" + cy + "' r='" + R + "' fill='#5b8fd0'/><path d='M" + (cx - R) + " " + cy + " L" + (cx + R) + " " + cy + "' stroke='#fff' stroke-width='2' stroke-dasharray='6 6'/>";
+    h += t(cx, cy + 8, 22, "지구", { a: "middle", c: "#fff", w: 900 });
+    function needle(lat, lab, lx, ly, anc) {
+      var la = lat * D2R, I = Math.atan(2 * Math.tan(Math.min(la, 89.9 * D2R)));
+      var px = cx + R * Math.cos(la), py = cy - R * Math.sin(la), nx = Math.cos(la), ny = -Math.sin(la);
+      var tx = -Math.sin(la), ty = -Math.cos(la), dx = -Math.cos(la), dy = Math.sin(la);
+      var ux = Math.cos(I) * tx + Math.sin(I) * dx, uy = Math.cos(I) * ty + Math.sin(I) * dy;
+      var c0x = px + 34 * nx, c0y = py + 34 * ny, Lh = 28;
+      var s = "<line x1='" + (c0x - Lh * ux) + "' y1='" + (c0y - Lh * uy) + "' x2='" + c0x + "' y2='" + c0y + "' stroke='#868e96' stroke-width='9' stroke-linecap='round'/>";
+      s += "<line x1='" + c0x + "' y1='" + c0y + "' x2='" + (c0x + Lh * ux) + "' y2='" + (c0y + Lh * uy) + "' stroke='#e03131' stroke-width='9' stroke-linecap='round'/><circle cx='" + c0x + "' cy='" + c0y + "' r='5' fill='#161b28'/>";
+      return s + t(lx, ly, 20, lab, { a: anc, w: 900, halo: true });
+    }
+    h += "<g data-step='1'>" + needle(0, "적도: 복각 0°", 462, 318, "start") + needle(90, "자극: 복각 90°", 330, 64, "start") + "</g>";
+    h += "<g data-step='3'>" + needle(45, "위도 45°", 440, 140, "start") + t(440, 166, 20, "→ 복각 약 63°", { w: 900, halo: true }) + "</g>";
+    h += t(10, 462, 18, "빨간 쪽 = 자침의 N극 · ⚠ 자기력선은 모식도", { c: "#5f6b80", w: 700 });
+    svg.innerHTML = h;
+  })();
+
+  /* 위도-복각 그래프 */
+  (function () {
+    var svg = document.getElementById("latSvg"), X0 = 100, X1 = 700, Y0 = 370, Y1 = 40, h = "";
+    function X(v) { return X0 + v / 90 * (X1 - X0); }
+    function Y(v) { return Y0 - v / 90 * (Y0 - Y1); }
+    [30, 60, 90].forEach(function (v) { h += "<line x1='" + X0 + "' y1='" + Y(v) + "' x2='" + X1 + "' y2='" + Y(v) + "' stroke='#e8edf4' stroke-width='2'/>" + t(X0 - 12, Y(v) + 7, 20, v + "°", { a: "end", c: "#5f6b80" }); });
+    [0, 30, 60, 90].forEach(function (v) { h += t(X(v), Y0 + 30, 20, v + "°", { a: "middle" }); });
+    h += t(X0 - 90, 24, 20, "복각", { c: "#5f6b80", w: 900 }) + t(X1, Y0 + 60, 20, "위도", { a: "end", c: "#5f6b80", w: 900 });
+    var p = []; for (var k = 0; k <= 89; k++) p.push(X(k).toFixed(1) + " " + Y(Math.atan(2 * Math.tan(k * D2R)) / D2R).toFixed(1));
+    h += "<path d='M" + p.join(" L") + "' fill='none' stroke='#1462d8' stroke-width='5'/>";
+    h += "<line x1='" + X0 + "' y1='" + Y0 + "' x2='" + X1 + "' y2='" + Y0 + "' stroke='#161b28' stroke-width='4'/><line x1='" + X0 + "' y1='" + Y1 + "' x2='" + X0 + "' y2='" + Y0 + "' stroke='#161b28' stroke-width='4'/>";
+    function pt(lat, inc, col, step, lab) {
+      return "<g data-step='" + step + "'><path d='M" + X0 + " " + Y(inc) + " L" + X(lat) + " " + Y(inc) + " L" + X(lat) + " " + Y0 + "' fill='none' stroke='" + col + "' stroke-width='3' stroke-dasharray='8 6'/><circle cx='" + X(lat) + "' cy='" + Y(inc) + "' r='10' fill='" + col + "'/>" + t(X(lat) + 16, Y(inc) + 30, 21, lab, { c: col, w: 900, halo: true }) + "</g>";
+    }
+    h += pt(60, 73.9, "#e8590c", 1, "㉮ 복각 73.9° → 60°");
+    h += pt(20, 36.1, "#198a4a", 2, "㉯ 복각 36.1° → 20°");
+    svg.innerHTML = h;
+  })();
+
+  /* 해령 줄무늬 — 좌우 대칭 */
+  (function () {
+    var g = document.getElementById("s10-stripes"), W = [34, 22, 46, 28, 40, 24, 52, 30, 44, 26, 38, 36, 30, 42, 26], h = "", x = 0, i;
+    for (i = 0; i < W.length; i++) {
+      var col = i % 2 ? "#ffffff" : "#161b28";
+      h += "<rect x='" + (700 + x) + "' y='120' width='" + W[i] + "' height='80' fill='" + col + "' stroke='#495057' stroke-width='1'/>";
+      h += "<rect x='" + (700 - x - W[i]) + "' y='120' width='" + W[i] + "' height='80' fill='" + col + "' stroke='#495057' stroke-width='1'/>";
+      x += W[i];
+    }
+    g.innerHTML = h;
+  })();
+
+  /* 확장 속도 그래프 — 단원 화면 관측점 */
+  (function () {
+    var svg = document.getElementById("rateSvg"), X0 = 110, X1 = 760, Y0 = 370, Y1 = 40, h = "";
+    var ATL = [[10, 250], [20, 500], [40, 1000], [60, 1500]], PAC = [[5, 300], [10, 600], [20, 1200], [30, 1800]];
+    function X(a) { return X0 + a / 60 * (X1 - X0); }
+    function Y(d) { return Y0 - d / 1800 * (Y0 - Y1); }
+    [600, 1200, 1800].forEach(function (d) { h += "<line x1='" + X0 + "' y1='" + Y(d) + "' x2='" + X1 + "' y2='" + Y(d) + "' stroke='#e8edf4' stroke-width='2'/>" + t(X0 - 12, Y(d) + 7, 20, d.toLocaleString(), { a: "end", c: "#5f6b80" }); });
+    [0, 10, 20, 30, 40, 50, 60].forEach(function (a) { h += t(X(a), Y0 + 30, 20, a, { a: "middle" }); });
+    h += t(X0 - 100, 22, 20, "해령에서의 거리 (km)", { c: "#5f6b80", w: 900 }) + t(X1, Y0 + 60, 20, "해양 지각의 나이 (백만 년)", { a: "end", c: "#5f6b80", w: 900 });
+    h += "<line x1='" + X0 + "' y1='" + Y0 + "' x2='" + X1 + "' y2='" + Y0 + "' stroke='#161b28' stroke-width='4'/><line x1='" + X0 + "' y1='" + Y1 + "' x2='" + X0 + "' y2='" + Y0 + "' stroke='#161b28' stroke-width='4'/>";
+    function set(arr, rate, col, step, lab, lx, ly) {
+      var s = "<g data-step='" + step + "'><line x1='" + X(0) + "' y1='" + Y(0) + "' x2='" + X(arr[arr.length - 1][0]) + "' y2='" + Y(rate * arr[arr.length - 1][0]) + "' stroke='" + col + "' stroke-width='4'/>";
+      arr.forEach(function (q) { s += "<circle cx='" + X(q[0]) + "' cy='" + Y(q[1]) + "' r='10' fill='#fff' stroke='" + col + "' stroke-width='5'/>"; });
+      return s + t(lx, ly, 21, lab, { c: col, w: 900, halo: true }) + "</g>";
+    }
+    h += set(ATL, 25, "#e8590c", 1, "대서양 중앙 해령", X(42), Y(1000) + 44);
+    h += set(PAC, 60, "#1462d8", 2, "동태평양 해령", X(30) + 10, Y(1800) + 30);
+    svg.innerHTML = h;
+  })();
+})();
+</script>
+</body>
+</html>

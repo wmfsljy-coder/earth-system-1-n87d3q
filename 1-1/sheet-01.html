@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>개념정리 학습지 · 지구의 탄생 (지구시스템과학1 Ⅰ-1 01)</title>
+<link rel="icon" href="https://wmfsljy-coder.github.io/science-teacher-hub-qtrqwc/assets/hub-icon.svg" type="image/svg+xml">
+<style>
+  /* 개념정리 학습지 — 칠판 강의 화면(board-01.html)의 빈칸 번호와 1:1. 주소 끝 ?key=1 이면 교사용 정답이 보인다. */
+  @import url('https://fonts.googleapis.com/css2?family=Gothic+A1:wght@400;500;700;800;900&display=swap');
+  @page { size: A4; margin: 13mm 14mm; }
+  * { box-sizing: border-box; }
+  body { margin: 0; background: #e9edf2; font-family: "Gothic A1", "Malgun Gothic", sans-serif; color: #161b28; }
+  .paper { width: 210mm; min-height: 297mm; margin: 18px auto; background: #fff; padding: 13mm 14mm; box-shadow: 0 4px 24px rgba(0,0,0,.12); }
+  .tools { width: 210mm; margin: 18px auto 0; display: flex; gap: 10px; justify-content: flex-end; font-size: 14px; }
+  .tools a, .tools button { font: inherit; font-weight: 800; padding: 8px 14px; border-radius: 10px; border: 2px solid #c9d1dd; background: #fff; color: #161b28; text-decoration: none; cursor: pointer; }
+  .tools button.main { background: #1462d8; border-color: #1462d8; color: #fff; }
+  header { display: flex; justify-content: space-between; align-items: flex-end; border-bottom: 3px solid #161b28; padding-bottom: 8px; margin-bottom: 12px; }
+  header .k { font-size: 11.5px; font-weight: 800; color: #5f6b80; }
+  header h1 { font-size: 22px; font-weight: 900; margin: 2px 0 0; letter-spacing: -.03em; }
+  header .who { display: flex; gap: 8px; font-size: 12px; font-weight: 800; }
+  header .who span { border: 1.5px solid #9aa4b5; border-radius: 6px; padding: 6px 10px; min-width: 92px; }
+  .key-mark { display: none; color: #d9302c; font-weight: 900; font-size: 12px; }
+  .key .key-mark { display: inline; }
+  .guide { font-size: 11.5px; color: #5f6b80; margin: 0 0 10px; }
+  h2 { font-size: 15.5px; font-weight: 900; margin: 11px 0 5px; padding: 4px 10px; background: #eef2f8; border-left: 5px solid #1462d8; border-radius: 4px; }
+  p, li { font-size: 13.5px; line-height: 1.88; margin: 0; }
+  ul { margin: 0; padding-left: 18px; }
+  .blank { position: relative; display: inline-block; min-width: 4.4em; padding: 0 1.1em 0 1.7em; margin: 0 2px; border-bottom: 1.6px solid #161b28; color: transparent; line-height: 1.5; text-align: center; font-weight: 800; }
+  .blank::before { content: attr(data-n); position: absolute; left: 0; top: 50%; transform: translateY(-50%); width: 15px; height: 15px; border-radius: 50%; background: #1462d8; color: #fff; font-size: 9.5px; font-weight: 900; line-height: 15px; text-align: center; }
+  .key .blank { color: #d9302c; }
+  table { border-collapse: collapse; width: 100%; font-size: 12.5px; margin: 4px 0 2px; }
+  td, th { border: 1px solid #c9d1dd; padding: 4px 8px; text-align: left; line-height: 1.6; }
+  th { background: #f4f6fa; font-weight: 800; }
+  .formula { font-weight: 800; background: #f8fafc; border: 1px dashed #c9d1dd; border-radius: 6px; padding: 2px 10px; display: inline-block; }
+  .q { margin-top: 6px; }
+  .q p { line-height: 1.7; }
+  .q .ans { display: none; color: #d9302c; font-weight: 900; }
+  .key .q .ans { display: inline; }
+  .write { border: 1.5px solid #9aa4b5; border-radius: 8px; height: 54px; margin-top: 4px; }
+  .foot { margin-top: 10px; font-size: 10.5px; color: #8a94a6; display: flex; justify-content: space-between; }
+  @media print {
+    body { background: #fff; }
+    .tools { display: none; }
+    .paper { margin: 0; box-shadow: none; width: auto; min-height: 0; padding: 0; }
+  }
+</style>
+<style>/* A4 한 장에 맞게 줄 간격·여백을 줄인다 */ p, li { font-size: 12.8px; line-height: 1.62; } table { font-size: 12px; } td, th { padding: 2px 7px; line-height: 1.42; } h2 { font-size: 14.5px; margin: 7px 0 3px; padding: 3px 10px; } header { margin-bottom: 8px; } .guide { margin-bottom: 6px; } .write { height: 40px; } .foot { margin-top: 6px; }</style>
+</head>
+<body>
+<div class="tools">
+  <a href="board-01.html">칠판 강의 화면</a>
+  <a id="keyLink" href="?key=1" hidden>교사용 정답 보기</a>
+  <button class="main" onclick="window.print()">인쇄하기</button>
+</div>
+<div class="paper">
+  <header>
+    <div>
+      <div class="k">지구시스템과학1 · Ⅰ-1 지구의 탄생과 물질의 순환 · 01 &nbsp;<span class="key-mark">[교사용 정답]</span></div>
+      <h1>개념정리 학습지 · 지구의 탄생</h1>
+    </div>
+    <div class="who"><span>학번</span><span>이름</span></div>
+  </header>
+  <p class="guide">칠판 화면에 번호가 열리면 같은 번호 빈칸에 받아 적으세요. (빈칸 1~15)</p>
+
+  <h2>① 미행성 충돌과 마그마 바다</h2>
+  <ul>
+    <li>금성 약 462 ℃·92기압 / 지구 약 15 ℃·1기압·표면의 71%가 바다 / 화성 약 −63 ℃·0.006기압 — 같은 재료로 태어났는데 왜 다를까?</li>
+    <li><b class="blank" data-n="1">미행성</b>이 쉴 새 없이 충돌 → 충돌 에너지가 열로 바뀌어 지표를 달군다</li>
+    <li>지구 속 <b class="blank" data-n="2">방사성 원소</b>가 붕괴하며 내는 열이 더해진다</li>
+    <li>지표 전체가 녹아 흐르는 <b class="blank" data-n="3">마그마 바다</b> (1200 ℃ 이상) → 충돌이 잦아들면 식어 700 ℃ 아래에서 원시 <b class="blank" data-n="4">지각</b>이 굳기 시작</li>
+  </ul>
+
+  <h2>② 층상 분화</h2>
+  <ul>
+    <li>지구가 녹아 있는 동안 <b class="blank" data-n="5">밀도</b>가 큰 철·니켈은 가라앉고, 밀도가 작은 규산염은 떠오른다</li>
+    <li>철·니켈 → <b class="blank" data-n="6">핵</b>, 규산염 → 맨틀과 지각 : 이 과정이 <b class="blank" data-n="7">층상 분화</b></li>
+    <li>단원 화면 모형: 약 1,900만 년에 절반, 약 7,700만 년에 95% 진행 (녹아 있던 짧은 동안에 끝남) · 가라앉는 철의 마찰열이 지구를 더 달굼</li>
+    <li>액체 외핵의 대류 → 지구 <b class="blank" data-n="8">자기장</b> → 태양풍으로부터 대기를 지켜 준다 (핵이 먼저, 자기장은 그다음)</li>
+  </ul>
+
+  <h2>③ 원시 대기와 원시 바다</h2>
+  <ul>
+    <li>지구 속 기체가 화산 활동으로 빠져나옴 → 원시 대기의 주성분: <b class="blank" data-n="9">수증기</b>와 <b class="blank" data-n="10">이산화 탄소</b> (산소는 거의 없음)</li>
+    <li>지표가 식자 수증기가 <b class="blank" data-n="11">응결</b>해 비가 되어 쏟아짐 → 낮은 곳에 고여 <b class="blank" data-n="12">원시 바다</b> → 대기의 CO₂가 바다에 녹아 줄어듦</li>
+  </ul>
+  <table>
+    <tr><th style="width:24%">행성 (거리 · 질량)</th><th>갈림길 (단원 화면 모형)</th></tr>
+    <tr><td>지구 (1 AU · 1)</td><td>수증기가 응결 → 바다 행성</td></tr>
+    <tr><td>금성 (0.72 AU · 0.82)</td><td>햇빛이 너무 강해 수증기가 끝내 응결하지 못함 → <b class="blank" data-n="13">폭주 온실</b></td></tr>
+    <tr><td>화성 (1.52 AU · 0.10)</td><td>대기가 얇고 추워 물이 모두 얼어붙음</td></tr>
+    <tr><td>수성 (0.39 AU · 0.06)</td><td><b class="blank" data-n="14">중력</b>이 약해 기체를 붙잡지 못함 → 대기를 잃은 행성</td></tr>
+  </table>
+  <ul>
+    <li>지권(핵·맨틀·지각) → 기권(원시 대기) → 수권(원시 바다) → 바닷속 최초의 생명체로 <b class="blank" data-n="15">생물권</b> : 지구시스템의 네 권역이 갖추어졌다</li>
+  </ul>
+
+  <h2>문제로 확인하기</h2>
+  <div class="q">
+    <p>1. 원시 바다가 생기기 바로 전에 일어나야 했던 일은? <span class="ans">→ ㉠</span><br>
+      ㉠ 지표가 식어 대기의 수증기가 응결했다 &nbsp; ㉡ 대기에 산소가 쌓였다 &nbsp; ㉢ 미행성 충돌이 더 잦아졌다</p>
+    <p>2. 금성에 바다가 남지 않은 가장 큰 까닭은? <span class="ans">→ 태양에 가까워 수증기가 응결하지 못했다(폭주 온실)</span></p>
+  </div>
+  <h2>한 문장 정리</h2>
+  <p>‘같은 재료, 다른 자리’를 거리·질량·원시 바다 세 낱말을 넣어 한 문장으로 바꿔 쓰세요.</p>
+  <div class="write"></div>
+  <div class="foot"><span>칠판 강의 화면: board-01.html · 이야기 ① 「세 행성의 갈림길」</span><span>과학 수업 도구</span></div>
+</div>
+<script>
+  if (new URLSearchParams(location.search).get("key") === "1") {
+    document.body.classList.add("key");
+    var a = document.getElementById("keyLink"); a.textContent = "학생용으로 보기"; a.href = "?"; a.hidden = false;
+  }
+</script>
+</body>
+</html>

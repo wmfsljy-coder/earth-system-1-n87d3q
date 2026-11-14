@@ -1,0 +1,472 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>칠판 강의 · 화산 활동과 암석의 순환 (지구시스템과학1 Ⅰ-2 03)</title>
+<link rel="icon" href="https://wmfsljy-coder.github.io/science-teacher-hub-qtrqwc/assets/hub-icon.svg" type="image/svg+xml">
+<link rel="stylesheet" href="../assets/board.css">
+<style>
+  @keyframes riseIn { from { opacity: 0; transform: translateY(20px); } to { opacity: 1; transform: none; } }
+  .current .art .vwrap { animation: riseIn 1.2s ease both; }
+  .lines p { margin-bottom: 12px; }
+  .tight p { font-size: 28px; margin-bottom: 8px; }
+  .sumlist { list-style: none; padding: 0; margin: 0; }
+  .sumlist li { position: relative; padding: 16px 24px 16px 84px; margin-bottom: 14px; background: #fff; border-radius: 20px; font-size: 28px; }
+  .sumlist li::before { content: attr(data-k); position: absolute; left: 24px; top: 16px; width: 44px; height: 44px; border-radius: 50%; background: var(--ink); color: #fff; font-weight: 900; font-size: 24px; text-align: center; line-height: 44px; }
+  .q { font-size: 31px !important; font-weight: 800; margin-bottom: 14px !important; }
+  #s-quiz .opt { font-size: 26px; padding: 14px 22px; }
+  #s-check1 .opt { font-size: 29px; padding: 14px 24px; }
+  table.ledger td, table.ledger th { padding: 12px 16px; }
+  table.ledger td:first-child { font-weight: 900; color: var(--mute); font-size: 24px; width: 290px; }
+  .halo { paint-order: stroke; stroke: #fff; stroke-width: 6px; stroke-linejoin: round; }
+</style>
+</head>
+<body>
+<div class="deck"><div class="stage">
+
+<!-- 1 표지 -->
+<section class="slide dark cover" id="s-cover" data-title="표지">
+  <div class="art">
+    <svg viewBox="0 0 1600 520" aria-label="밑변이 넓고 완만한 한라산과, 꼭대기가 내려앉아 칼데라 호수를 이고 있는 가파른 백두산">
+      <defs>
+        <linearGradient id="c3-h" x1="0" x2="0" y1="0" y2="1"><stop offset="0" stop-color="#5c5f66"/><stop offset="1" stop-color="#2b2d33"/></linearGradient>
+        <linearGradient id="c3-b" x1="0" x2="0" y1="0" y2="1"><stop offset="0" stop-color="#d6cfc2"/><stop offset="1" stop-color="#7d7466"/></linearGradient>
+      </defs>
+      <g class="vwrap">
+        <rect x="0" y="440" width="1600" height="80" fill="#1d2b3a"/>
+        <path d="M60 440 Q200 400 330 360 Q420 335 470 332 Q520 335 610 360 Q740 400 880 440 Z" fill="url(#c3-h)"/>
+        <path d="M940 440 Q1060 340 1130 220 L1160 160 L1200 182 L1240 182 L1280 160 L1310 220 Q1380 340 1500 440 Z" fill="url(#c3-b)"/>
+        <path d="M1172 170 Q1220 196 1268 170 L1258 186 Q1220 200 1182 186 Z" fill="#4dabf7"/>
+      </g>
+      <g data-step="1" font-size="26" font-weight="800" fill="#c9d1df" text-anchor="middle">
+        <text x="470" y="300">한라산 1,947 m</text><text x="470" y="490" font-size="22">넓고 완만한 방패 모양 · 현무암</text>
+        <text x="1220" y="130">백두산 2,744 m · 천지</text><text x="1220" y="490" font-size="22">꼭대기가 내려앉은 칼데라</text>
+      </g>
+      <text x="1560" y="514" fill="#9aa4b5" font-size="18" text-anchor="end">⚠ 높이는 과장하고 밑변은 줄인 모식도</text>
+    </svg>
+  </div>
+  <div class="ttl">
+    <p class="kicker">지구시스템과학1 · Ⅰ-2 판 구조 운동과 지구 내부 구조 · 03</p>
+    <h1>화산 활동과 암석의 순환</h1>
+    <p class="sub" data-step="1">같은 한반도, 너무 다른 두 화산</p>
+  </div>
+  <aside class="script">
+    <p>오늘은 화산의 생김새와 화산이 만드는 암석, 그리고 암석이 도는 순환을 봅니다.</p>
+    <p data-at="1">한라산은 넓고 완만하고, 백두산은 946년 무렵 엄청난 분화로 꼭대기가 내려앉아 천지를 이고 있습니다. 둘 다 판 경계가 아닌 판 안쪽의 화산이에요.</p>
+  </aside>
+</section>
+
+<!-- 2 도입 -->
+<section class="slide soft" id="s-hook" data-title="두 화산이 다른 까닭" data-part="도입">
+  <p class="kicker">도입 · 한라산과 백두산</p>
+  <h2>무엇이 두 화산을 이렇게 다르게 만들었을까?</h2>
+  <div class="cols w64">
+    <div class="card">
+      <p>한라산: 밑변이 넓고 경사가 완만, 검은 현무암, 용암 동굴. 백두산: 946년 무렵 대분화, 화산재가 바다 건너 일본에서도 발견된다.</p>
+      <p class="big mt">가장 큰 까닭은?</p>
+    </div>
+    <div class="card yel">
+      <h3>여러분의 답은?</h3>
+      <div class="opts">
+        <div class="opt">㉠ 분화한 시기가 달라서 — 오래될수록 깎여 완만해진다</div>
+        <div class="opt">㉡ 마그마의 성분(SiO₂ 함량)이 달라 끈적임과 기체가 달라서</div>
+        <div class="opt">㉢ 백두산이 한라산보다 높은 산이라서</div>
+      </div>
+      <p class="small mt" data-step="1">하나를 골라 까닭을 한 문장으로 말해 보세요.</p>
+    </div>
+  </div>
+  <aside class="script">
+    <p>화산암석학 연구원 하준의 말입니다. 둘 다 판 안쪽 화산이니 ‘어디에서 터졌나’로는 설명이 안 됩니다.</p>
+    <p data-at="1">손을 들게 하고 까닭을 묻습니다. 답은 주지 않습니다.</p>
+  </aside>
+</section>
+
+<!-- 3 키워드 -->
+<section class="slide" id="s-kw" data-title="오늘의 키워드" data-part="도입">
+  <p class="kicker">오늘의 키워드</p>
+  <h2>이 다섯 낱말로 오늘을 정리합니다</h2>
+  <div class="kw">
+    <div class="card"><b>점성</b><span>마그마가 끈적한 정도</span></div>
+    <div class="card"><b>SiO₂ 함량</b><span>마그마의 점성을 가장 크게 좌우한다</span></div>
+    <div class="card"><b>화산체</b><span>순상 · 성층 · 종상 화산</span></div>
+    <div class="card"><b>화산암과 심성암</b><span>굳은 깊이에 따라 달라지는 결정의 크기</span></div>
+    <div class="card"><b>암석의 순환</b><span>화성암 · 퇴적암 · 변성암이 돌고 돈다</span></div>
+  </div>
+  <div class="card blue mt2 row" style="gap:30px"><span class="blank on" style="font-size:34px;font-weight:900;flex:none"><i class="bn">1</i>빈칸</span>
+    <p style="margin:0">화면에 번호가 열리면 <b>학습지의 같은 번호</b>에 받아 적으세요. 오늘 빈칸은 <b>1~14번</b>입니다.</p></div>
+  <aside class="script"><p>키워드 다섯 개를 읽어 주기만 합니다. 정리 장면에서 모두 다시 나옵니다.</p></aside>
+</section>
+
+<!-- 4 비교 -->
+<section class="slide" id="s-compare" data-title="두 화산의 사건 기록" data-part="① 마그마의 점성">
+  <p class="kicker">① 마그마의 점성 · 두 화산의 사건 기록 (단원 화면)</p>
+  <h2>한라산과 백두산을 나란히 놓으면</h2>
+  <table class="ledger">
+    <tr><th></th><th>한라산</th><th>백두산</th></tr>
+    <tr data-step="1"><td>생김새</td><td>밑변이 넓고 경사가 완만한 방패 모양</td><td>꼭대기가 내려앉아 생긴 <b class="blank" data-n="1" data-step="1">칼데라</b>(천지, 지름 약 5 km)</td></tr>
+    <tr data-step="2"><td>표고</td><td>1,947 m</td><td>2,744 m</td></tr>
+    <tr data-step="3"><td>주요 암석</td><td>현무암 (SiO₂ 약 48%)</td><td>정상부 조면암·유문암 (SiO₂ 약 70%)</td></tr>
+    <tr data-step="4"><td>분출 모습</td><td>조용히 흘러나온 용암류, 용암 동굴</td><td>화산재와 부석이 두껍게 쌓임</td></tr>
+  </table>
+  <p class="small mt" data-step="4">가장 크게 다른 줄은? → SiO₂ 함량</p>
+  <aside class="script">
+    <p>단원 화면의 사건 기록을 나란히 놓습니다.</p>
+    <p data-at="1">백두산 꼭대기의 천지는 분화 뒤 꼭대기가 내려앉아 생긴 빈칸 1번, 칼데라입니다. 울릉도 나리 분지도 칼데라예요.</p>
+    <p data-at="2">높이는 다르지만, 높이가 생김새를 정했다고 보기는 어렵습니다.</p>
+    <p data-at="3">눈여겨볼 줄은 여기입니다. SiO₂가 약 48%와 약 70%로 크게 다릅니다.</p>
+    <p data-at="4">분출 모습도 정반대. 이 차이가 어디서 오는지 마그마를 직접 봅니다.</p>
+  </aside>
+</section>
+
+<!-- 5 점성 -->
+<section class="slide soft" id="s-visc" data-title="끈적임을 정하는 것들" data-part="① 마그마의 점성">
+  <p class="kicker">① 마그마의 점성 · 마그마 실험실</p>
+  <h2>끈적임은 무엇이 정할까?</h2>
+  <svg viewBox="0 0 1400 300" width="1400" height="300" aria-label="왼쪽: 넓게 퍼진 묽은 마그마와 높게 쌓인 끈적한 마그마. 오른쪽: SiO₂가 적으면 규산염 그물이 성기고, 많으면 촘촘하다">
+    <rect x="0" y="0" width="660" height="300" rx="18" fill="#fff"/><rect x="740" y="0" width="660" height="300" rx="18" fill="#fff"/>
+    <g data-step="1">
+      <line x1="30" y1="220" x2="630" y2="220" stroke="#5c4330" stroke-width="5"/>
+      <path d="M50 220 Q60 196 170 192 Q280 196 290 220 Z" fill="#e8590c"/>
+      <path d="M400 220 Q410 120 490 112 Q570 120 580 220 Z" fill="#a61e4d"/>
+      <g font-size="22" font-weight="900" text-anchor="middle"><text x="170" y="260" fill="#e8590c">묽다 · 넓게 퍼진다</text><text x="490" y="260" fill="#a61e4d">끈적하다 · 높게 쌓인다</text></g>
+      <text x="330" y="44" font-size="23" font-weight="900" fill="#161b28" text-anchor="middle">같은 양을 쏟으면</text>
+    </g>
+    <g data-step="2">
+      <text x="1070" y="44" font-size="23" font-weight="900" fill="#161b28" text-anchor="middle">마그마 속 규산염 그물</text>
+      <rect x="790" y="70" width="250" height="170" rx="10" fill="#fff4e6" stroke="#e8590c" stroke-width="3"/>
+      <rect x="1110" y="70" width="250" height="170" rx="10" fill="#fff0f6" stroke="#a61e4d" stroke-width="3"/>
+      <g stroke="#e8590c" stroke-width="4"><path d="M830 110 L880 130 M950 100 L1000 120 M850 200 L900 180 M960 200 L1010 190"/></g>
+      <g fill="#e8590c"><circle cx="830" cy="110" r="8"/><circle cx="880" cy="130" r="8"/><circle cx="950" cy="100" r="8"/><circle cx="1000" cy="120" r="8"/><circle cx="850" cy="200" r="8"/><circle cx="900" cy="180" r="8"/><circle cx="960" cy="200" r="8"/><circle cx="1010" cy="190" r="8"/></g>
+      <g stroke="#a61e4d" stroke-width="4"><path d="M1140 100 L1190 100 L1240 100 L1290 100 L1330 100 M1140 150 L1190 150 L1240 150 L1290 150 L1330 150 M1140 200 L1190 200 L1240 200 L1290 200 L1330 200 M1140 100 L1140 200 M1190 100 L1190 200 M1240 100 L1240 200 M1290 100 L1290 200 M1330 100 L1330 200 M1140 100 L1190 150 M1240 100 L1290 150 M1190 150 L1240 200 M1290 150 L1330 200"/></g>
+      <g fill="#a61e4d"><circle cx="1140" cy="100" r="8"/><circle cx="1190" cy="100" r="8"/><circle cx="1240" cy="100" r="8"/><circle cx="1290" cy="100" r="8"/><circle cx="1330" cy="100" r="8"/><circle cx="1140" cy="150" r="8"/><circle cx="1190" cy="150" r="8"/><circle cx="1240" cy="150" r="8"/><circle cx="1290" cy="150" r="8"/><circle cx="1330" cy="150" r="8"/><circle cx="1140" cy="200" r="8"/><circle cx="1190" cy="200" r="8"/><circle cx="1240" cy="200" r="8"/><circle cx="1290" cy="200" r="8"/><circle cx="1330" cy="200" r="8"/></g>
+      <g font-size="21" font-weight="900" text-anchor="middle"><text x="915" y="272" fill="#e8590c">SiO₂ 적다 · 그물이 성기다</text><text x="1235" y="272" fill="#a61e4d">SiO₂ 많다 · 그물이 촘촘하다</text></g>
+    </g>
+    <text x="1396" y="296" font-size="18" fill="#5f6b80" text-anchor="end">⚠ 그물 구조는 개념만 나타낸 모식도</text>
+  </svg>
+  <div class="tight mt">
+    <p data-step="1">마그마가 끈적한 정도 → <b class="blank" data-n="2" data-step="1">점성</b></p>
+    <p data-step="2"><b class="blank" data-n="3" data-step="2">SiO₂</b> 함량이 많을수록 규산염 그물이 촘촘해져 점성이 크다</p>
+    <p data-step="3">온도가 높을수록, 녹아 있는 물이 많을수록 그물이 끊겨 묽어진다</p>
+  </div>
+  <aside class="script">
+    <p>마그마 실험실입니다. 같은 양의 마그마를 쏟는다고 생각해 봅시다.</p>
+    <p data-at="1">묽은 마그마는 넓게 퍼지고 끈적한 마그마는 높게 쌓입니다. 끈적한 정도가 빈칸 2번, 점성입니다.</p>
+    <p data-at="2">점성을 가장 크게 정하는 것이 빈칸 3번, SiO₂ 함량. 많을수록 규산염 그물이 촘촘해져 끈적해집니다.</p>
+    <p data-at="3">온도가 높을수록, 녹아 있는 물이 많을수록 묽어집니다. 단원 화면에서는 SiO₂·온도·물 세 값을 바꿔 확인해요.</p>
+  </aside>
+</section>
+
+<!-- 6 화산체 -->
+<section class="slide" id="s-shape" data-title="마그마가 정한 화산의 생김새" data-part="① 마그마의 점성">
+  <p class="kicker">① 마그마의 점성 · 세 가지 마그마, 세 가지 화산체</p>
+  <h2>SiO₂가 많을수록 가파르다</h2>
+  <svg viewBox="0 0 1400 300" width="1400" height="300" aria-label="세 칸 그림: 낮고 넓은 순상 화산, 용암과 화산 쇄설물이 번갈아 쌓인 원뿔 모양의 성층 화산, 종 모양으로 가파르게 솟은 종상 화산">
+    <g fill="#f2f5f9"><rect x="0" y="0" width="440" height="300" rx="18"/><rect x="480" y="0" width="440" height="300" rx="18"/><rect x="960" y="0" width="440" height="300" rx="18"/></g>
+    <g data-step="1">
+      <path d="M20 230 Q120 200 200 186 Q220 182 240 186 Q320 200 420 230 Z" fill="#495057"/>
+      <text x="220" y="40" font-size="23" font-weight="900" fill="#161b28" text-anchor="middle">현무암질 · SiO₂ 52% 미만</text>
+      <text x="220" y="270" font-size="20" font-weight="800" fill="#5f6b80" text-anchor="middle">묽어 멀리 흐른다 · 현무암</text>
+    </g>
+    <g data-step="2">
+      <path d="M520 230 Q620 200 660 160 Q690 120 700 90 Q710 120 740 160 Q780 200 880 230 Z" fill="#868e96"/>
+      <path d="M560 222 Q640 196 670 160 M840 222 Q760 196 730 160 M610 212 Q660 190 684 140 M790 212 Q740 190 716 140" fill="none" stroke="#c9b79c" stroke-width="5"/>
+      <text x="700" y="40" font-size="23" font-weight="900" fill="#161b28" text-anchor="middle">안산암질 · SiO₂ 52~63%</text>
+      <text x="700" y="270" font-size="20" font-weight="800" fill="#5f6b80" text-anchor="middle">용암과 화산 쇄설물이 번갈아 · 안산암</text>
+    </g>
+    <g data-step="3">
+      <path d="M1080 230 Q1080 140 1120 110 Q1180 76 1240 110 Q1280 140 1280 230 Z" fill="#b5a99a"/>
+      <text x="1180" y="40" font-size="23" font-weight="900" fill="#161b28" text-anchor="middle">유문암질 · SiO₂ 63% 이상</text>
+      <text x="1180" y="270" font-size="20" font-weight="800" fill="#5f6b80" text-anchor="middle">끈적해 멀리 못 간다 · 유문암</text>
+    </g>
+    <text x="1396" y="296" font-size="18" fill="#5f6b80" text-anchor="end">⚠ 경사를 과장한 모식도</text>
+  </svg>
+  <div class="tight mt">
+    <p data-step="1">현무암질 → 밑변이 넓고 완만한 <b class="blank" data-n="4" data-step="1">순상 화산</b> (한라산, 하와이)</p>
+    <p data-step="2">안산암질 → 원뿔 모양의 <b class="blank" data-n="5" data-step="2">성층 화산</b> (일본 사쿠라지마, 필리핀 마욘)</p>
+    <p data-step="3">유문암질 → 경사가 급한 종 모양의 <b class="blank" data-n="6" data-step="3">종상 화산</b> (백두산 정상부, 울릉도)</p>
+  </div>
+  <aside class="script">
+    <p>SiO₂ 함량으로 마그마를 셋으로 나눕니다.</p>
+    <p data-at="1">52% 미만의 현무암질 마그마는 묽어서 용암이 멀리 흐릅니다. 빈칸 4번, 순상 화산. 방패를 엎어 놓은 모양이에요. 굳으면 현무암.</p>
+    <p data-at="2">52~63%의 안산암질은 용암류와 화산 쇄설물이 번갈아 쌓여 빈칸 5번, 성층 화산이 됩니다.</p>
+    <p data-at="3">63% 이상의 유문암질은 끈적해서 멀리 못 가고 쌓입니다. 빈칸 6번, 종상 화산. 다만 백두산·울릉도의 조면암처럼 알칼리 성분이 많은 암석은 SiO₂만으로 딱 잘라 나누기 어렵다는 점도 덧붙입니다.</p>
+  </aside>
+</section>
+
+<!-- 7 확인 -->
+<section class="slide" id="s-check1" data-title="SiO₂ 58% 마그마" data-part="① 마그마의 점성">
+  <p class="kicker">① 마그마의 점성 · 확인</p>
+  <h2>SiO₂ 58%인 마그마가 주로 만드는 화산체는?</h2>
+  <div class="opts" style="max-width:1300px">
+    <div class="opt wrong" data-step="1">① 순상 화산</div>
+    <div class="opt right" data-step="1">② 성층 화산</div>
+    <div class="opt wrong" data-step="1">③ 종상 화산</div>
+    <div class="opt wrong" data-step="1">④ 마그마의 성분과 화산체는 관계가 없다</div>
+  </div>
+  <aside class="script">
+    <p>짝과 30초 이야기한 뒤 번호를 들게 합니다.</p>
+    <p data-at="1">정답은 ②. 52~63%는 안산암질 마그마입니다. 첫 추리에서 ㉠이나 ㉢을 고른 학생에게, 나이나 높이가 아니라 성분이라는 점을 짚어 줍니다.</p>
+  </aside>
+</section>
+
+<!-- 8 기체 -->
+<section class="slide" id="s-gas" data-title="터뜨리는 것은 기체" data-part="② 분출 양식">
+  <p class="kicker">② 분출 양식 · 끈적한 마그마는 왜 폭발할까</p>
+  <h2>갇힌 기포가 한꺼번에 터진다</h2>
+  <svg viewBox="0 0 1400 330" width="1400" height="330" aria-label="두 화도 단면. 묽은 마그마에서는 기포가 쉽게 빠져나가 조용히 분출하고, 끈적한 마그마에서는 기포가 갇혔다가 한꺼번에 터져 화산재가 솟구친다">
+    <g fill="#f2f5f9"><rect x="0" y="0" width="660" height="330" rx="18"/><rect x="740" y="0" width="660" height="330" rx="18"/></g>
+    <g data-step="1">
+      <rect x="40" y="200" width="580" height="110" fill="#c9b79c"/><rect x="290" y="80" width="80" height="230" fill="#c9b79c"/>
+      <path d="M220 200 L290 90 L370 90 L440 200 Z" fill="#a68a64"/>
+      <rect x="306" y="96" width="48" height="214" fill="#e8590c"/>
+      <g fill="#fff" opacity=".9"><circle cx="320" cy="280" r="6"/><circle cx="338" cy="240" r="7"/><circle cx="322" cy="190" r="8"/><circle cx="340" cy="140" r="9"/><circle cx="330" cy="70" r="10"/><circle cx="350" cy="40" r="8"/></g>
+      <text x="330" y="30" font-size="21" font-weight="900" fill="#161b28" text-anchor="middle" class="halo">기포가 빠져나감</text>
+      <text x="150" y="120" font-size="22" font-weight="900" fill="#e8590c" text-anchor="middle">묽은 마그마</text>
+      <text x="150" y="150" font-size="20" font-weight="800" fill="#5f6b80" text-anchor="middle">조용한 분출</text>
+      <rect x="780" y="200" width="580" height="110" fill="#c9b79c"/><rect x="1030" y="80" width="80" height="230" fill="#c9b79c"/>
+      <path d="M960 200 L1030 90 L1110 90 L1180 200 Z" fill="#a68a64"/>
+      <rect x="1046" y="96" width="48" height="214" fill="#a61e4d"/>
+      <g fill="#fff" opacity=".9"><circle cx="1058" cy="290" r="5"/><circle cx="1080" cy="270" r="6"/><circle cx="1060" cy="240" r="6"/><circle cx="1082" cy="215" r="7"/><circle cx="1058" cy="190" r="7"/><circle cx="1080" cy="165" r="8"/><circle cx="1060" cy="140" r="9"/><circle cx="1082" cy="118" r="9"/></g>
+      <text x="890" y="120" font-size="22" font-weight="900" fill="#a61e4d" text-anchor="middle">끈적한 마그마</text>
+      <text x="890" y="150" font-size="20" font-weight="800" fill="#5f6b80" text-anchor="middle">기포가 갇힌다</text>
+    </g>
+    <g data-step="2">
+      <path d="M1070 90 L1000 20 L1040 40 L1060 0 L1080 36 L1110 4 L1110 44 L1150 22 L1100 90 Z" fill="#868e96"/>
+      <g fill="#495057"><circle cx="1010" cy="60" r="7"/><circle cx="1150" cy="56" r="6"/><circle cx="1170" cy="80" r="5"/><circle cx="990" cy="86" r="5"/></g>
+      <text x="1230" y="40" font-size="21" font-weight="900" fill="#161b28" class="halo">한꺼번에 폭발</text>
+      <text x="1230" y="70" font-size="20" font-weight="800" fill="#5f6b80" class="halo">화산재 · 부석</text>
+    </g>
+    <text x="1396" y="324" font-size="18" fill="#5f6b80" text-anchor="end">⚠ 기포와 화도 크기는 과장한 모식도</text>
+  </svg>
+  <div class="tight mt">
+    <p data-step="1">마그마가 올라와 압력이 낮아지면 녹아 있던 물이 기포가 된다</p>
+    <p data-step="2">끈적한 마그마에서는 <b class="blank" data-n="7" data-step="2">기체</b>가 갇혔다가 한꺼번에 터진다</p>
+    <p data-step="3">마그마가 잘게 부서져 <b class="blank" data-n="8" data-step="3">화산재</b>와 부석이 된다</p>
+  </div>
+  <aside class="script">
+    <p>끈적한 마그마는 그 자체로는 조용합니다. 터뜨리는 것은 따로 있어요.</p>
+    <p data-at="1">탄산음료 뚜껑을 열 때처럼, 마그마가 올라와 압력이 낮아지면 녹아 있던 물이 기포가 됩니다. 묽은 마그마에서는 기포가 쉽게 빠져나갑니다.</p>
+    <p data-at="2">끈적한 마그마에서는 빈칸 7번, 기체가 갇힙니다. 갇힌 기포가 한꺼번에 터지면 폭발이에요.</p>
+    <p data-at="3">마그마가 잘게 부서져 빈칸 8번, 화산재와 부석이 됩니다.</p>
+  </aside>
+</section>
+
+<!-- 9 946년 -->
+<section class="slide soft" id="s-946" data-title="946년 백두산과 용암 돔" data-part="② 분출 양식">
+  <p class="kicker">② 분출 양식 · SiO₂ 70% 백두산 마그마로 두 가지 분출</p>
+  <h2>같은 마그마, 정반대의 분출</h2>
+  <svg viewBox="0 0 1400 330" width="1400" height="330" aria-label="같은 성분의 마그마로 생긴 두 분출. 물이 많으면 분연주가 25 km 넘게 치솟고, 기체가 거의 없으면 꼭대기에 용암 돔이 조용히 밀려 올라온다">
+    <rect x="0" y="0" width="660" height="330" rx="18" fill="#fff"/><rect x="740" y="0" width="660" height="330" rx="18" fill="#fff"/>
+    <g font-size="19" font-weight="800" fill="#5f6b80" text-anchor="end">
+      <line x1="560" y1="300" x2="560" y2="20" stroke="#161b28" stroke-width="3"/>
+      <text x="550" y="306">0</text><text x="550" y="226">10</text><text x="550" y="146">20</text><text x="550" y="66">30 km</text>
+    </g>
+    <g data-step="1">
+      <path d="M80 300 L200 230 L260 230 L380 300 Z" fill="#a68a64"/>
+      <path d="M210 230 Q190 160 200 110 Q170 80 190 60 Q210 40 230 50 Q250 36 270 56 Q290 80 260 110 Q270 160 250 230 Z" fill="#868e96"/>
+      <line x1="120" y1="100" x2="560" y2="100" stroke="#d9302c" stroke-width="4" stroke-dasharray="10 8"/>
+      <text x="330" y="92" font-size="21" font-weight="900" fill="#d9302c" class="halo">25 km</text>
+      <text x="230" y="30" font-size="21" font-weight="900" fill="#161b28" text-anchor="middle" class="halo">물이 많을 때 · 분연주</text>
+    </g>
+    <g data-step="2">
+      <path d="M820 300 L960 210 L1040 210 L1180 300 Z" fill="#a68a64"/>
+      <path d="M950 214 Q960 160 1000 154 Q1040 160 1050 214 Z" fill="#a61e4d"/>
+      <text x="1000" y="130" font-size="21" font-weight="900" fill="#a61e4d" text-anchor="middle">밀려 올라온 용암</text>
+      <text x="1000" y="40" font-size="21" font-weight="900" fill="#161b28" text-anchor="middle">기체가 거의 없을 때</text>
+    </g>
+    <text x="10" y="324" font-size="18" fill="#5f6b80">⚠ 산의 높이는 눈금과 맞지 않게 과장</text>
+  </svg>
+  <div class="tight mt">
+    <p data-step="1">946년 무렵: 분연주가 25 km 넘게 치솟는 폭발적 분출 → 꼭대기가 내려앉아 천지(칼데라)</p>
+    <p data-step="2">기체가 거의 없으면 조용히 밀려 올라오는 <b class="blank" data-n="9" data-step="2">용암 돔</b></p>
+    <p data-step="3">같은 성분이라도 기체의 양이 분출 양식을 바꾼다</p>
+  </div>
+  <aside class="script">
+    <p>SiO₂ 70%짜리 백두산 마그마에 물을 넣어 보는 단원 화면 미션입니다.</p>
+    <p data-at="1">물이 많으면 분연주가 25 km 넘게 치솟습니다. 946년 분화가 그랬고, 그때 날아간 화산재는 일본에서도 발견됩니다.</p>
+    <p data-at="2">같은 마그마라도 기체가 거의 없으면 끈적한 용암이 꼭대기에서 조용히 밀려 올라옵니다. 빈칸 9번, 용암 돔.</p>
+    <p data-at="3">단원 화면 모형은 경향만 살린 것이고, 실제 분연주 높이는 단위 시간에 뿜어져 나오는 마그마의 양에 더 크게 좌우된다는 점도 말해 줍니다.</p>
+  </aside>
+</section>
+
+<!-- 10 화산암과 심성암 -->
+<section class="slide" id="s-rock" data-title="굵은 결정, 고운 결정" data-part="③ 화성암과 순환">
+  <p class="kicker">③ 화성암과 암석의 순환 · 마그마가 굳은 깊이</p>
+  <h2>천천히 식을수록 결정이 크다</h2>
+  <svg viewBox="0 0 1400 330" width="1400" height="330" aria-label="단면 모식도: 지표로 흘러나와 급히 식은 용암은 결정이 작은 화산암이 되고, 땅속 깊이에서 천천히 식은 마그마는 결정이 굵은 심성암이 된다. 돋보기 속에 두 암석의 결정 크기가 비교되어 있다">
+    <defs>
+      <pattern id="s10-fine" width="14" height="14" patternUnits="userSpaceOnUse"><rect width="14" height="14" fill="#5a5a66"/><rect x="2" y="3" width="4" height="3" fill="#9aa0b0"/><rect x="8" y="9" width="4" height="2" fill="#e8c84a"/><rect x="9" y="2" width="2" height="4" fill="#2a2a33"/></pattern>
+      <clipPath id="s10-cc"><circle cx="1220" cy="200" r="100"/></clipPath>
+    </defs>
+    <rect x="0" y="70" width="860" height="260" fill="#e9d8bf"/>
+    <rect x="0" y="0" width="860" height="70" fill="#d0ebff"/>
+    <path d="M150 70 L230 20 L290 20 L380 70 Z" fill="#a68a64"/>
+    <g data-step="1">
+      <path d="M290 30 Q380 60 520 66 L520 74 L300 74 Z" fill="#495057"/>
+      <path d="M252 300 L252 30 L268 30 L268 300 Z" fill="#e8590c"/>
+      <circle cx="1000" cy="200" r="100" fill="url(#s10-fine)" stroke="#161b28" stroke-width="6"/>
+      <path d="M1074 270 L1110 310" stroke="#161b28" stroke-width="12" stroke-linecap="round"/>
+      <path d="M520 60 Q700 40 900 140" fill="none" stroke="#161b28" stroke-width="3" stroke-dasharray="8 6"/>
+      <text x="1000" y="56" font-size="22" font-weight="900" fill="#161b28" text-anchor="middle">급히 식음</text><text x="1000" y="84" font-size="21" font-weight="800" fill="#5f6b80" text-anchor="middle">작은 결정</text>
+    </g>
+    <g data-step="2">
+      <ellipse cx="620" cy="250" rx="150" ry="56" fill="#d6c3c9" stroke="#8a6d7a" stroke-width="4"/>
+      <g clip-path="url(#s10-cc)">
+        <rect x="1110" y="90" width="220" height="220" fill="#d9d4c8"/>
+        <path d="M1120 100 L1200 96 L1210 170 L1130 180 Z" fill="#f0d0a8" stroke="#555" stroke-width="2"/>
+        <path d="M1200 96 L1300 110 L1290 180 L1210 170 Z" fill="#8a8a96" stroke="#555" stroke-width="2"/>
+        <path d="M1130 180 L1210 170 L1220 250 L1140 270 Z" fill="#e8e4dc" stroke="#555" stroke-width="2"/>
+        <path d="M1210 170 L1290 180 L1310 260 L1220 250 Z" fill="#4a4a52" stroke="#555" stroke-width="2"/>
+        <path d="M1140 270 L1220 250 L1240 310 L1130 310 Z" fill="#c9c2b4" stroke="#555" stroke-width="2"/>
+        <path d="M1220 250 L1310 260 L1320 310 L1240 310 Z" fill="#f0d0a8" stroke="#555" stroke-width="2"/>
+      </g>
+      <circle cx="1220" cy="200" r="100" fill="none" stroke="#161b28" stroke-width="6"/>
+      <path d="M1294 270 L1330 310" stroke="#161b28" stroke-width="12" stroke-linecap="round"/>
+      <path d="M770 250 Q950 290 1120 230" fill="none" stroke="#161b28" stroke-width="3" stroke-dasharray="8 6"/>
+      <text x="1230" y="56" font-size="22" font-weight="900" fill="#161b28" text-anchor="middle">천천히 식음</text><text x="1230" y="84" font-size="21" font-weight="800" fill="#5f6b80" text-anchor="middle">큰 결정</text>
+      <text x="620" y="258" font-size="21" font-weight="900" fill="#5c3a4a" text-anchor="middle">깊은 곳에서 굳은 마그마</text>
+    </g>
+    <text x="400" y="110" font-size="20" font-weight="800" fill="#161b28">지표의 용암류</text>
+    <text x="10" y="322" font-size="18" fill="#5f6b80">⚠ 결정과 깊이는 과장한 모식도</text>
+  </svg>
+  <div class="tight mt">
+    <p data-step="1">지표 가까이에서 급히 식음 → 결정이 작다 → <b class="blank" data-n="10" data-step="1">화산암</b></p>
+    <p data-step="2">땅속 깊은 곳에서 천천히 식음 → 결정이 크다 → <b class="blank" data-n="11" data-step="2">심성암</b></p>
+    <p data-step="3">암석의 조직(결정 크기)만 봐도 굳은 깊이를 짐작할 수 있다</p>
+  </div>
+  <aside class="script">
+    <p>같은 마그마라도 어디에서 굳었는지에 따라 다른 암석이 됩니다. 결정은 천천히 식을수록 크게 자랍니다.</p>
+    <p data-at="1">지표로 나와 급히 식으면 결정이 자랄 틈이 없습니다. 빈칸 10번, 화산암.</p>
+    <p data-at="2">땅속 깊은 곳에서 오랜 세월 천천히 식으면 결정이 굵어집니다. 빈칸 11번, 심성암.</p>
+    <p data-at="3">그래서 돋보기로 결정 크기만 봐도 굳은 깊이를 짐작할 수 있어요. 결정 크기는 결정핵이 얼마나 많이 생기느냐에도 달려 있습니다.</p>
+  </aside>
+</section>
+
+<!-- 11 화성암 분류 -->
+<section class="slide soft" id="s-table" data-title="화성암 분류표" data-part="③ 화성암과 순환">
+  <p class="kicker">③ 화성암과 암석의 순환 · 성분과 굳은 깊이로 나누기</p>
+  <h2>화성암은 두 기준으로 나눈다</h2>
+  <table class="ledger">
+    <tr><th>구분</th><th>현무암질</th><th>안산암질</th><th>유문암질</th></tr>
+    <tr data-step="1"><td>SiO₂ 함량</td><td>52% 미만</td><td>52~63%</td><td>63% 이상</td></tr>
+    <tr data-step="2"><td>화산암 (작은 결정)</td><td>현무암</td><td>안산암</td><td>유문암</td></tr>
+    <tr data-step="3"><td>심성암 (큰 결정)</td><td>반려암</td><td>섬록암</td><td><b class="blank" data-n="12" data-step="3">화강암</b></td></tr>
+    <tr data-step="4"><td>색</td><td>어둡다</td><td colspan="2">← SiO₂가 많을수록 밝아진다 →</td></tr>
+  </table>
+  <aside class="script">
+    <p>화성암은 성분과 굳은 깊이, 두 기준으로 나눕니다.</p>
+    <p data-at="1">가로는 SiO₂ 함량입니다.</p>
+    <p data-at="2">지표에서 급히 굳으면 현무암·안산암·유문암.</p>
+    <p data-at="3">깊은 곳에서 천천히 굳으면 반려암·섬록암, 그리고 빈칸 12번, 화강암. 유문암과 화강암은 성분이 같고 결정 크기만 다릅니다.</p>
+    <p data-at="4">SiO₂가 많은 암석일수록 밝은 광물이 많아 색이 밝습니다. 한라산의 검은 현무암을 떠올려 보세요.</p>
+  </aside>
+</section>
+
+<!-- 12 암석의 순환 -->
+<section class="slide" id="s-cycle" data-title="암석은 돌고 돈다" data-part="③ 화성암과 순환">
+  <p class="kicker">③ 화성암과 암석의 순환 · 화산 활동의 자리</p>
+  <h2>화산 활동은 순환의 출발점이자 되돌아오는 자리</h2>
+  <div class="cols" style="grid-template-columns:720px 1fr;align-items:center">
+    <svg id="cycSvg" viewBox="0 0 720 470" width="720" height="470" aria-label="암석의 순환: 마그마가 식어 화성암, 풍화·침식되어 퇴적물, 쌓이고 다져져 퇴적암, 열과 압력을 받아 변성암, 다시 녹아 마그마가 된다"></svg>
+    <div class="lines">
+      <p data-step="1">마그마가 식어 굳으면 화성암</p>
+      <p data-step="2">풍화·침식 → 퇴적물이 쌓이고 다져져 <b class="blank" data-n="13" data-step="2">퇴적암</b></p>
+      <p data-step="3">깊이 묻혀 열과 압력을 받으면 <b class="blank" data-n="14" data-step="3">변성암</b> → 더 깊이 들어가 다시 녹아 마그마</p>
+      <p class="small" data-step="4">판의 운동이 이 순환을 돌리고, 화산 기체(수증기·이산화 탄소)는 대기로 간다</p>
+    </div>
+  </div>
+  <aside class="script">
+    <p>마지막으로 화산 활동이 암석의 순환에서 어떤 자리에 있는지 봅니다.</p>
+    <p data-at="1">마그마가 식어 굳으면 화성암. 오늘 본 현무암, 화강암이 여기입니다.</p>
+    <p data-at="2">지표로 드러난 암석이 풍화·침식되어 잘게 부서지고, 쌓이고 다져지면 빈칸 13번, 퇴적암입니다.</p>
+    <p data-at="3">깊이 묻혀 높은 열과 압력을 받으면 빈칸 14번, 변성암. 더 깊이 들어가 녹으면 다시 마그마로 돌아갑니다.</p>
+    <p data-at="4">섭입대에서는 판이 암석을 깊이 끌고 들어가니, 판의 운동이 이 순환을 쉬지 않고 돌립니다. 화산은 기체를 내보내 대기에도 영향을 줍니다.</p>
+  </aside>
+</section>
+
+<!-- 13 정리 -->
+<section class="slide soft" id="s-sum" data-title="오늘의 정리" data-part="정리">
+  <p class="kicker">오늘의 정리</p>
+  <h2>생김새를 정한 것은 SiO₂와 기체였다</h2>
+  <ul class="sumlist">
+    <li data-k="1" data-step="1">SiO₂가 많을수록 <b>점성</b>이 크다 (온도가 높고 물이 많으면 묽어진다)</li>
+    <li data-k="2" data-step="2">현무암질 → <b>순상 화산</b> · 안산암질 → <b>성층 화산</b> · 유문암질 → <b>종상 화산</b></li>
+    <li data-k="3" data-step="3">끈적한 마그마에 갇힌 <b>기체</b>가 폭발적 분출을 만든다 (946년 백두산, 칼데라)</li>
+    <li data-k="4" data-step="4">급히 식으면 <b>화산암</b>, 천천히 식으면 <b>심성암</b> · 화산 활동은 <b>암석의 순환</b>의 출발점</li>
+  </ul>
+  <aside class="script"><p>학습지를 덮고 한 줄씩 먼저 말로 떠올리게 한 다음 엽니다. 마지막에 첫 추리 ㉠㉡㉢ 가운데 무엇이 맞았는지, 다른 두 개는 왜 틀렸는지 말하게 합니다.</p></aside>
+</section>
+
+<!-- 14 문제 -->
+<section class="slide" id="s-quiz" data-title="문제로 확인하기" data-part="정리">
+  <p class="kicker">문제로 확인하기</p>
+  <h2>두 문제만 풀어 봅시다</h2>
+  <div class="cols">
+    <div class="card">
+      <p class="q">1. 마그마의 점성을 크게 하는 조건은?</p>
+      <div class="opts">
+        <div class="opt right" data-step="1">㉠ SiO₂ 함량이 많다</div>
+        <div class="opt wrong" data-step="1">㉡ 온도가 높다</div>
+        <div class="opt wrong" data-step="1">㉢ 녹아 있는 물이 많다</div>
+      </div>
+    </div>
+    <div class="card">
+      <p class="q">2. 화강암과 유문암의 가장 큰 차이는?</p>
+      <div class="opts">
+        <div class="opt wrong" data-step="2">㉠ SiO₂ 함량</div>
+        <div class="opt right" data-step="2">㉡ 굳은 깊이에 따른 결정의 크기</div>
+        <div class="opt wrong" data-step="2">㉢ 만들어진 화산의 높이</div>
+      </div>
+    </div>
+  </div>
+  <aside class="script">
+    <p>1분 동안 풀게 하고 손가락으로 답을 들게 합니다.</p>
+    <p data-at="1">1번은 ㉠. 온도와 물은 반대로 점성을 줄입니다.</p>
+    <p data-at="2">2번은 ㉡. 둘은 성분이 같고, 화강암은 깊은 곳에서 천천히 굳어 결정이 큽니다.</p>
+  </aside>
+</section>
+
+<!-- 15 활동·다음 -->
+<section class="slide dark" id="s-next" data-title="직접 해 보기 · 다음 시간" data-part="정리">
+  <p class="kicker">직접 해 보기</p>
+  <h2>이야기 ③ 「한라산과 백두산」</h2>
+  <div class="cols">
+    <div class="card"><h3>직접 만들어 보세요</h3><p>세 가지 마그마로 세 화산체 만들기, 같은 마그마로 대폭발과 용암 돔 만들기, 깊이를 바꿔 화산암과 심성암 만들기, 암석의 순환 순서 맞추기가 기다립니다.</p>
+      <p class="mt"><a href="index.html" style="color:#74b6ff;font-weight:900">단원 화면 열기 →</a></p></div>
+    <div class="card"><h3>다음 시간 · 04 지진파와 지구 내부 구조</h3><p>사람이 뚫어 본 가장 깊은 구멍은 12 km 남짓. 그런데 6,371 km 아래 중심까지 어떻게 그렸을까요?</p></div>
+  </div>
+  <aside class="script"><p>남은 시간에는 단원 화면의 이야기 ③을 열어 미션을 하게 합니다.</p></aside>
+</section>
+
+</div></div>
+<script src="../assets/board.js"></script>
+<script>
+(function () {
+  "use strict";
+  /* 암석의 순환 — 다섯 마디와 화살표 */
+  (function () {
+    var svg = document.getElementById("cycSvg"), cx = 360, cy = 250, R = 175, h = "";
+    h += "<defs><marker id='s12-a' viewBox='0 0 10 10' refX='8' refY='5' markerWidth='4' markerHeight='4' orient='auto'><path d='M0 0 L10 5 L0 10 Z' fill='#495057'/></marker></defs>";
+    var N = [["마그마", "#e8590c", 1], ["화성암", "#495057", 1], ["퇴적물", "#c49a6c", 2], ["퇴적암", "#b08968", 2], ["변성암", "#6741d9", 3]];
+    var P = ["굳음", "풍화·침식", "쌓이고 다져짐", "열과 압력", "녹음"], Ps = [1, 2, 2, 3, 3];
+    var pos = N.map(function (n, i) { var a = (-90 + i * 72) * Math.PI / 180; return [cx + R * Math.cos(a), cy + R * Math.sin(a)]; });
+    for (var i = 0; i < 5; i++) {
+      var a = pos[i], b = pos[(i + 1) % 5], dx = b[0] - a[0], dy = b[1] - a[1], L = Math.sqrt(dx * dx + dy * dy), ux = dx / L, uy = dy / L;
+      var x1 = a[0] + ux * 70, y1 = a[1] + uy * 40, x2 = b[0] - ux * 70, y2 = b[1] - uy * 40;
+      var mx = (a[0] + b[0]) / 2, my = (a[1] + b[1]) / 2, ox = mx - cx, oy = my - cy, oL = Math.sqrt(ox * ox + oy * oy);
+      var lx = mx + ox / oL * 40, ly = my + oy / oL * 40 + 8;
+      h += "<g data-step='" + Ps[i] + "'><line x1='" + x1 + "' y1='" + y1 + "' x2='" + x2 + "' y2='" + y2 + "' stroke='#495057' stroke-width='5' marker-end='url(#s12-a)'/>";
+      h += "<text x='" + lx + "' y='" + ly + "' font-size='20' font-weight='800' fill='#5f6b80' text-anchor='middle' class='halo'>" + P[i] + "</text></g>";
+    }
+    N.forEach(function (n, i) {
+      var p = pos[i];
+      h += "<g data-step='" + n[2] + "'><rect x='" + (p[0] - 66) + "' y='" + (p[1] - 28) + "' width='132' height='56' rx='16' fill='" + n[1] + "'/><text x='" + p[0] + "' y='" + (p[1] + 9) + "' font-size='24' font-weight='900' fill='#fff' text-anchor='middle'>" + n[0] + "</text></g>";
+    });
+    h += "<g data-step='4'><text x='" + cx + "' y='" + (cy + 4) + "' font-size='22' font-weight='900' fill='#e8590c' text-anchor='middle'>화산 활동</text><text x='" + cx + "' y='" + (cy + 32) + "' font-size='19' font-weight='800' fill='#5f6b80' text-anchor='middle'>순환의 출발점</text></g>";
+    svg.innerHTML = h;
+  })();
+})();
+</script>
+</body>
+</html>

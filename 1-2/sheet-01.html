@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>개념정리 학습지 · 판구조론 정립의 증거 (지구시스템과학1 Ⅰ-2 01)</title>
+<link rel="icon" href="https://wmfsljy-coder.github.io/science-teacher-hub-qtrqwc/assets/hub-icon.svg" type="image/svg+xml">
+<style>
+  /* 개념정리 학습지 — 칠판 강의 화면(board-01.html)의 빈칸 번호와 1:1. 주소 끝 ?key=1 이면 교사용 정답이 보인다. */
+  @import url('https://fonts.googleapis.com/css2?family=Gothic+A1:wght@400;500;700;800;900&display=swap');
+  @page { size: A4; margin: 13mm 14mm; }
+  * { box-sizing: border-box; }
+  body { margin: 0; background: #e9edf2; font-family: "Gothic A1", "Malgun Gothic", sans-serif; color: #161b28; }
+  .paper { width: 210mm; min-height: 297mm; margin: 18px auto; background: #fff; padding: 13mm 14mm; box-shadow: 0 4px 24px rgba(0,0,0,.12); }
+  .tools { width: 210mm; margin: 18px auto 0; display: flex; gap: 10px; justify-content: flex-end; font-size: 14px; }
+  .tools a, .tools button { font: inherit; font-weight: 800; padding: 8px 14px; border-radius: 10px; border: 2px solid #c9d1dd; background: #fff; color: #161b28; text-decoration: none; cursor: pointer; }
+  .tools button.main { background: #1462d8; border-color: #1462d8; color: #fff; }
+  header { display: flex; justify-content: space-between; align-items: flex-end; border-bottom: 3px solid #161b28; padding-bottom: 8px; margin-bottom: 12px; }
+  header .k { font-size: 11.5px; font-weight: 800; color: #5f6b80; }
+  header h1 { font-size: 22px; font-weight: 900; margin: 2px 0 0; letter-spacing: -.03em; }
+  header .who { display: flex; gap: 8px; font-size: 12px; font-weight: 800; }
+  header .who span { border: 1.5px solid #9aa4b5; border-radius: 6px; padding: 6px 10px; min-width: 92px; }
+  .key-mark { display: none; color: #d9302c; font-weight: 900; font-size: 12px; }
+  .key .key-mark { display: inline; }
+  .guide { font-size: 11.5px; color: #5f6b80; margin: 0 0 10px; }
+  h2 { font-size: 15.5px; font-weight: 900; margin: 11px 0 5px; padding: 4px 10px; background: #eef2f8; border-left: 5px solid #1462d8; border-radius: 4px; }
+  p, li { font-size: 13.5px; line-height: 1.88; margin: 0; }
+  ul { margin: 0; padding-left: 18px; }
+  .blank { position: relative; display: inline-block; min-width: 4.4em; padding: 0 1.1em 0 1.7em; margin: 0 2px; border-bottom: 1.6px solid #161b28; color: transparent; line-height: 1.5; text-align: center; font-weight: 800; }
+  .blank::before { content: attr(data-n); position: absolute; left: 0; top: 50%; transform: translateY(-50%); width: 15px; height: 15px; border-radius: 50%; background: #1462d8; color: #fff; font-size: 9.5px; font-weight: 900; line-height: 15px; text-align: center; }
+  .key .blank { color: #d9302c; }
+  table { border-collapse: collapse; width: 100%; font-size: 12.5px; margin: 4px 0 2px; }
+  td, th { border: 1px solid #c9d1dd; padding: 4px 8px; text-align: left; line-height: 1.6; }
+  th { background: #f4f6fa; font-weight: 800; }
+  .formula { font-weight: 800; background: #f8fafc; border: 1px dashed #c9d1dd; border-radius: 6px; padding: 2px 10px; display: inline-block; }
+  .q { margin-top: 6px; }
+  .q p { line-height: 1.7; }
+  .q .ans { display: none; color: #d9302c; font-weight: 900; }
+  .key .q .ans { display: inline; }
+  .write { border: 1.5px solid #9aa4b5; border-radius: 8px; height: 54px; margin-top: 4px; }
+  .foot { margin-top: 10px; font-size: 10.5px; color: #8a94a6; display: flex; justify-content: space-between; }
+  @media print {
+    body { background: #fff; }
+    .tools { display: none; }
+    .paper { margin: 0; box-shadow: none; width: auto; min-height: 0; padding: 0; }
+  }
+</style>
+<style>/* A4 한 장에 맞게 줄 간격·여백을 줄인다 */ p, li { font-size: 12.8px; line-height: 1.62; } table { font-size: 12px; } td, th { padding: 2px 7px; line-height: 1.42; } h2 { font-size: 14.5px; margin: 7px 0 3px; padding: 3px 10px; } header { margin-bottom: 8px; } .guide { margin-bottom: 6px; } .write { height: 40px; } .foot { margin-top: 6px; }</style>
+</head>
+<body>
+<div class="tools">
+  <a href="board-01.html">칠판 강의 화면</a>
+  <a id="keyLink" href="?key=1" hidden>교사용 정답 보기</a>
+  <button class="main" onclick="window.print()">인쇄하기</button>
+</div>
+<div class="paper">
+  <header>
+    <div>
+      <div class="k">지구시스템과학1 · Ⅰ-2 판 구조 운동과 지구 내부 구조 · 01 &nbsp;<span class="key-mark">[교사용 정답]</span></div>
+      <h1>개념정리 학습지 · 판구조론 정립의 증거</h1>
+    </div>
+    <div class="who"><span>학번</span><span>이름</span></div>
+  </header>
+  <p class="guide">칠판 화면에 번호가 열리면 같은 번호 빈칸에 받아 적으세요. (빈칸 1~16)</p>
+
+  <h2>① 대륙 이동설 — 1912년 베게너</h2>
+  <ul>
+    <li>대서양 양쪽 해안선이 들어맞는다(수심 2,000 m 등심선으로 맞추면 더 잘 맞음) → 여러 대륙이 원래 하나였던 초대륙 <b class="blank" data-n="1">판게아</b></li>
+    <li>민물 파충류 <b class="blank" data-n="2">메소사우루스</b> 화석이 남아메리카와 아프리카 양쪽에서만 나온다</li>
+    <li>고생대 말 <b class="blank" data-n="3">빙하</b>가 긁고 간 자국이 지금은 적도 부근인 대륙들에 남아 있고, 대륙을 모으면 방향이 한 점에서 퍼져 나간다</li>
+    <li>대서양으로 끊긴 산맥과 지층이 반대편 대륙에서 이어진다</li>
+    <li>한계: 대륙이 단단한 해저를 헤치고 나아간다고 보았고, 대륙을 움직이는 <b class="blank" data-n="4">원동력</b>을 설명하지 못해 받아들여지지 않았다</li>
+  </ul>
+
+  <h2>② 고지자기 — 암석에 굳어 버린 나침반</h2>
+  <ul>
+    <li>용암이 식어 굳을 때 자성 광물이 그 자리의 지구 자기장 방향을 기록한다</li>
+    <li>자침이 수평면과 이루는 각: <b class="blank" data-n="5">복각</b> · 적도 0°, 자극 90° → 복각은 <b class="blank" data-n="6">위도</b>에 따라 정해진다 &nbsp;<span class="formula">tan(복각) = 2 × tan(위도)</span></li>
+    <li>노르웨이 남부: 오늘 복각 73.9° → 북위 <b class="blank" data-n="7">60</b>° / 3억 년 전 용암 복각 36.1° → 북위 <b class="blank" data-n="8">20</b>° → 북쪽으로 4,000 km 넘게 이동</li>
+    <li>시대별 암석의 복각으로 그 시대 자북극 위치를 이은 선: <b class="blank" data-n="9">겉보기 극이동 곡선</b></li>
+    <li>북아메리카와 유럽의 곡선이 어긋나지만, 대서양을 닫아 되돌리면 하나로 겹친다 → 움직인 것은 극이 아니라 <b class="blank" data-n="10">대륙</b></li>
+  </ul>
+
+  <h2>③ 해양저 확장 — 해령을 가로지른 자력계</h2>
+  <ul>
+    <li>정자극기·역자극기 줄무늬가 해령을 축으로 좌우 <b class="blank" data-n="11">대칭</b> · 해령에서 멀어질수록 해양 지각의 나이가 <b class="blank" data-n="12">많아진다</b></li>
+    <li>해령에서 새 해양 지각이 만들어져 양옆으로 밀려 나간다: <b class="blank" data-n="13">해양저 확장설</b></li>
+  </ul>
+  <table>
+    <tr><th style="width:30%">해령 (<span class="formula">1 cm/년 = 10 km/100만 년</span>)</th><th>관측</th><th style="width:30%">한쪽 방향 확장 속도</th></tr>
+    <tr><td>대서양 중앙 해령</td><td>1,000만 년에 250 km</td><td>약 <b class="blank" data-n="14">2.5</b> cm/년</td></tr>
+    <tr><td>동태평양 해령</td><td>500만 년에 300 km</td><td>약 <b class="blank" data-n="15">6</b> cm/년</td></tr>
+  </table>
+  <ul>
+    <li>대륙 이동설 → 맨틀 대류설(홈스) → 해양저 확장설 → 1960년대, 지구의 겉을 여러 장의 판으로 보고 지진·화산·산맥을 함께 설명하는 <b class="blank" data-n="16">판구조론</b></li>
+  </ul>
+
+  <h2>문제로 확인하기</h2>
+  <div class="q">
+    <p>1. 해령에서 멀어질수록 해양 지각의 나이는? <span class="ans">→ ㉡</span> &nbsp; ㉠ 적어진다 &nbsp; ㉡ 많아진다 &nbsp; ㉢ 어디서나 같다</p>
+    <p>2. 대륙 이동설이 처음에 받아들여지지 않은 가장 큰 까닭은? <span class="ans">→ 대륙을 움직이는 원동력을 설명하지 못해서</span></p>
+  </div>
+  <h2>한 문장 정리</h2>
+  <p>‘무엇이 대륙을 움직였는가’라는 베게너의 물음에 해양저 확장의 증거를 들어 한 문장으로 답하세요.</p>
+  <div class="write"></div>
+  <div class="foot"><span>칠판 강의 화면: board-01.html · 이야기 ① 「대륙을 움직인 범인」</span><span>과학 수업 도구</span></div>
+</div>
+<script>
+  if (new URLSearchParams(location.search).get("key") === "1") {
+    document.body.classList.add("key");
+    var a = document.getElementById("keyLink"); a.textContent = "학생용으로 보기"; a.href = "?"; a.hidden = false;
+  }
+</script>
+</body>
+</html>
